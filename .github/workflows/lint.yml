@@ -7,7 +7,7 @@ on:
 permissions: {} # no workflow-level access; each job grants only what it needs
 
 concurrency:
-  group: lint-${{ github.head_ref }}
+  group: lint-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
