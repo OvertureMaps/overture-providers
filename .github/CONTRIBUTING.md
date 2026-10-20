@@ -32,6 +32,10 @@ dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0"]
 source = ["my_package"]
 ```
 
+## Releasing
+
+Packages release automatically on merge to `main`; see [`PACKAGE_VERSIONING.md`](../PACKAGE_VERSIONING.md). Use a Conventional Commits PR title (`fix:` = patch, `feat:` = minor). Copy the `dynamic = ["version"]`, `[tool.setuptools_scm]` and `[tool.semantic_release]` config from an existing package, and do the one-time PyPI trusted-publisher setup for new packages.
+
 ## Cross-package dependencies
 
 Reference a sibling package by version range in `dependencies`, and add a `[tool.uv.sources]` path override so local dev resolves it from the checkout:

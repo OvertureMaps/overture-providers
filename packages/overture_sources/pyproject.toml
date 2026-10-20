@@ -1,6 +1,6 @@
 [project]
 name = "overture-sources"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Overture Maps source registry JSON files."
 readme = "README.md"
 authors = [{ name = "Overture Maps Foundation" }]
@@ -21,7 +21,7 @@ Issues = "https://github.com/OvertureMaps/overture-providers/issues"
 dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0"]
 
 [build-system]
-requires = ["setuptools>=77.0.3", "wheel"]
+requires = ["setuptools>=77.0.3", "setuptools_scm>=8.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
@@ -35,3 +35,22 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 source = ["overture_sources"]
+
+[tool.setuptools_scm]
+root = "../.."
+tag_regex = "^overture_sources-v(?P<version>.*)$"
+git_describe_command = "git describe --dirty --tags --long --match 'overture_sources-v*'"
+# PyPI rejects local version identifiers (the "+g<hash>" suffix), so drop it.
+local_scheme = "no-local-version"
+
+[tool.semantic_release]
+commit_parser = "conventional-monorepo"
+tag_format = "overture_sources-v{version}"
+allow_zero_version = true
+
+[tool.semantic_release.commit_parser_options]
+# Attributes a commit to this package by the files it touched.
+path_filters = ["."]
+# Floor every recognized type at a patch bump so any release-worthy push to
+# this package produces a new version (2 == LevelBump.PATCH).
+default_bump_level = 2

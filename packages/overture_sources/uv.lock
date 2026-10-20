@@ -141,7 +141,6 @@ wheels = [
 
 [[package]]
 name = "overture-sources"
-version = "0.1.0"
 source = { editable = "." }
 
 [package.optional-dependencies]

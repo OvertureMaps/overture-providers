@@ -580,7 +580,6 @@ wheels = [
 
 [[package]]
 name = "overture-dataset-configs"
-version = "0.1.0"
 source = { editable = "." }
 
 [package.optional-dependencies]
