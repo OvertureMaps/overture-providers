@@ -1,6 +1,6 @@
 # overture-dataset-configs
 
-Public dataset license/policy configs for Overture Maps providers.
+Public dataset license/policy configs for Overture providers.
 
 ```python
 from overture_dataset_configs import load_config, load_license_policy, provider_names

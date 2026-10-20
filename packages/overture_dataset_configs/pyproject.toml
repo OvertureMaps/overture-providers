@@ -1,7 +1,7 @@
 [project]
 name = "overture-dataset-configs"
 dynamic = ["version"]
-description = "Public dataset license/policy configs for Overture Maps providers."
+description = "Public dataset license/policy configs for Overture providers."
 readme = "README.md"
 authors = [{ name = "Overture Maps Foundation" }]
 license = "MIT"

@@ -1,6 +1,6 @@
 # overture-providers
 
-A monorepo of independently versioned, independently published Python packages for Overture Maps data providers. Each directory under [`packages/`](packages) with a `pyproject.toml` and a `tests/` directory is one package.
+A monorepo of independently versioned, independently published Python packages for Overture data providers. Each directory under [`packages/`](packages) with a `pyproject.toml` and a `tests/` directory is one package.
 
 ## Packages
 

@@ -1,7 +1,7 @@
 [project]
 name = "overture-sources"
 dynamic = ["version"]
-description = "Overture Maps source registry JSON files."
+description = "Overture source registry JSON files."
 readme = "README.md"
 authors = [{ name = "Overture Maps Foundation" }]
 license = "MIT"
