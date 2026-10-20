@@ -1,0 +1,41 @@
+{
+  "addresses": [
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "DL-DE-BY-2.0",
+    "DL-DE-ZERO-2.0",
+    "etalab-2.0",
+    "LicenseRef-Proprietary",
+    "LicenseRef-Public-Domain-PL-Geodesy-Law",
+    "LicenseRef-Public-Domain-US",
+    "LicenseRef-Public-Domain-US-CA-Law",
+    "LicenseRef-Public-Domain-US-FL-Law",
+    "PDDL-1.0"
+  ],
+  "base": [
+    "ODbL-1.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+  ],
+  "buildings": [
+    "CC-BY-4.0",
+    "LicenseRef-Proprietary",
+    "LicenseRef-Public-Domain-US",
+    "ODbL-1.0"
+  ],
+  "divisions": [
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "ODbL-1.0"
+  ],
+  "places": [
+    "Apache-2.0",
+    "CC0-1.0",
+    "CDLA-Permissive-2.0"
+  ],
+  "transportation": [
+    "LicenseRef-Proprietary",
+    "LicenseRef-Public-Domain-US",
+    "ODbL-1.0"
+  ]
+}

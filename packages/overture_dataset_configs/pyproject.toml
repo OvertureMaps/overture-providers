@@ -29,7 +29,7 @@ build-backend = "setuptools.build_meta"
 include = ["overture_dataset_configs*"]
 
 [tool.setuptools.package-data]
-overture_dataset_configs = ["datasets/*.json"]
+overture_dataset_configs = ["datasets/*.json", "license_policy.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

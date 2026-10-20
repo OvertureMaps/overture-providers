@@ -30,3 +30,10 @@ def load_config(provider: str) -> dict[str, Any]:
     if "/" in provider or "\\" in provider or not path.is_file():
         raise KeyError(f"unknown provider: {provider!r}")
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_license_policy() -> dict[str, list[str]]:
+    """Return the per-theme allowlist of license identifiers."""
+    return json.loads(
+        (files(__package__) / "license_policy.json").read_text(encoding="utf-8")
+    )

@@ -3,10 +3,11 @@
 Public dataset license/policy configs for Overture Maps providers.
 
 ```python
-from overture_dataset_configs import load_config, provider_names
+from overture_dataset_configs import load_config, load_license_policy, provider_names
 
 provider_names()  # ["alltheplaces", "birdeye", ...]
 load_config("linz")  # parsed JSON for overture_dataset_configs/datasets/linz.json
+load_license_policy()  # {theme: [allowed license ids]} from overture_dataset_configs/license_policy.json
 ```
 
 ## Dataset config files
