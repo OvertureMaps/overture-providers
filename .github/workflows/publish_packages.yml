@@ -189,7 +189,17 @@ jobs:
       - name: Build package
         if: github.event_name == 'workflow_dispatch' || steps.release.outputs.released == 'true' || steps.resume.outputs.unpublished == 'true'
         working-directory: packages/${{ matrix.package }}
-        run: uv build
+        env:
+          PACKAGE_DIR: ${{ matrix.package }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          # Test PyPI rejects re-uploads of an existing filename, so give every
+          # smoke-test run (and re-run attempt) its own throwaway version.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            var="SETUPTOOLS_SCM_PRETEND_VERSION_FOR_$(printf '%s' "$PACKAGE_DIR" | tr 'a-z' 'A-Z')"
+            export "$var=0.0.0.dev${GITHUB_RUN_ID}${GITHUB_RUN_ATTEMPT}"
+          fi
+          uv build
 
       # Twine's built-in check is what PyPI itself uses to validate metadata
       # (long_description rendering, required fields, valid classifiers) at

@@ -47,9 +47,11 @@ flowchart TD
 
 For each package, PSR looks at the commits since its last release tag and, if any warrant a bump, tags and pushes `<package_dir>-v<version>` (e.g. `overture_sources-v0.2.0`): **no commit is ever made back to `main`**, and no `CHANGELOG.md` is committed to the repo. Release notes are published to the tag's [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github) instead, and the same job then builds with `uv build` (`setuptools-scm` picks up the version it just tagged) and publishes to PyPI via [trusted publishing](https://docs.pypi.org/trusted-publishers/), no stored credentials.
 
+Changes that only touch Markdown under `packages/` (such as a package README) don't select the package, so they never cut a release. A README change reaches the PyPI project page with the package's next release.
+
 ### Manual dispatch publishes to Test PyPI instead
 
-Running `publish_packages.yml` manually (`workflow_dispatch`) never tags, releases, or touches real PyPI: it's a smoke test of the build/publish pipeline, not a release mechanism. Every package builds from its current (unreleased) state and publishes to [Test PyPI](https://test.pypi.org/) instead, through a separate `testpypi-<package_dir>` GitHub Environment (distinct from the `pypi-<package_dir>` one a push uses) so its trusted-publisher scoping never overlaps with a real release.
+Running `publish_packages.yml` manually (`workflow_dispatch`) never tags, releases, or touches real PyPI: it's a smoke test of the build/publish pipeline, not a release mechanism. Every package builds from its current (unreleased) state and publishes to [Test PyPI](https://test.pypi.org/) instead, through a separate `testpypi-<package_dir>` GitHub Environment (distinct from the `pypi-<package_dir>` one a push uses) so its trusted-publisher scoping never overlaps with a real release. Each run builds as `0.0.0.dev<run_id><attempt>`, since Test PyPI rejects a re-upload of an existing version.
 
 ## Trusted publishing setup (one-time per package)
 
