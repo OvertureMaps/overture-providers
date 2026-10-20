@@ -15,9 +15,15 @@ load_license_policy()  # {theme: [allowed license ids]}
 
 This package only ships the data. For typed access (`Dataset`), license-policy checks, attribution generation, and the `overture-datasets` CLI, use [overture-core](https://pypi.org/project/overture-core/).
 
-## Config files
+## Concepts
 
-Each file in [`overture_dataset_configs/datasets`](overture_dataset_configs/datasets) describes one provider and the resources (datasets) taken from it. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
+- **Provider**: an organization Overture takes data from, such as Land Information New Zealand.
+- **Dataset** (a `resources` entry): one licensed collection of data from a provider, such as a single layer or file set. A provider can have many datasets, and each has its own license, coverage and refresh cadence.
+- **License policy**: per theme, the license identifiers Overture accepts. Every dataset's license type should appear in it.
+
+Each file in [`overture_dataset_configs/datasets`](overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
+
+The [source registry](https://pypi.org/project/overture-sources/) is the published, per-theme view of these inputs.
 
 ## Contributing
 
