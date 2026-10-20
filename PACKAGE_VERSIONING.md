@@ -53,14 +53,6 @@ Changes that only touch Markdown under `packages/` (such as a package README) do
 
 Running `publish_packages.yml` manually (`workflow_dispatch`) never tags, releases, or touches real PyPI: it's a smoke test of the build/publish pipeline, not a release mechanism. Every package builds from its current (unreleased) state and publishes to [Test PyPI](https://test.pypi.org/) instead, through a separate `testpypi-<package_dir>` GitHub Environment (distinct from the `pypi-<package_dir>` one a push uses) so its trusted-publisher scoping never overlaps with a real release. Each run builds as `0.0.0.dev<run_id><attempt>`, since Test PyPI rejects a re-upload of an existing version.
 
-## Trusted publishing setup (one-time per package)
-
-Each package publishes through its own GitHub Environment, named `pypi-<package_dir>` (e.g. `pypi-overture_sources`) for real releases and `testpypi-<package_dir>` for manual-dispatch smoke tests, so PyPI's and Test PyPI's trusted-publisher configs can each scope access per package. `publish_packages.yml`'s `release` job references these as its `environment`, so GitHub auto-creates them the first time the job runs for a given package/trigger combination, no manual setup needed on the GitHub side. When adding a new package, the only manual steps are on PyPI and Test PyPI (each has its own separate account/project system, so both need this done independently):
-
-1. Create the project (or use a "pending" trusted publisher to reserve the name on first publish, see [PyPI's docs](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/)) on both [pypi.org](https://pypi.org/manage/account/publishing/) and [test.pypi.org](https://test.pypi.org/manage/account/publishing/).
-2. On pypi.org, add a trusted publisher: this repo, workflow `publish_packages.yml`, environment `pypi-<package_dir>`.
-3. On test.pypi.org, add a trusted publisher: this repo, workflow `publish_packages.yml`, environment `testpypi-<package_dir>`.
-
 ## Adding a new package
 
-Auto-discovered testable packages need no CI changes, see [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the `pyproject.toml` shape (`dynamic = ["version"]`, `[tool.setuptools_scm]`, `[tool.semantic_release]`) each package needs for this to work. Publishing does need the one-time trusted-publisher setup above, since PyPI has no auto-discovery of new projects.
+Auto-discovered testable packages need no CI changes, see [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the `pyproject.toml` shape (`dynamic = ["version"]`, `[tool.setuptools_scm]`, `[tool.semantic_release]`) each package needs for this to work. Publishing also needs a [trusted publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) on both pypi.org and test.pypi.org: this repo, workflow `publish_packages.yml`, and environment `pypi-<package_dir>` or `testpypi-<package_dir>` respectively.
