@@ -17,9 +17,11 @@ provider. Files are named `<provider_label>.json` (e.g. `open_addresses.json`)
 and are looked up by file stem via `load_config`.
 
 Every file is validated against the pydantic schema in
-[`schema.py`](overture_dataset_configs/schema.py). Validation runs in this
-package's tests. Unknown keys are **rejected** — if you need a new field, add
-it to the schema and document it here in the same PR.
+[`overture_core.dataset.schema`](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/schema.py).
+Validation runs in this package's tests (`overture-core` is a dev-only
+dependency; the package itself has none). Unknown keys are **rejected** — if
+you need a new field, add it to the schema in `overture-core` and document it
+here.
 
 ## Top-level structure
 
@@ -146,8 +148,7 @@ Several fields hold a pair of URLs:
 ## Adding or changing a file
 
 1. Follow the structure above; run the validator locally:
-   `uv run python -m overture_dataset_configs.schema overture_dataset_configs/datasets/*.json`
-   (or `uv run pytest`) from this directory.
-2. New field? Add it to `schema.py` and to this README in the same PR.
+   `uv run pytest` from this directory (after `uv sync --extra dev`).
+2. New field? Add it to the schema in `overture-core` and to this README.
 3. Provider/resource `label`s are load-bearing (dataset IDs, S3 paths) — never
    rename them casually.

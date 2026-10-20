@@ -7,7 +7,7 @@ authors = [{ name = "Overture Maps Foundation" }]
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2.0"]
+dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
@@ -19,7 +19,7 @@ Source = "https://github.com/OvertureMaps/overture-providers/tree/main/packages/
 Issues = "https://github.com/OvertureMaps/overture-providers/issues"
 
 [project.optional-dependencies]
-dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0"]
+dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0", "overture-core>=1.2.3"]
 
 [build-system]
 requires = ["setuptools>=77.0.3", "wheel"]
