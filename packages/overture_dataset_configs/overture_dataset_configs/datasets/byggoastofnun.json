@@ -1,0 +1,54 @@
+{
+  "provider": {
+    "label": "byggoastofnun",
+    "name": "Byggðastofnun",
+    "url": {
+      "primary": "https://www.byggdastofnun.is/",
+      "archive": "https://web.archive.org/web/2025/https://www.byggdastofnun.is/"
+    }
+  },
+  "resources": [
+    {
+      "label": "postal_cities",
+      "name": "Byggðastofnun Postal Cities",
+      "collection": {
+        "data_location": {
+          "primary": "https://gis.lmi.is/geoserver/byggdastofnun/wfs",
+          "archive": ""
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://gis.lmi.is/geoserver/byggdastofnun/wfs?request=GetFeature&service=WFS&version=1.1.0&typeName=byggdastofnun:postnumer&outputFormat=csv"
+        },
+        "license": {
+          "url": {
+            "primary": "",
+            "archive": ""
+          },
+          "type": "LicenseRef-Proprietary",
+          "requires_attribution": false,
+          "text": "",
+          "attribution": ""
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "IS"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": "Infrequent",
+          "source": "tf-data-platform",
+          "type": "continuous",
+          "month": []
+        },
+        "known_issues": "",
+        "notes": "Combined with stadfangaskra at ingest time."
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

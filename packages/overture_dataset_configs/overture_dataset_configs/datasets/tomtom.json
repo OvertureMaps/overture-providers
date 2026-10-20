@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "tomtom",
+        "name": "TomTom",
+        "url": {
+            "primary": "https://www.tomtom.com/",
+            "archive": "https://web.archive.org/web/20250221172537/https://www.tomtom.com/"
+        }
+    },
+    "resources": [
+        {
+            "label": "orbis",
+            "name": "Orbis",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "license": {
+                    "url": {
+                        "primary": "",
+                        "archive": ""
+                    },
+                    "type": "LicenseRef-Proprietary",
+                    "requires_attribution": false,
+                    "text": "",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

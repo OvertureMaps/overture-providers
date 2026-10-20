@@ -1,0 +1,1572 @@
+{
+    "provider": {
+        "label": "geoboundaries",
+        "name": "geoBoundaries",
+        "url": {
+            "primary": "https://geoboundaries.org/",
+            "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/"
+        }
+    },
+    "resources": [
+        {
+            "label": "ago_adm2",
+            "name": "geoBoundaries AGO ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "AGO/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "AO"
+                        }
+                    ],
+                    "description": "Angola"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "bdi_adm2",
+            "name": "geoBoundaries BDI ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "BDI/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BI"
+                        }
+                    ],
+                    "description": "Burundi"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "brn_adm2",
+            "name": "geoBoundaries BRN ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "BRN/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BN"
+                        }
+                    ],
+                    "description": "Brunei Darussalam"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "bwa_adm2",
+            "name": "geoBoundaries BWA ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "BWA/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BW"
+                        }
+                    ],
+                    "description": "Botswana"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "caf_adm2",
+            "name": "geoBoundaries CAF ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "CAF/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CF"
+                        }
+                    ],
+                    "description": "Central African Republic"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "che_adm2",
+            "name": "geoBoundaries CHE ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "CHE/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CH"
+                        }
+                    ],
+                    "description": "Switzerland"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "cod_adm2",
+            "name": "geoBoundaries COD ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "COD/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CD"
+                        }
+                    ],
+                    "description": "Democratic Republic of the Congo"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "cog_adm2",
+            "name": "geoBoundaries COG ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "COG/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CG"
+                        }
+                    ],
+                    "description": "Republic of the Congo"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "col_adm2",
+            "name": "geoBoundaries COL ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "COL/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CO"
+                        }
+                    ],
+                    "description": "Colombia"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "com_adm2",
+            "name": "geoBoundaries COM ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "COM/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "KM"
+                        }
+                    ],
+                    "description": "Comoros"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "cpv_adm2",
+            "name": "geoBoundaries CPV ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "CPV/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CV"
+                        }
+                    ],
+                    "description": "Cabo Verde"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "cyp_adm1",
+            "name": "geoBoundaries CYP ADM1",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "CYP/ADM1/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CY"
+                        }
+                    ],
+                    "description": "Cyprus"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "egy_adm2",
+            "name": "geoBoundaries EGY ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "EGY/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "EG"
+                        }
+                    ],
+                    "description": "Egypt"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "eri_adm2",
+            "name": "geoBoundaries ERI ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "ERI/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "ER"
+                        }
+                    ],
+                    "description": "Eritrea"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "eth_adm2",
+            "name": "geoBoundaries ETH ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "ETH/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "ET"
+                        }
+                    ],
+                    "description": "Ethiopia"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "gab_adm2",
+            "name": "geoBoundaries GAB ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "GAB/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GA"
+                        }
+                    ],
+                    "description": "Gabon"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "gbr_adm2",
+            "name": "geoBoundaries GBR ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "GBR/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GB"
+                        }
+                    ],
+                    "description": "United Kingdom"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "gin_adm2",
+            "name": "geoBoundaries GIN ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "GIN/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GN"
+                        }
+                    ],
+                    "description": "Guinea"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "gmb_adm2",
+            "name": "geoBoundaries GMB ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "GMB/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GM"
+                        }
+                    ],
+                    "description": "Gambia"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "gnq_adm2",
+            "name": "geoBoundaries GNQ ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "GNQ/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GQ"
+                        }
+                    ],
+                    "description": "Equatorial Guinea"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "jpn_adm2",
+            "name": "geoBoundaries JPN ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "JPN/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "JP"
+                        }
+                    ],
+                    "description": "Japan"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "khm_adm2",
+            "name": "geoBoundaries KHM ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "KHM/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "KH"
+                        }
+                    ],
+                    "description": "Cambodia"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "kwt_adm2",
+            "name": "geoBoundaries KWT ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "KWT/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "KW"
+                        }
+                    ],
+                    "description": "Kuwait"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "lso_adm2",
+            "name": "geoBoundaries LSO ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "LSO/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "LS"
+                        }
+                    ],
+                    "description": "Lesotho"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "mdg_adm2",
+            "name": "geoBoundaries MDG ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "MDG/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "MG"
+                        }
+                    ],
+                    "description": "Madagascar"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "mrt_adm2",
+            "name": "geoBoundaries MRT ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "MRT/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "MR"
+                        }
+                    ],
+                    "description": "Mauritania"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "nam_adm2",
+            "name": "geoBoundaries NAM ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "NAM/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "NA"
+                        }
+                    ],
+                    "description": "Namibia"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "nzl_adm2",
+            "name": "geoBoundaries NZL ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "NZL/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "NZ"
+                        }
+                    ],
+                    "description": "New Zealand"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "omn_adm2",
+            "name": "geoBoundaries OMN ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "OMN/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "OM"
+                        }
+                    ],
+                    "description": "Oman"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "png_adm2",
+            "name": "geoBoundaries PNG ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "PNG/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "PG"
+                        }
+                    ],
+                    "description": "Papua New Guinea"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "qat_adm2",
+            "name": "geoBoundaries QAT ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "QAT/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "QA"
+                        }
+                    ],
+                    "description": "Qatar"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "sdn_adm2",
+            "name": "geoBoundaries SDN ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "SDN/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "SD"
+                        }
+                    ],
+                    "description": "Sudan"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "slv_adm2",
+            "name": "geoBoundaries SLV ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "SLV/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "SV"
+                        }
+                    ],
+                    "description": "El Salvador"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "tcd_adm2",
+            "name": "geoBoundaries TCD ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "TCD/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "TD"
+                        }
+                    ],
+                    "description": "Chad"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "tgo_adm2",
+            "name": "geoBoundaries TGO ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "TGO/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "TG"
+                        }
+                    ],
+                    "description": "Togo"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "tha_adm2",
+            "name": "geoBoundaries THA ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "THA/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "TH"
+                        }
+                    ],
+                    "description": "Thailand"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "tuv_adm2",
+            "name": "geoBoundaries TUV ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "TUV/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "TV"
+                        }
+                    ],
+                    "description": "Tuvalu"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "ury_adm2",
+            "name": "geoBoundaries URY ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "URY/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "UY"
+                        }
+                    ],
+                    "description": "Uruguay"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "vut_adm2",
+            "name": "geoBoundaries VUT ADM2",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/",
+                    "endpoint": "VUT/ADM2/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.geoboundaries.org/#tabs1-js",
+                        "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commmercial, noncommercial, and academic uses.",
+                    "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "VU"
+                        }
+                    ],
+                    "description": "Vanuatu"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "provider": {
+        "label": "osm",
+        "name": "OpenStreetMap",
+        "url": {
+            "primary": "https://www.openstreetmap.org/",
+            "archive": "https://web.archive.org/web/20250224061839/https://www.openstreetmap.org/"
+        }
+    },
+    "resources": [
+        {
+            "label": "planet",
+            "name": "OpenStreetMap",
+            "collection": {
+                "data_location": {
+                    "primary": "https://planet.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/20250224111401/https://planet.openstreetmap.org/"
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://osm-planet-us-west-2/planet/pbf/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.openstreetmap.org/copyright",
+                        "archive": "https://web.archive.org/web/20250224023118/https://www.openstreetmap.org/copyright"
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                    "attribution": "© OpenStreetMap contributors"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "planet_history",
+            "name": "OpenStreetMap Full History",
+            "collection": {
+                "data_location": {
+                    "primary": "https://planet.openstreetmap.org/planet/full-history/",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://osm-planet-us-west-2/planet-full-history/pbf/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.openstreetmap.org/copyright",
+                        "archive": "https://web.archive.org/web/20250224023118/https://www.openstreetmap.org/copyright"
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                    "attribution": "© OpenStreetMap contributors"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Weekly"
+                },
+                "known_issues": "",
+                "notes": "Complete edit history of every OSM entity, including deleted versions. Used to bootstrap the OSM history Iceberg table."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "coastlines",
+            "name": "OpenStreetMap Coastlines",
+            "collection": {
+                "data_location": {
+                    "primary": "https://osmdata.openstreetmap.de/data/coastlines.html",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://osmdata.openstreetmap.de/download/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.openstreetmap.org/copyright",
+                        "archive": "https://web.archive.org/web/20250224023118/https://www.openstreetmap.org/copyright"
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                    "attribution": "© OpenStreetMap contributors"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Weekly"
+                },
+                "known_issues": "",
+                "notes": "Download files: land-polygons-split-4326.zip, water-polygons-split-4326.zip, coastlines-split-4326.zip (file names are set in dataset_osm_coastline_collect_dag.py)."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

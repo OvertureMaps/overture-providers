@@ -1,0 +1,51 @@
+{
+    "provider": {
+        "label": "meta",
+        "name": "Meta",
+        "url": {
+            "primary": "https://www.meta.com/",
+            "archive": "https://web.archive.org/web/20250225172536/https://www.meta.com/"
+        }
+    },
+    "resources": [
+        {
+            "label": "meta",
+            "name": "meta",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://meta-overture-staging/hive_uploads/pd2_in_overture_format/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.",
+                    "attribution": "Meta"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

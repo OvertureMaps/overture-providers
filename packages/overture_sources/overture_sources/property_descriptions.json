@@ -1,0 +1,173 @@
+{
+    "properties": [
+        {
+            "source_name": {
+                "description": "The name of the source.",
+                "type": "string"
+            },
+            "dataset_name": {
+                "description": "The name of the dataset being used from the source. This typically matches the 'dataset' value found in a record's sources column.",
+                "type": "string"
+            },
+            "inception_date": {
+                "description": "The first date this source was used in the given Overture theme, in YYYY-MM-DD format.",
+                "type": "string"
+            },
+            "source": {
+                "description": "Information about where the data comes from, including URLs and downloads.",
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "Home page URLs.",
+                        "type": "object",
+                        "properties": {
+                            "primary": {
+                                "type": "string"
+                            },
+                            "archive": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data_location": {
+                        "description": "Landing page or portal URLs where data is described.",
+                        "type": "object",
+                        "properties": {
+                            "primary": {
+                                "type": "string"
+                            },
+                            "archive": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "data_download": {
+                        "description": "Direct download link(s) to the data.",
+                        "type": "array"
+                    }
+                }
+            },
+            "license": {
+                "description": "License information for the source data.",
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "License URLs.",
+                        "type": "object",
+                        "properties": {
+                            "primary": {
+                                "type": "string"
+                            },
+                            "archive": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "type": {
+                        "description": "The license that data from this source falls under (e.g. CC0-1.0, CC-BY-4.0, Open Data License).",
+                        "type": "string"
+                    },
+                    "requires_attribution": {
+                        "description": "Whether the source requires attribution.",
+                        "type": "boolean"
+                    },
+                    "text": {
+                        "description": "Relevant license text, direct from the license URL.",
+                        "type": "string"
+                    },
+                    "attribution": {
+                        "description": "Attribution text required by this source.",
+                        "type": "string"
+                    }
+                }
+            },
+            "coverage": {
+                "description": "Geographic coverage details.",
+                "type": "object",
+                "properties": {
+                    "areas": {
+                        "description": "List of covered administrative areas (ISO 3166-1 country code in iso_3166_1, optional ISO 3166-2 codes in iso_3166_2).",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "iso_3166_1": {
+                                    "description": "ISO 3166-1 alpha-2 country code.",
+                                    "type": "string"
+                                },
+                                "iso_3166_2": {
+                                    "description": "Optional list of ISO 3166-2 codes within the country.",
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    },
+                    "description": {
+                        "description": "A description of the coverage type of the source data - i.e. national, regional, local.",
+                        "type": "string"
+                    },
+                    "bbox": {
+                        "description": "The bounding box of this source's coverage in [minLon, minLat, maxLon, maxLat] order.",
+                        "type": "array"
+                    }
+                }
+            },
+            "file_information": {
+                "description": "File and path details for the sourced data.",
+                "type": "object",
+                "properties": {
+                    "oa_path": {
+                        "description": "File path and name in OpenAddresses, if applicable (addresses theme only).",
+                        "type": "array"
+                    },
+                    "data_layer_name": {
+                        "description": "Name of the data layer used from this source.",
+                        "type": "string"
+                    },
+                    "file_format": {
+                        "description": "Format of the file used from this source.",
+                        "type": "string"
+                    },
+                    "address_levels": {
+                        "description": "Available address level attributes from OpenAddress, if applicable (addresses theme only).",
+                        "type": "array"
+                    }
+                }
+            },
+            "refresh_schedule": {
+                "description": "How and when the source is refreshed in the Overture pipeline.",
+                "type": "object",
+                "properties": {
+                    "frequency": {
+                        "description": "How frequently the source data is updated.",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "The ingest source path for data (e.g., 'OpenAddresses' or 'tf-data-platform').",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Whether the data is continuously updated or needs manual intervention.",
+                        "type": "string"
+                    },
+                    "month": {
+                        "description": "The month (or months, numeric) in which the data is updated for Overture releases.",
+                        "type": "array"
+                    }
+                }
+            },
+            "known_issues": {
+                "description": "A description of any issues with the data that are known - i.e. data is incomplete, records are incomplete, coverage is incomplete, etc.",
+                "type": "string"
+            },
+            "notes": {
+                "description": "Freeform notes about this data source, including notes on any pre-processing requirements.",
+                "type": "string"
+            },
+            "license_priority": {
+                "description": "A map of license type to numeric priority (lower is preferred) for conflation when multiple sources exist.",
+                "type": "object"
+            }
+        }
+    ]
+}

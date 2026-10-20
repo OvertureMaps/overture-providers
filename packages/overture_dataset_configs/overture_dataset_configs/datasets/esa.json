@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "esa",
+        "name": "The European Space Agency",
+        "url": {
+            "primary": "https://esa-worldcover.org/en",
+            "archive": "https://web.archive.org/web/20250122075653/https://esa-worldcover.org/en"
+        }
+    },
+    "resources": [
+        {
+            "label": "esa_worldcover",
+            "name": "ESA WorldCover",
+            "collection": {
+                "data_location": {
+                    "primary": "https://esa-worldcover.org/en/data-access",
+                    "archive": "https://web.archive.org/web/20250214095946/https://esa-worldcover.org/en/data-access"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://esa-worldcover.org/en/data-access",
+                        "archive": "https://web.archive.org/web/20250214095946/https://esa-worldcover.org/en/data-access"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "The ESA WorldCover product is provided free of charge, without restriction of use. For the full license information see the Creative Commons Attribution 4.0 International License.",
+                    "attribution": "© ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium. Available under [CC BY 4.0 DEED](https://creativecommons.org/licenses/by/4.0/)"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

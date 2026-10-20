@@ -1,0 +1,54 @@
+{
+    "provider": {
+        "label": "crab",
+        "name": "Agentschap Digitaal Vlaanderen",
+        "url": {
+            "primary": "https://www.vlaanderen.be/",
+            "archive": "https://web.archive.org/web/2025/https://www.vlaanderen.be/"
+        }
+    },
+    "resources": [
+        {
+            "label": "crab",
+            "name": "CRAB",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/gebouwen-en-adressenregister",
+                    "archive": "https://web.archive.org/web/2025/https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/gebouwen-en-adressenregister"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://opendata.bosa.be/download/best/openaddress-bevlg.zip"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://opendata.bosa.be/index.fr.html",
+                        "archive": "https://web.archive.org/web/2025/https://opendata.bosa.be/index.fr.html"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "Licence: Creative Commons 4.0 Attribution",
+                    "attribution": "AR (Adressenregister)"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BE"
+                        }
+                    ],
+                    "description": "Regional"
+                },
+                "refresh_schedule": {
+                    "frequency": "Daily",
+                    "source": "tf-data-platform",
+                    "type": "continuous",
+                    "month": []
+                },
+                "known_issues": "",
+                "notes": "Accessed via https://opendata.bosa.be/."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

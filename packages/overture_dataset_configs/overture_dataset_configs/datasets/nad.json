@@ -1,0 +1,71 @@
+{
+  "provider": {
+    "label": "nad",
+    "name": "National Address Database",
+    "url": {
+      "primary": "https://www.transportation.gov/",
+      "archive": "https://web.archive.org/web/2025/https://www.transportation.gov/"
+    }
+  },
+  "resources": [
+    {
+      "label": "nad",
+      "name": "NAD",
+      "collection": {
+        "data_location": {
+          "primary": "https://www.transportation.gov/gis/national-address-database",
+          "archive": "https://web.archive.org/web/20240909200927/https://www.transportation.gov/gis/national-address-database"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://data.transportation.gov/download/fc2s-wawr/application%2Fx-zip-compressed"
+        },
+        "license": {
+          "url": {
+            "primary": "https://www.transportation.gov/mission/open/gis/national-address-database/national-address-database-nad-disclaimer",
+            "archive": "https://web.archive.org/web/20240906160337/https://www.transportation.gov/mission/open/gis/national-address-database/national-address-database-nad-disclaimer"
+          },
+          "type": "LicenseRef-Public-Domain-US",
+          "requires_attribution": true,
+          "text": "Published data made available as a part of the NAD is provided as a public service to enhance open government, transparency, and accountability.  The NAD is a compilation of data provided by state, local, and tribal governments and is made available “as is.”  Although the NAD is open data, it is not intended for use as a mailing list and is subject to individual state statutes that prohibit it’s use as a mailing list. The NAD is a work of the federal government and as such is not subject to copyright protection in accordance with 17 U.S.C. § 105.  It is available for re-use without limitation or restriction.",
+          "attribution": "N/A"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "US"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": "Semi-annually",
+          "source": "tf-data-platform",
+          "type": "manual",
+          "month": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "known_issues": "Coverage varies county-to-county; this source does not include full coverage in the US.",
+        "notes": "Distributed by OpenAddresses. NAD addresses in New York City have been replaced with address data from the City of New York.",
+        "api": {
+          "url": "https://data.transportation.gov/api/views/fc2s-wawr.json"
+        },
+        "extras": {}
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

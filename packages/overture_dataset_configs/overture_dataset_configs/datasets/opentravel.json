@@ -1,0 +1,53 @@
+{
+    "provider": {
+        "label": "opentravel",
+        "name": "OpenTravel Alliance",
+        "url": {
+            "primary": "https://opentravel.org/",
+            "archive": ""
+        }
+    },
+    "resources": [
+        {
+            "label": "hilton",
+            "name": "OpenTravel",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://omf-places-data-providers/opentravel/resource=hilton/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/2025/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                    "attribution": "OpenTravel Alliance"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global; 143 countries in the 2026-09 drop, 68% of open properties in the US"
+                },
+                "refresh_schedule": {
+                    "frequency": "Infrequent",
+                    "source": "OpenTravel Alliance",
+                    "type": "manual"
+                },
+                "known_issues": "Phone numbers arrive as bare national numbers with no country code and are passed through unnormalised. 29% of rows are Under Construction properties that do not exist yet and are excluded at ingest; Overture's operating_status vocabulary cannot express this state, and these rows are also materially sparser (89% no phone, 88% no URL). 193 rows have no usable coordinates and are excluded at ingest. Addr1 is truncated at 35 characters with the remainder in Addr2. Facility Country holds country names, not ISO codes, in mixed casing. The feed also contains Dir of Sales and DSEmail columns naming individual Hilton employees; these are personal data and are deliberately never mapped.",
+                "notes": "Hilton property list brokered by the OpenTravel Alliance (contributor: Brian Bell), delivered as a one-time drop rather than a recurring feed. Business-owner-verified data keyed on Hilton's own InnCode property code. Tracked in OvertureMaps/tf-place-data#518. License confirmed by Albi as CDLA-Permissive (OvertureMaps/tf-place-data#532). The field mapping and open decisions are recorded on the tracking issue."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

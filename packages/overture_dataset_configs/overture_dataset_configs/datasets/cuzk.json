@@ -1,0 +1,54 @@
+{
+  "provider": {
+    "label": "cuzk",
+    "name": "Český úřad zeměměřický a katastrální",
+    "url": {
+      "primary": "https://vdp.cuzk.cz/",
+      "archive": "https://web.archive.org/web/2025/https://vdp.cuzk.cz/"
+    }
+  },
+  "resources": [
+    {
+      "label": "cuzk",
+      "name": "ČÚZK",
+      "collection": {
+        "data_location": {
+          "primary": "",
+          "archive": ""
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://vdp.cuzk.gov.cz/vymenny_format/csv/{date}_OB_ADR_csv.zip"
+        },
+        "license": {
+          "url": {
+            "primary": "https://cuzk.gov.cz/Predpisy/Podminky-poskytovani-prostor-dat-a-sitovych-sluzeb/Podminky-poskytovani-prostorovych-dat-CUZK.aspx",
+            "archive": "https://web.archive.org/web/2025/https://cuzk.gov.cz/Predpisy/Podminky-poskytovani-prostor-dat-a-sitovych-sluzeb/Podminky-poskytovani-prostorovych-dat-CUZK.aspx"
+          },
+          "type": "CC-BY-4.0",
+          "requires_attribution": true,
+          "text": "Licence: Creative Commons 4.0 Attribution",
+          "attribution": "Český úřad zeměměřický a katastrální (ČÚZK)"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "CZ"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": "Monthly",
+          "source": "tf-data-platform",
+          "type": "continuous",
+          "month": []
+        },
+        "known_issues": "",
+        "notes": ""
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

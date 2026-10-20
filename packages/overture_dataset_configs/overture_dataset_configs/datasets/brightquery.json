@@ -1,0 +1,120 @@
+{
+    "provider": {
+        "label": "brightquery",
+        "name": "BrightQuery",
+        "url": {
+            "primary": "https://brightquery.com/",
+            "archive": ""
+        }
+    },
+    "resources": [
+        {
+            "label": "brightquery",
+            "name": "BrightQuery",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://omf-places-data-providers/brightquery/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/2025/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                    "attribution": "BrightQuery"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {
+                "country_category_filters": {
+                    "country_policy": "allowlist",
+                    "default": {
+                        "excluded_categories": []
+                    },
+                    "countries": {
+                        "AT": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "BE": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "CA": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "CH": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "DE": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "DK": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "ES": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "FI": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "FR": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "GB": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "IT": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "NL": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "NO": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "SE": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        },
+                        "US": {
+                            "excluded_categories": [],
+                            "reason": "In scope for ingestion, all categories"
+                        }
+                    }
+                }
+            },
+            "matching": {}
+        }
+    ]
+}

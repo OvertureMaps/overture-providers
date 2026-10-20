@@ -1,0 +1,644 @@
+{
+    "datasets": [
+        {
+            "source_name": "Meta",
+            "dataset_name": "meta",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "https://www.meta.com/",
+                    "archive": "https://web.archive.org/web/20250225172536/https://www.meta.com/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://cdla.dev/permissive-2-0/",
+                    "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.",
+                "attribution": "Meta"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.999992,
+                    -85,
+                    179.9997228,
+                    84.9971328
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Microsoft",
+            "dataset_name": "Microsoft",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "https://www.microsoft.com/",
+                    "archive": "https://web.archive.org/web/20250225093926/https://www.microsoft.com/en-us/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://cdla.dev/permissive-2-0/",
+                    "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.",
+                "attribution": "Microsoft"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180,
+                    -89.913,
+                    180,
+                    90
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "PinMeTo",
+            "dataset_name": "PinMeTo",
+            "inception_date": "2025-05-21",
+            "source": {
+                "url": {
+                    "primary": "https://www.pinmeto.com/",
+                    "archive": "https://www.web.archive.org/web/20250425155801/https://www.pinmeto.com/"
+                },
+                "data_location": {
+                    "primary": "https://www.pinmeto.com/products/local-business-listing",
+                    "archive": "https://web.archive.org/web/20250425155801/https://www.pinmeto.com/products/local-business-listing"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "PinMeTo"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -158.05246485862884,
+                    -46.413217336056725,
+                    176.98961124555098,
+                    78.22396
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Krick",
+            "dataset_name": "Krick",
+            "inception_date": "2025-06-25",
+            "source": {
+                "url": {
+                    "primary": "https://www.krick.com/",
+                    "archive": "https://www.web.archive.org/web/2025/https://www.krick.com/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "Krick"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    2.6330743,
+                    39.570984,
+                    13.8385,
+                    54.916443
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Foursquare",
+            "dataset_name": "Foursquare",
+            "inception_date": "2025-08-10",
+            "source": {
+                "url": {
+                    "primary": "https://www.foursquare.com/",
+                    "archive": "https://web.archive.org/web/20250725084943/https://www.foursquare.com/"
+                },
+                "data_location": {
+                    "primary": "https://huggingface.co/datasets/foursquare/fsq-os-places",
+                    "archive": "https://web.archive.org/web/2026/https://huggingface.co/datasets/foursquare/fsq-os-places"
+                },
+                "data_download": [
+                    "hf://datasets/foursquare/fsq-os-places/release/dt=2026-02-12/places/parquet/*.parquet"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://opensource.foursquare.com/places-notice-txt/",
+                    "archive": "https://web.archive.org/web/20251118012312/https://opensource.foursquare.com/places-notice-txt/"
+                },
+                "type": "Apache-2.0",
+                "requires_attribution": true,
+                "text": "The Foursquare OS Places dataset (the “Data”) is licensed under the Apache License, Version 2.0 (the “License”).",
+                "attribution": "Foursquare"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "RenderSEO",
+            "dataset_name": "RenderSEO",
+            "inception_date": "2025-11-11",
+            "source": {
+                "url": {
+                    "primary": "https://www.renderseo.com/",
+                    "archive": "https://web.archive.org/web/2025/https://www.renderseo.com/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "RenderSEO"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "AllThePlaces",
+            "dataset_name": "AllThePlaces",
+            "inception_date": "2025-11-11",
+            "source": {
+                "url": {
+                    "primary": "https://alltheplaces.xyz/",
+                    "archive": "https://web.archive.org/web/2025/https://alltheplaces.xyz/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": [
+                    "https://alltheplaces-data.openaddresses.io/runs/2025-11-08-13-32-41/output.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CC0-1.0",
+                "requires_attribution": false,
+                "text": "The downloads provided above and the data contained therein are released under Creative Commons' CC-0 waiver.",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "The data_download_url is for a specific release. Go to the main url to find the newest release. Overture ingests a subset of data provided by AllThePlaces."
+        },
+        {
+            "source_name": "DAC",
+            "dataset_name": "DAC",
+            "inception_date": "2026-01-08",
+            "source": {
+                "url": {
+                    "primary": "https://www.dacgroup.com/",
+                    "archive": ""
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "DAC"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -166.53507,
+                    -78.90977,
+                    174.950644,
+                    78.470412
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "BrightQuery",
+            "dataset_name": "BrightQuery",
+            "inception_date": "2026-05-20",
+            "source": {
+                "url": {
+                    "primary": "https://brightquery.com/",
+                    "archive": "https://web.archive.org/web/2025/https://brightquery.com/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "BrightQuery"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Birdeye",
+            "dataset_name": "Birdeye",
+            "inception_date": "2026-05-12",
+            "source": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "Birdeye"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "License type CDLA-Permissive-2.0 is an unconfirmed placeholder (matches the pattern used for other providers) pending legal confirmation of Birdeye's actual data agreement terms before public release."
+        },
+        {
+            "source_name": "Uberall",
+            "dataset_name": "Uberall",
+            "inception_date": "2026-09-23",
+            "source": {
+                "url": {
+                    "primary": "https://uberall.com/",
+                    "archive": "https://web.archive.org/web/2026/https://uberall.com/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://cdla.dev/permissive-2-0/",
+                    "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "Uberall"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.1186261177063,
+                    -84.539151,
+                    179.19491685926914,
+                    78.24913169485218
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": "json"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Overture",
+            "dataset_name": "overture",
+            "inception_date": "2026-08-25",
+            "source": {
+                "url": {
+                    "primary": "https://overturemaps.org/",
+                    "archive": ""
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://cdla.dev/permissive-2-0/",
+                    "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "Overture"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "First-party data produced by OMF's own labeling team, currently places-quality-model training labels at datasets/provider=overture/resource=quality_model_labels/. License terms confirmed by data-ops (Jeff Underwood, Stephen Epps) on 2026-08-25."
+        },
+        {
+            "source_name": "OpenTravel",
+            "dataset_name": "OpenTravel",
+            "inception_date": "2026-09-09",
+            "source": {
+                "url": {
+                    "primary": "https://opentravel.org/",
+                    "archive": ""
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CDLA-Permissive-2.0",
+                "requires_attribution": true,
+                "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                "attribution": "OpenTravel Alliance"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global; 143 countries in the 2026-09 drop"
+            },
+            "file_information": {
+                "data_layer_name": "Hotel & Contact Fact",
+                "file_format": "xlsx"
+            },
+            "refresh_schedule": {
+                "frequency": "Infrequent"
+            },
+            "known_issues": "Unnormalised phone numbers; 29% of rows are not-yet-open properties carrying a null operating_status; 193 rows lack coordinates and are excluded at ingest.",
+            "notes": "Hilton property list brokered by the OpenTravel Alliance as a one-time drop rather than a recurring feed, keyed on Hilton's InnCode. Tracked in OvertureMaps/tf-place-data#518. License confirmed by Albi as CDLA-Permissive (OvertureMaps/tf-place-data#532)."
+        }
+    ],
+    "license_priority": {
+        "CDLA-Permissive-2.0": 0,
+        "CC0-1.0": 0,
+        "Apache-2.0": 1
+    }
+}

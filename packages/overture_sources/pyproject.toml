@@ -1,0 +1,37 @@
+[project]
+name = "overture-sources"
+version = "0.1.0"
+description = "Overture Maps source registry JSON files."
+readme = "README.md"
+authors = [{ name = "Overture Maps Foundation" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/OvertureMaps/overture-providers"
+Source = "https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_sources"
+Issues = "https://github.com/OvertureMaps/overture-providers/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0"]
+
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["overture_sources*"]
+
+[tool.setuptools.package-data]
+overture_sources = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["overture_sources"]

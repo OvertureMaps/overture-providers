@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "us_dot",
+        "name": "United States Department of Transportation",
+        "url": {
+            "primary": "https://www.transportation.gov/",
+            "archive": "https://web.archive.org/web/2025/https://www.transportation.gov/"
+        }
+    },
+    "resources": [
+        {
+            "label": "hpms",
+            "name": "Highway Performance Monitoring System",
+            "collection": {
+                "data_location": {
+                    "primary": "https://geo.dot.gov/server/rest/services/Hosted",
+                    "archive": "https://web.archive.org/web/2025/https://geo.dot.gov/server/rest/services/Hosted"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.fhwa.dot.gov/policyinformation/hpms.cfm",
+                        "archive": "https://web.archive.org/web/2025/https://www.fhwa.dot.gov/policyinformation/hpms.cfm"
+                    },
+                    "type": "LicenseRef-Public-Domain-US",
+                    "requires_attribution": false,
+                    "text": "HPMS data is produced by the Federal Highway Administration and is not subject to copyright protection in the United States as a work of the U.S. Government.",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "US"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": "Annually"
+                },
+                "known_issues": "",
+                "notes": "State-level GeoJSON collected from FHWA ArcGIS FeatureServer. Each feature is an independently-geometried road segment with attributes including speed limits, functional classification, and surface type."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

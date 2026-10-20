@@ -1,0 +1,68 @@
+{
+  "provider": {
+    "label": "nyc_dcp",
+    "name": "New York City Department of City Planning",
+    "url": {
+      "primary": "https://www.nyc.gov/site/planning/index.page",
+      "archive": "https://web.archive.org/web/2025/https://www.nyc.gov/site/planning/index.page"
+    }
+  },
+  "resources": [
+    {
+      "label": "nyc_borough_boundaries",
+      "name": "NYC Borough Boundaries (Water Included)",
+      "collection": {
+        "data_location": {
+          "primary": "https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page",
+          "archive": "https://web.archive.org/web/2025/https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/borough-boundaries/nybbwi_25a.zip"
+        },
+        "license": {
+          "url": {
+            "primary": "https://www.nyc.gov/home/terms-of-use.page",
+            "archive": "https://web.archive.org/web/2025/https://www.nyc.gov/home/terms-of-use.page"
+          },
+          "type": "LicenseRef-Proprietary",
+          "requires_attribution": true,
+          "text": "This dataset is provided by the New York City Department of City Planning. Use is subject to NYC's Terms of Use.",
+          "attribution": "New York City Department of City Planning"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "US",
+              "iso_3166_2": "US-NY"
+            }
+          ],
+          "description": "New York City — 5 boroughs, water-included boundaries"
+        },
+        "refresh_schedule": {
+          "frequency": "Annually",
+          "source": "tf-data-platform",
+          "type": "manual",
+          "month": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "known_issues": "",
+        "notes": "Shapefile in EPSG:2263 (NY State Plane Long Island, NAD83, US feet). Used by the NAD normalizer to left_anti clip NYC boroughs from NAD, where NYC OA (us/ny/city_of_new_york) replaces NAD."
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

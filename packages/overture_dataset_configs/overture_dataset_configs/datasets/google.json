@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "google",
+        "name": "Google",
+        "url": {
+            "primary": "https://www.google.com/",
+            "archive": "https://web.archive.org/web/2025/https://www.google.com/"
+        }
+    },
+    "resources": [
+        {
+            "label": "open_buildings",
+            "name": "Google Open Buildings",
+            "collection": {
+                "data_location": {
+                    "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",
+                    "archive": "https://web.archive.org/web/2025/https://sites.research.google/gr/open-buildings/#open-buildings-download"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",
+                        "archive": "https://web.archive.org/web/2025/https://sites.research.google/gr/open-buildings/#open-buildings-download"
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "The data is shared under the Creative Commons Attribution (CC BY-4.0) license and the Open Data Commons Open Database License (ODbL) v1.0 license. As the user, you can pick which of the two licenses you prefer and use the data under the terms of that license. However, please note the liability disclaimer in the footnotes.",
+                    "attribution": "Google Open Buildings"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

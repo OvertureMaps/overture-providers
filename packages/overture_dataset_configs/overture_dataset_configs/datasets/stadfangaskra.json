@@ -1,0 +1,47 @@
+{
+  "provider": {
+    "label": "stadfangaskra",
+    "name": "Stadfangaskrá/Byggðastofnun",
+    "url": {
+      "primary": "https://fasteignaskra.is",
+      "archive": "https://web.archive.org/web/2025/https://fasteignaskra.is"
+    }
+  },
+  "resources": [
+    {
+      "label": "stadfangaskra",
+      "name": "Stadfangaskrá",
+      "collection": {
+        "data_location": {
+          "primary": "https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/",
+          "archive": "https://web.archive.org/web/2025/https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://hmsstgsftpprodweu001.blob.core.windows.net/fasteignaskra/Stadfangaskra.csv"
+        },
+        "license": {
+          "url": {
+            "primary": "https://opingogn.is/pages/notkunarleidbeiningar",
+            "archive": "https://web.archive.org/web/20241116140612/https://opingogn.is/pages/notkunarleidbeiningar"
+          },
+          "type": "LicenseRef-Proprietary",
+          "requires_attribution": true,
+          "text": "User must: state the origin of the information and it is recommended that it be done in the manner requested by the right holder of the information.",
+          "attribution": "Fasteignaskra"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "IS"
+            }
+          ],
+          "description": "Iceland"
+        },
+        "notes": ""
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

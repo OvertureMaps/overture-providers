@@ -1,0 +1,38 @@
+[project]
+name = "overture-dataset-configs"
+version = "0.1.0"
+description = "Public dataset license/policy configs for Overture Maps providers."
+readme = "README.md"
+authors = [{ name = "Overture Maps Foundation" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/OvertureMaps/overture-providers"
+Source = "https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_dataset_configs"
+Issues = "https://github.com/OvertureMaps/overture-providers/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0"]
+
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["overture_dataset_configs*"]
+
+[tool.setuptools.package-data]
+overture_dataset_configs = ["datasets/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["overture_dataset_configs"]

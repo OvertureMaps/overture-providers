@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "ign_es",
+        "name": "Instituto Geográfico Nacional (España)",
+        "url": {
+            "primary": "https://www.ign.es/web/ign/portal",
+            "archive": "https://web.archive.org/web/2025/https://www.ign.es/web/ign/portal"
+        }
+    },
+    "resources": [
+        {
+            "label": "instituto_geografico_nacional_espana",
+            "name": "Instituto Geográfico Nacional (España)",
+            "collection": {
+                "data_location": {
+                    "primary": "https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias",
+                    "archive": "https://web.archive.org/web/2025/https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf",
+                        "archive": "https://web.archive.org/web/2025/https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "The use of information from the geographic data products and services defined in Order FOM/2807/2015 , as well as its derivatives , implies the user's acceptance of the general conditions of said order, specified in a license for use compatible with CC BY 4.0 . This license requires acknowledgment and mention of the source and ownership.",
+                    "attribution": "Work derived from BTN 2024 CC BY 4.0 ign.es"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "ES"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": "Monthly"
+                },
+                "known_issues": "",
+                "notes": "Multiple data download urls."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

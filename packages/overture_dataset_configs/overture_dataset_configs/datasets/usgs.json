@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "usgs",
+        "name": "United States Geological Survey",
+        "url": {
+            "primary": "https://www.usgs.gov/3d-elevation-program",
+            "archive": "https://web.archive.org/web/20250225184235/https://www.usgs.gov/3d-elevation-program"
+        }
+    },
+    "resources": [
+        {
+            "label": "lidar",
+            "name": "USGS Lidar",
+            "collection": {
+                "data_location": {
+                    "primary": "https://apps.nationalmap.gov/datasets/",
+                    "archive": "https://web.archive.org/web/20250218043410/https://apps.nationalmap.gov/datasets/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+                        "archive": "https://web.archive.org/web/2025/https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+                    },
+                    "type": "LicenseRef-Public-Domain-US",
+                    "requires_attribution": false,
+                    "text": "USGS-authored or produced data and information are considered to be in the U.S. Public Domain.",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "US"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

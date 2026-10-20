@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "ncei",
+        "name": "National Centers for Environmental Information",
+        "url": {
+            "primary": "https://www.ncei.noaa.gov/products/etopo-global-relief-model",
+            "archive": "https://web.archive.org/web/20250221230523/https://www.ncei.noaa.gov/products/etopo-global-relief-model"
+        }
+    },
+    "resources": [
+        {
+            "label": "etopo_globathy",
+            "name": "ETOPO",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.ncei.noaa.gov/maps/grid-extract/",
+                    "archive": "https://web.archive.org/web/20250202222352/https://www.ncei.noaa.gov/maps/grid-extract/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/DEM//iso/xml/etopo_2022.xml&view=getDataView&header=none",
+                        "archive": "https://web.archive.org/web/2025/https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/DEM//iso/xml/etopo_2022.xml&view=getDataView&header=none"
+                    },
+                    "type": "CC0-1.0",
+                    "requires_attribution": false,
+                    "text": "These data were produced by NOAA and are not subject to copyright protection in the United States. NOAA waives any potential copyright and related rights in these data worldwide through the Creative Commons Zero 1.0 Universal Public Domain Dedication (CC0-1.0).",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Semi-annually"
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

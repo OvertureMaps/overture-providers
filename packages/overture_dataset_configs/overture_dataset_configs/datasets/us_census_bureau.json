@@ -1,0 +1,67 @@
+{
+  "provider": {
+    "label": "us_census_bureau",
+    "name": "US Census Bureau",
+    "url": {
+      "primary": "https://www.census.gov/programs-surveys/geography.html",
+      "archive": "https://web.archive.org/web/2025/https://www.census.gov/programs-surveys/geography.html"
+    }
+  },
+  "resources": [
+    {
+      "label": "tiger_us_counties",
+      "name": "TIGER/Line — US Counties (2024)",
+      "collection": {
+        "data_location": {
+          "primary": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+          "archive": "https://web.archive.org/web/2025/https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://www2.census.gov/geo/tiger/TIGER2024/COUNTY/tl_2024_us_county.zip"
+        },
+        "license": {
+          "url": {
+            "primary": "https://www.census.gov/data/developers/about/terms-of-service.html",
+            "archive": "https://web.archive.org/web/2025/https://www.census.gov/data/developers/about/terms-of-service.html"
+          },
+          "type": "LicenseRef-Public-Domain-US",
+          "requires_attribution": false,
+          "text": "TIGER/Line Shapefiles are extracts of selected geographic and cartographic information from the Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) system.",
+          "attribution": "N/A"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "US"
+            }
+          ],
+          "description": "US county boundaries — TIGER/Line 2024 release"
+        },
+        "refresh_schedule": {
+          "frequency": "Annually",
+          "source": "tf-data-platform",
+          "type": "manual",
+          "month": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "known_issues": "",
+        "notes": "Shapefile in EPSG:4269 (NAD83 geographic). Filtered by COUNTY_NS_FILTERS and STATE_FP_FILTERS in overture_addresses.legacy.us_clip_regions, then used to left_anti clip NAD (and MS statewide OA files) in favour of per-county / per-state OA sources."
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+    "datasets": [
+        {
+            "source_name": "OpenStreetMap",
+            "dataset_name": "OpenStreetMap",
+            "inception_date": "2024-02-15",
+            "source": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/20250224061839/https://www.openstreetmap.org/"
+                },
+                "data_location": {
+                    "primary": "https://planet.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/20250224111401/https://planet.openstreetmap.org/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/copyright",
+                    "archive": "https://web.archive.org/web/20250224023118/https://www.openstreetmap.org/copyright"
+                },
+                "type": "ODbL-1.0",
+                "requires_attribution": true,
+                "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                "attribution": "© OpenStreetMap contributors"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Monthly"
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "The European Space Agency",
+            "dataset_name": "ESA WorldCover",
+            "inception_date": "2024-05-16",
+            "source": {
+                "url": {
+                    "primary": "https://esa-worldcover.org/en",
+                    "archive": "https://web.archive.org/web/20250122075653/https://esa-worldcover.org/en"
+                },
+                "data_location": {
+                    "primary": "https://esa-worldcover.org/en/data-access",
+                    "archive": "https://web.archive.org/web/20250214095946/https://esa-worldcover.org/en/data-access"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://esa-worldcover.org/en/data-access",
+                    "archive": "https://web.archive.org/web/20250214095946/https://esa-worldcover.org/en/data-access"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "The ESA WorldCover product is provided free of charge, without restriction of use. For the full license information see the Creative Commons Attribution 4.0 International License.",
+                "attribution": "© ESA WorldCover project 2020 / Contains modified Copernicus Sentinel data (2020) processed by ESA WorldCover consortium. Available under [CC BY 4.0 DEED](https://creativecommons.org/licenses/by/4.0/)"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "National Centers for Environmental Information - ETOPO Global Relief Model",
+            "dataset_name": "ETOPO/GLOBathy",
+            "inception_date": "2024-12-18",
+            "source": {
+                "url": {
+                    "primary": "https://www.ncei.noaa.gov/products/etopo-global-relief-model",
+                    "archive": "https://web.archive.org/web/20250221230523/https://www.ncei.noaa.gov/products/etopo-global-relief-model"
+                },
+                "data_location": {
+                    "primary": "https://www.ncei.noaa.gov/maps/grid-extract/",
+                    "archive": "https://web.archive.org/web/20250202222352/https://www.ncei.noaa.gov/maps/grid-extract/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/DEM//iso/xml/etopo_2022.xml&view=getDataView&header=none",
+                    "archive": "https://web.archive.org/web/2025/https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/DEM//iso/xml/etopo_2022.xml&view=getDataView&header=none"
+                },
+                "type": "CC0-1.0",
+                "requires_attribution": false,
+                "text": "These data were produced by NOAA and are not subject to copyright protection in the United States. NOAA waives any potential copyright and related rights in these data worldwide through the Creative Commons Zero 1.0 Universal Public Domain Dedication (CC0-1.0).",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": "Semi-annually"
+            },
+            "known_issues": "",
+            "notes": "Source referenced jointly as 'ETOPO/GLOBathy'"
+        },
+        {
+            "source_name": "GLOBathy (Global lakes bathymetry dataset)",
+            "dataset_name": "ETOPO/GLOBathy",
+            "inception_date": "2024-12-18",
+            "source": {
+                "url": {
+                    "primary": "https://www.nature.com/articles/s41597-022-01132-9",
+                    "archive": "https://web.archive.org/web/20221222105048/https://www.nature.com/articles/s41597-022-01132-9"
+                },
+                "data_location": {
+                    "primary": "https://www.nature.com/articles/s41597-022-01132-9",
+                    "archive": "https://web.archive.org/web/20221222105048/https://www.nature.com/articles/s41597-022-01132-9"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://gee-community-catalog.org/projects/globathy/#license",
+                    "archive": "https://web.archive.org/web/20221222105048/https://gee-community-catalog.org/projects/globathy/#license"
+                },
+                "type": "CC0-1.0",
+                "requires_attribution": false,
+                "text": "The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": "None"
+            },
+            "known_issues": "",
+            "notes": "Source referenced jointly as 'ETOPO/GLOBathy'"
+        }
+    ],
+    "license_priority": {}
+}

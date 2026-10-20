@@ -1,0 +1,86 @@
+{
+    "provider": {
+        "label": "esri",
+        "name": "Esri",
+        "url": {
+            "primary": "http://communitymaps.arcgis.com/home/",
+            "archive": "https://web.archive.org/web/2025/http://communitymaps.arcgis.com/home/"
+        }
+    },
+    "resources": [
+        {
+            "label": "community_maps_buildings",
+            "name": "Esri Community Maps",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://creativecommons.org/licenses/by/4.0/",
+                        "archive": "https://web.archive.org/web/2025/https://creativecommons.org/licenses/by/4.0/"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "Creative Commons by Attribution (CC BY 4.0) with OpenStreetMap waivers",
+                    "attribution": "Esri Community Maps contributors"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "community_maps_divisions",
+            "name": "Esri Community Maps",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://overture-managed-source-data/datasets/provider=esri/resource=community_maps_divisions/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://creativecommons.org/licenses/by/4.0/",
+                        "archive": ""
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "Creative Commons by Attribution (CC BY 4.0) with OpenStreetMap waivers",
+                    "attribution": "Esri Community Maps contributors"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "Parquet column names abbreviate language subtags: name_pt_b is pt-BR, name_pt_p is pt-PT, name_zh_s is zh-Hans, name_zh_t is zh-Hant, and name_sr holds Latin script so it is sr-Latn.",
+                "notes": "Two files: esri_names.txt keyed by OSM id and esri_names.parquet keyed by GERS id. Shared ad hoc and uploaded manually into the s3 bucket."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "provider": {
+        "label": "ibge",
+        "name": "Instituto Brasileiro de Geografia e Estatística",
+        "url": {
+            "primary": "https://www.ibge.gov.br/",
+            "archive": "https://web.archive.org/web/2025/https://www.ibge.gov.br/"
+        }
+    },
+    "resources": [
+        {
+            "label": "ibge",
+            "name": "IBGE CNEFE",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.ibge.gov.br/estatisticas/sociais/populacao/38734-cadastro-nacional-de-enderecos-para-fins-estatisticos.html?=&t=downloads",
+                    "archive": "https://web.archive.org/web/20241111182857/https://www.ibge.gov.br/estatisticas/sociais/populacao/38734-cadastro-nacional-de-enderecos-para-fins-estatisticos.html?=&t=downloads"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://addressforall-my.sharepoint.com/personal/thierry_addressforall_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fthierry%5Faddressforall%5Forg%2FDocuments%2FA4A%5FOperacao%5F20%2FImput%5FDados%2FBrasil%2FConcessionarias%2FIBGE%2FLicense%2FReadme%2Dlicense%2DINE%2DIBGE%2D2024%2D10%2D07%2Epdf&parent=%2Fpersonal%2Fthierry%5Faddressforall%5Forg%2FDocuments%2FA4A%5FOperacao%5F20%2FImput%5FDados%2FBrasil%2FConcessionarias%2FIBGE%2FLicense&ga=1",
+                        "archive": "https://web.archive.org/web/20241111181547/https://login.microsoftonline.com/4f2806a2-75e6-45d1-aacf-208810b041b2/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=BB717DF7FD9534D9899843E82238D61E22F2C70A2633DFDB%2D9334ADE093B7BF7DCAF5CA2A49FCC8A3EFD83D85D03B01D9B31F7D4E78E948B5&redirect%5Furi=https%3A%2F%2Faddressforall%2Dmy%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=d3e962a1%2D90a8%2D6000%2Dd91b%2Dec3ea3b9efc1"
+                    },
+                    "type": "LicenseRef-Proprietary",
+                    "requires_attribution": false,
+                    "text": "See notes. The data is not explicitly associated with a specific license. However, IBGE outlines its Open Data Plan here: https://www.ibge.gov.br/np_download/novoportal/documentos_institucionais/Plano_de_Dados_Abertos_IBGE_2020_2022_1arevisao.pdf",
+                    "attribution": "The license family is CC0, however we recommend to attribute the data to: IBGE (Instituto Brasileiro de Geografia e Estatística - https://www.ibge.gov.br/."
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BR"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": "Infrequent",
+                    "source": "tf-data-platform",
+                    "type": "manual",
+                    "month": []
+                },
+                "known_issues": "",
+                "notes": "Distributed by AddressForAll; multiple data download urls. The AddressForAll Institute has sought clarification from the CGU (Controladoria Geral da União). Based on their response, we are comfortable considering all data published by federal entities as open data without restrictions, comparable to CC0. See source for all direct download links."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}
