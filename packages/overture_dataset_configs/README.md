@@ -10,6 +10,8 @@ load_config("linz")  # parsed JSON for overture_dataset_configs/datasets/linz.js
 load_license_policy()  # {theme: [allowed license ids]} from overture_dataset_configs/license_policy.json
 ```
 
+This package only ships the data. For typed access (`Dataset`), license-policy checks, attribution generation, and the `overture-datasets` CLI, use [`overture-core`](https://pypi.org/project/overture-core/).
+
 ## Dataset config files
 
 Each JSON file in [`overture_dataset_configs/datasets`](overture_dataset_configs/datasets)
