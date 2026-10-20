@@ -21,6 +21,8 @@ This package only ships the data. For typed access (`Dataset`), license-policy c
 - **Dataset** (a `resources` entry): one licensed collection of data from a provider, such as a single layer or file set. A provider can have many datasets, and each has its own license, coverage and refresh cadence.
 - **License policy**: per theme, the license identifiers Overture accepts. Every dataset's license type should appear in it.
 
+For how themes, attribution, and licensing work across Overture data, see the [Overture documentation](https://docs.overturemaps.org/): the [schema](https://docs.overturemaps.org/schema/) for themes, and the [attribution page](https://docs.overturemaps.org/attribution/) for the terms published with each release.
+
 Each file in [`overture_dataset_configs/datasets`](overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
 
 The [source registry](https://pypi.org/project/overture-sources/) is the published, per-theme view of these inputs.
