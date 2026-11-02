@@ -3059,8 +3059,8 @@
             "notes": ""
         },
         {
-            "source_name": "Valsts digitālās attīstības aģentūra",
-            "dataset_name": "OpenAddresses/Valsts digitālās attīstības aģentūra",
+            "source_name": "Valsts zemes dienests",
+            "dataset_name": "OpenAddresses/Valsts zemes dienests",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -3083,7 +3083,7 @@
                 "type": "CC-BY-4.0",
                 "requires_attribution": true,
                 "text": "License: Creative Commons Attribution 4.0",
-                "attribution": "Latvian State Digital Development Agency / Valsts digitālās attīstības aģentūra"
+                "attribution": "Valsts zemes dienests"
             },
             "coverage": {
                 "areas": [
