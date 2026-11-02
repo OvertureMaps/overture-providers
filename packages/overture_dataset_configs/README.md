@@ -1,7 +1,7 @@
 # overture-dataset-configs
 
 [![PyPI](https://img.shields.io/pypi/v/overture-dataset-configs)](https://pypi.org/project/overture-dataset-configs/)
-[![License](https://img.shields.io/pypi/l/overture-dataset-configs)](LICENSE)
+[![License](https://img.shields.io/pypi/l/overture-dataset-configs)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/LICENSE)
 
 Public dataset license/policy configs for Overture providers.
 
@@ -23,7 +23,7 @@ This package only ships the data. For typed access (`Dataset`), license-policy c
 
 For how themes, attribution, and licensing work across Overture data, see the [Overture documentation](https://docs.overturemaps.org/): the [schema](https://docs.overturemaps.org/schema/) for themes, and the [attribution page](https://docs.overturemaps.org/attribution/) for the terms published with each release.
 
-Each file in [`overture_dataset_configs/datasets`](overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
+Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_dataset_configs/overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
 
 The [source registry](https://pypi.org/project/overture-sources/) is the published, per-theme view of these inputs.
 
