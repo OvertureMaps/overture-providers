@@ -50,8 +50,9 @@ tag_format = "overture_dataset_configs-v{version}"
 allow_zero_version = true
 
 [tool.semantic_release.commit_parser_options]
-# Attributes a commit to this package by the files it touched.
-path_filters = ["."]
+# Attributes a commit to this package by the files it touched; Markdown-only
+# changes never cut a release.
+path_filters = [".", "!*.md"]
 # Floor every recognized type at a patch bump so any release-worthy push to
 # this package produces a new version (2 == LevelBump.PATCH).
 default_bump_level = 2

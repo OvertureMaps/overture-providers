@@ -28,16 +28,14 @@ This repo requires [Overture PR Checks (v2)](https://github.com/OvertureMaps/.gi
 
 ## Release
 
-On every push to `main`, [`publish_packages.yml`](../.github/workflows/publish_packages.yml) first narrows to the packages actually touched by that push ([`tj-actions/changed-files`](https://github.com/tj-actions/changed-files), same discovery as [`test_python.yml`](../.github/workflows/test_python.yml)), then runs PSR for each of those:
+On every push to `main`, [`publish_packages.yml`](../.github/workflows/publish_packages.yml) runs PSR for every package. PSR's tag history, not the push's diff, decides what's unreleased, so a push whose queued run GitHub replaced still gets released by the next run:
 
 ```mermaid
 %%{init: {"theme": "dark", "flowchart": {"padding": 8}, "themeVariables": {"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif", "fontSize": "14px", "mainBkg": "#21262d", "nodeBorder": "#4493f8"}}}%%
 flowchart TD
     classDef default rx:8,ry:8,stroke-width:0.75px
-    A[Push to main] --> B{tj-actions/changed-files:<br/>which packages did this touch?}
-    B -->|package touched| C[Run PSR for that package]
-    B -->|not touched| Z[Skip, no job runs]
-    C --> D{Commits since last tag<br/>warrant a bump?}
+    A[Push to main] --> C[Run PSR for each package]
+    C --> D{Commits touching the package<br/>since its last tag warrant a bump?}
     D -->|no| E[Nothing tagged]
     D -->|yes| F[Tag + push<br/>package_dir-vX.Y.Z]
     F --> G[Publish GitHub Release<br/>with notes]
@@ -47,7 +45,7 @@ flowchart TD
 
 For each package, PSR looks at the commits since its last release tag and, if any warrant a bump, tags and pushes `<package_dir>-v<version>` (e.g. `overture_sources-v0.2.0`): **no commit is ever made back to `main`**, and no `CHANGELOG.md` is committed to the repo. Release notes are published to the tag's [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github) instead, and the same job then builds with `uv build` (`setuptools-scm` picks up the version it just tagged) and publishes to PyPI via [trusted publishing](https://docs.pypi.org/trusted-publishers/), no stored credentials.
 
-Changes that only touch Markdown under `packages/` (such as a package README) don't select the package, so they never cut a release. A README change reaches the PyPI project page with the package's next release.
+Changes that only touch Markdown under `packages/` (such as a package README) are excluded by each package's `path_filters` (`"!*.md"`), so they never cut a release. A README change reaches the PyPI project page with the package's next release.
 
 ### Manual dispatch publishes to Test PyPI instead
 

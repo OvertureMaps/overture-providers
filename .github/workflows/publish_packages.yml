@@ -28,6 +28,10 @@ jobs:
     permissions:
       contents: read
     uses: $/.github/workflows/discover-packages.yml
+    # Every package, every run: a queued push can be superseded, so PSR's tag
+    # history decides what's unreleased, not this push's diff.
+    with:
+      all: true
 
   release:
     name: release ${{ matrix.package }}
