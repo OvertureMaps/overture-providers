@@ -1,6 +1,6 @@
 # Package versioning and publishing
 
-Each package under [`packages/`](packages) (`overture_sources`, `overture_dataset_configs`) is versioned and released independently, and fully automatically: there's no version to bump and no tag to create by hand.
+Each package under [`packages/`](../packages) (`overture_sources`, `overture_dataset_configs`) is versioned and released independently, and fully automatically: there's no version to bump and no tag to create by hand.
 
 ## Background: python-semantic-release
 
@@ -28,7 +28,7 @@ This repo requires [Overture PR Checks (v2)](https://github.com/OvertureMaps/.gi
 
 ## Release
 
-On every push to `main`, [`publish_packages.yml`](.github/workflows/publish_packages.yml) first narrows to the packages actually touched by that push ([`tj-actions/changed-files`](https://github.com/tj-actions/changed-files), same discovery as [`test_python.yml`](.github/workflows/test_python.yml)), then runs PSR for each of those:
+On every push to `main`, [`publish_packages.yml`](../.github/workflows/publish_packages.yml) first narrows to the packages actually touched by that push ([`tj-actions/changed-files`](https://github.com/tj-actions/changed-files), same discovery as [`test_python.yml`](../.github/workflows/test_python.yml)), then runs PSR for each of those:
 
 ```mermaid
 %%{init: {"theme": "dark", "flowchart": {"padding": 8}, "themeVariables": {"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif", "fontSize": "14px", "mainBkg": "#21262d", "nodeBorder": "#4493f8"}}}%%
@@ -55,4 +55,4 @@ Running `publish_packages.yml` manually (`workflow_dispatch`) never tags, releas
 
 ## Adding a new package
 
-Auto-discovered testable packages need no CI changes, see [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the `pyproject.toml` shape (`dynamic = ["version"]`, `[tool.setuptools_scm]`, `[tool.semantic_release]`) each package needs for this to work. Publishing also needs a [trusted publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) on both pypi.org and test.pypi.org: this repo, workflow `publish_packages.yml`, and environment `pypi-<package_dir>` or `testpypi-<package_dir>` respectively.
+Auto-discovered testable packages need no CI changes, see [`CONTRIBUTING.md`](../.github/CONTRIBUTING.md) for the `pyproject.toml` shape (`dynamic = ["version"]`, `[tool.setuptools_scm]`, `[tool.semantic_release]`) each package needs for this to work. Publishing also needs a [trusted publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) on both pypi.org and test.pypi.org: this repo, workflow `publish_packages.yml`, and environment `pypi-<package_dir>` or `testpypi-<package_dir>` respectively.

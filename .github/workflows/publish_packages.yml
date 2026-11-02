@@ -6,7 +6,7 @@
 # dev version to Test PyPI. No tags or releases.
 #
 # If publishing fails after the tag is pushed, delete the tag and GitHub Release,
-# then re-run. Setup and versioning: PACKAGE_VERSIONING.md.
+# then re-run. Setup and versioning: docs/PACKAGE_VERSIONING.md.
 
 name: Publish Python Packages
 
