@@ -83,6 +83,13 @@ def test_license_type_is_spdx_or_licenseref(provider, resource):
 
 
 @pytest.mark.parametrize(("provider", "resource"), RESOURCES, ids=IDS)
+def test_spdx_license_has_url(provider, resource):
+    license_ = resource["collection"]["license"]
+    if license_ and not license_["type"].startswith("LicenseRef-"):
+        assert license_["url"]["primary"], license_["type"]
+
+
+@pytest.mark.parametrize(("provider", "resource"), RESOURCES, ids=IDS)
 def test_attribution_matches_license(provider, resource):
     license_ = resource["collection"]["license"]
     expected = ATTRIBUTION_REQUIRED.get(license_ and license_["type"])

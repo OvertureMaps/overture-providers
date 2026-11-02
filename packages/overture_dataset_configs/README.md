@@ -29,6 +29,6 @@ The [source registry](https://pypi.org/project/overture-sources/) is the publish
 
 ## Contributing
 
-1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the overture-core schema, plus semantic checks (license ids, attribution, URL pairs).
+1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the overture-core schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
 2. A new field goes in the overture-core schema first.
 3. Provider and resource labels feed dataset IDs and S3 paths, so don't rename them.
