@@ -1,7 +1,9 @@
 # overture-dataset-configs
 
-[![PyPI](https://img.shields.io/pypi/v/overture-dataset-configs)](https://pypi.org/project/overture-dataset-configs/)
-[![License](https://img.shields.io/pypi/l/overture-dataset-configs)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/overture-dataset-configs?color=4051CC&labelColor=001A39)](https://pypi.org/project/overture-dataset-configs/)
+[![Test Python](https://github.com/OvertureMaps/overture-providers/actions/workflows/test_python.yml/badge.svg?branch=main)](https://github.com/OvertureMaps/overture-providers/actions/workflows/test_python.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-4051CC?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-05A5AF?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/LICENSE)
 
 Public dataset license/policy configs for Overture providers.
 

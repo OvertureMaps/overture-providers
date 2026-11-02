@@ -1,7 +1,9 @@
 # overture-sources
 
-[![PyPI](https://img.shields.io/pypi/v/overture-sources)](https://pypi.org/project/overture-sources/)
-[![License](https://img.shields.io/pypi/l/overture-sources)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_sources/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/overture-sources?color=4051CC&labelColor=001A39)](https://pypi.org/project/overture-sources/)
+[![Test Python](https://github.com/OvertureMaps/overture-providers/actions/workflows/test_python.yml/badge.svg?branch=main)](https://github.com/OvertureMaps/overture-providers/actions/workflows/test_python.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-4051CC?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_sources/pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-05A5AF?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_sources/LICENSE)
 
 Overture source registry: the JSON files describing the datasets that feed each theme.
 
