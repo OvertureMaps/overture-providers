@@ -561,7 +561,7 @@ wheels = [
 
 [[package]]
 name = "overture-core"
-version = "1.2.3"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "boto3" },
@@ -572,10 +572,11 @@ dependencies = [
     { name = "pystac" },
     { name = "requests" },
     { name = "rich" },
+    { name = "sqlglot" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9c/32/deb2b53473afaec22545a8090e555735629e1eceeef2726e66320cd006dc/overture_core-1.2.3.tar.gz", hash = "sha256:d47a0a07d5a63f7adea45173bc57dcf15f64d313939c9785a54d6e868d051cfe", size = 278978, upload-time = "2026-10-19T15:33:18.534Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/28/03/36431ae175f754d7790101d9e27ca8545205024d4629ae75daaecdc3c98c/overture_core-1.5.0.tar.gz", hash = "sha256:5557f54b3a2774c2e813d057c6c71d023e403ea44cc1d759bbe5ce044bc9e3fe", size = 284849, upload-time = "2026-11-04T16:32:23.398Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/33/a6/6b4e3e2e830b26c020cb7c9db1441ff5799888f56bc0ceab2341fb90485c/overture_core-1.2.3-py3-none-any.whl", hash = "sha256:9763fc2f4e181c45a97aecbd65d86ed7a675b5e8df96c40b9d231e892a03d664", size = 83144, upload-time = "2026-10-19T15:33:16.837Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/42/7166f43e5d6c11b7abd5de5b1a7e1e54cb7eeea980dff50dfbbfb35e5141/overture_core-1.5.0-py3-none-any.whl", hash = "sha256:cb56c6e6dbe8bcda9cc58d9950ca6636ffac9e4b5befa6cac73c9d9e18e838da", size = 85873, upload-time = "2026-11-04T16:32:22.04Z" },
 ]
 
 [[package]]
@@ -593,7 +594,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "license-expression", marker = "extra == 'dev'", specifier = ">=30.0" },
-    { name = "overture-core", marker = "extra == 'dev'", specifier = ">=1.2.3" },
+    { name = "overture-core", marker = "extra == 'dev'", specifier = ">=1.5.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.1.1" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },
 ]
@@ -1261,6 +1262,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "sqlglot"
+version = "30.29.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/26/ede384f80617864ff6a87701b921f887c5b156976e10594cfb72d12f7545/sqlglot-30.29.0.tar.gz", hash = "sha256:67bef76a4cbd29607b8859c65c213f39c086246c35c96cb96140ca7f8e7515d1", size = 6177381, upload-time = "2026-11-03T11:49:51.324Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/10/b0/d7f3f0169fdf0261e924bfd37149aa5cb98798aec330fe0e94721a68a2a1/sqlglot-30.29.0-py3-none-any.whl", hash = "sha256:16e47cc30c48bbf66bd24a680cb6edc2203d4ed4644acf84dd377109ecbe70fc", size = 804206, upload-time = "2026-11-03T11:49:49.284Z" },
 ]
 
 [[package]]

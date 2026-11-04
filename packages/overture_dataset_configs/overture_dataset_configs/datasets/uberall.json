@@ -18,7 +18,8 @@
                 },
                 "data_download": {
                     "type": "s3",
-                    "url": "s3://uberall-export-overture-production/feed/"
+                    "url": "s3://uberall-export-overture-production/feed/",
+                    "region": "eu-central-1"
                 },
                 "license": {
                     "url": {
