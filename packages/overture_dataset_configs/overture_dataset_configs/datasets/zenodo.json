@@ -48,7 +48,7 @@
                     "description": "National"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "None"
                 },
                 "known_issues": "",
                 "notes": ""

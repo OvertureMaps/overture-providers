@@ -36,7 +36,7 @@
                     "description": "Local"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "None"
                 },
                 "known_issues": "",
                 "notes": "Original source data processed by Esri."
