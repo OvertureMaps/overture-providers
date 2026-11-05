@@ -1,11 +1,5 @@
-from pathlib import Path
-
-from overture_core.dataset.license_policy import load_policy
+from overture_dataset_configs.license_policy import POLICY_FILE, load_policy
 from overture_dataset_configs import load_config, load_license_policy, provider_names
-
-POLICY_FILE = (
-    Path(__file__).parent.parent / "overture_dataset_configs" / "license_policy.json"
-)
 
 
 def test_policy_is_valid():
@@ -28,3 +22,7 @@ def test_every_config_license_is_in_some_theme_allowlist():
     ]
     assert entries
     assert policy.unlisted_licenses(entries) == {}
+
+
+def test_load_policy_defaults_to_packaged_file():
+    assert load_policy() == load_policy(POLICY_FILE)

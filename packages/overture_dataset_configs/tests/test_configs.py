@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 from overture_dataset_configs import load_config, provider_names
-from overture_core.dataset.schema import validate_all, validate_file
+from overture_dataset_configs.schema import validate_all, validate_file
 
 DATASETS = Path(__file__).parent.parent / "overture_dataset_configs" / "datasets"
 FILES = sorted(DATASETS.glob("*.json"))

@@ -1,13 +1,13 @@
 [project]
 name = "overture-dataset-configs"
 dynamic = ["version"]
-description = "Public dataset license/policy configs for Overture providers."
+description = "Dataset configs and license policy for Overture providers, with loaders, validation and attribution rendering."
 readme = "README.md"
 authors = [{ name = "Overture Maps Foundation" }]
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["pydantic>=2.0", "botocore>=1.31"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",

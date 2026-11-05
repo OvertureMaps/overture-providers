@@ -5,17 +5,31 @@
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-4051CC?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-05A5AF?labelColor=001A39)](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/LICENSE)
 
-Public dataset license/policy configs for Overture providers.
+Dataset configs for Overture providers, the per-theme license policy, and the classes that validate, load and render them.
 
 ```python
-from overture_dataset_configs import load_config, load_license_policy, provider_names
+from overture_dataset_configs import load_config, provider_names
+from overture_dataset_configs.dataset import Dataset
+from overture_dataset_configs.license_policy import load_policy
 
 provider_names()  # ["alltheplaces", "birdeye", ...]
-load_config("linz")  # parsed overture_dataset_configs/datasets/linz.json
-load_license_policy()  # {theme: [allowed license ids]}
+load_config("linz")  # raw dict from overture_dataset_configs/datasets/linz.json
+
+ds = Dataset.from_name("osm", "planet")  # packaged configs by default
+ds.dataset_id, ds.license_type, ds.download_url
+
+load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 ```
 
-This package only ships the data. For typed access (`Dataset`), license-policy checks, attribution generation, and the `overture-datasets` CLI, use [overture-core](https://pypi.org/project/overture-core/).
+| Module | Scope |
+| --- | --- |
+| `dataset` | `Dataset`: one provider/resource config, with its collection, ingestion and matching sections. |
+| `schema` | Strict pydantic models for the config files; `python -m overture_dataset_configs.schema <files>` validates from the shell. |
+| `license_policy` | `LicensePolicy`: validating and querying the per-theme license allowlist. |
+| `attribution` | Flattening configs into license entries and rendering them as Markdown or plain text. |
+| `spdx` | Fetching canonical SPDX license texts from a pinned `license-list-data` release. |
+
+These modules are ported from overture-core's `overture_core.dataset`, which keeps the `overture-datasets` CLI.
 
 ## Concepts
 
@@ -25,12 +39,10 @@ This package only ships the data. For typed access (`Dataset`), license-policy c
 
 For how themes, attribution, and licensing work across Overture data, see the [Overture documentation](https://docs.overturemaps.org/): the [schema](https://docs.overturemaps.org/schema/) for themes, and the [attribution page](https://docs.overturemaps.org/attribution/) for the terms published with each release.
 
-Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_dataset_configs/overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is the [overture-core dataset schema](https://github.com/OvertureMaps/overture-core/blob/main/packages/overture_core/overture_core/dataset/README.md), which also rejects unknown keys.
-
-The [source registry](https://pypi.org/project/overture-sources/) is the published, per-theme view of these inputs.
+Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_dataset_configs/overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is [`schema.py`](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/overture_dataset_configs/schema.py), which also rejects unknown keys.
 
 ## Contributing
 
-1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the overture-core schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
-2. A new field goes in the overture-core schema first.
+1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
+2. A new field needs a matching change to `schema.py` in the same PR.
 3. Provider and resource labels feed dataset IDs and S3 paths, so don't rename them.

@@ -582,6 +582,10 @@ wheels = [
 [[package]]
 name = "overture-dataset-configs"
 source = { editable = "." }
+dependencies = [
+    { name = "botocore" },
+    { name = "pydantic" },
+]
 
 [package.optional-dependencies]
 dev = [
@@ -593,8 +597,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "botocore", specifier = ">=1.31" },
     { name = "license-expression", marker = "extra == 'dev'", specifier = ">=30.0" },
     { name = "overture-core", marker = "extra == 'dev'", specifier = ">=1.5.0" },
+    { name = "pydantic", specifier = ">=2.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.1.1" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },
 ]

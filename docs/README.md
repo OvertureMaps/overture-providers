@@ -13,10 +13,10 @@ Metadata about the data providers behind Overture releases: which datasets feed 
 
 | Package | Install | What it holds |
 | --- | --- | --- |
-| [overture_sources](../packages/overture_sources) | `pip install overture-sources` | Source registry: the datasets that feed each theme, with license, coverage and refresh details. |
-| [overture_dataset_configs](../packages/overture_dataset_configs) | `pip install overture-dataset-configs` | Per-provider dataset configs and the per-theme license policy. Typed access and attribution rendering live in [overture-core](https://pypi.org/project/overture-core/). |
+| [overture_sources](../packages/overture_sources) | `pip install overture-sources` | Deprecated in favor of overture_dataset_configs. Source registry: the datasets that feed each theme, with license, coverage and refresh details. |
+| [overture_dataset_configs](../packages/overture_dataset_configs) | `pip install overture-dataset-configs` | Per-provider dataset configs and the per-theme license policy, with classes to validate, load and render attribution from them. |
 
-Both packages ship data only, with small loaders. Each package's tests validate its JSON files in CI.
+Each package's tests validate its JSON files in CI.
 
 ## Releases
 

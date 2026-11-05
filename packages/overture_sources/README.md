@@ -7,6 +7,9 @@
 
 Overture source registry: the JSON files describing the datasets that feed each theme.
 
+> [!WARNING]
+> Deprecated in favor of [overture-dataset-configs](https://pypi.org/project/overture-dataset-configs/), which holds the same per-dataset license, attribution and coverage details. This package is kept for existing consumers of the per-theme files; new code should use the dataset configs.
+
 ```python
 from overture_sources import load_sources, theme_names
 
@@ -22,4 +25,4 @@ load_sources("places")  # parsed overture_sources/places.json
 
 Each theme file has a `datasets` list, with one entry per source and dataset pair, plus a `license_priority` mapping of license identifiers to a priority rank. An entry records the dataset's license, attribution, coverage, refresh cadence and the date it was first used in the theme. `property_descriptions.json` documents every field.
 
-To see which datasets are taken from a provider and under which license policy, see [overture-dataset-configs](https://pypi.org/project/overture-dataset-configs/). For the attribution and license terms as published with each release, see the [Overture attribution page](https://docs.overturemaps.org/attribution/).
+For the attribution and license terms as published with each release, see the [Overture attribution page](https://docs.overturemaps.org/attribution/).
