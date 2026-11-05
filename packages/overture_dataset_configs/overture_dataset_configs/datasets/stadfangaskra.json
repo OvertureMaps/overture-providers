@@ -13,8 +13,8 @@
       "name": "Stadfangaskrá",
       "collection": {
         "data_location": {
-          "primary": "https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/",
-          "archive": "https://web.archive.org/web/2025/https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/"
+          "primary": "https://hms.is/gogn-og-maelabord/grunngogntilnidurhals/stadfangaskra",
+          "archive": "https://web.archive.org/web/20260508111355/https://hms.is/gogn-og-maelabord/grunngogntilnidurhals/stadfangaskra"
         },
         "data_download": {
           "type": "http",
@@ -22,13 +22,13 @@
         },
         "license": {
           "url": {
-            "primary": "https://opingogn.is/pages/notkunarleidbeiningar",
-            "archive": "https://web.archive.org/web/20241116140612/https://opingogn.is/pages/notkunarleidbeiningar"
+            "primary": "https://gatt.lmi.is/geonetwork/srv/ice/catalog.search#/metadata/%7BA879D973-CA98-49D7-AA50-7BC35047E461%7D",
+            "archive": "https://web.archive.org/web/20261105174831/https://gatt.lmi.is/geonetwork/srv/ice/catalog.search#/metadata/%7BA879D973-CA98-49D7-AA50-7BC35047E461%7D"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": true,
           "text": "User must: state the origin of the information and it is recommended that it be done in the manner requested by the right holder of the information.",
-          "attribution": "Fasteignaskra"
+          "attribution": "Húsnæðis-, mannvirkja- og skipulagsstofnun"
         },
         "coverage": {
           "areas": [
