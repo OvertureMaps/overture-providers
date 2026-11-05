@@ -11,6 +11,7 @@
         {
             "label": "planet",
             "name": "OpenStreetMap",
+            "themes": ["base", "buildings", "divisions", "transportation"],
             "collection": {
                 "data_location": {
                     "primary": "https://planet.openstreetmap.org/",
@@ -89,6 +90,7 @@
         {
             "label": "coastlines",
             "name": "OpenStreetMap Coastlines",
+            "themes": ["base"],
             "collection": {
                 "data_location": {
                     "primary": "https://osmdata.openstreetmap.de/data/coastlines.html",

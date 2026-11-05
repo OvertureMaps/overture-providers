@@ -7,6 +7,7 @@
             "archive": "https://web.archive.org/web/20250221230523/https://www.ncei.noaa.gov/products/etopo-global-relief-model"
         }
     },
+    "themes": ["base"],
     "resources": [
         {
             "label": "etopo_globathy",

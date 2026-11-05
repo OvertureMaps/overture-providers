@@ -7,6 +7,7 @@
             "archive": ""
         }
     },
+    "themes": ["places"],
     "resources": [
         {
             "label": "birdeye",

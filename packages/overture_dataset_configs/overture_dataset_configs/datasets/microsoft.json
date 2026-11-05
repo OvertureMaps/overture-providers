@@ -11,6 +11,7 @@
         {
             "label": "ml_buildings",
             "name": "Microsoft ML Buildings",
+            "themes": ["buildings"],
             "collection": {
                 "data_location": {
                     "primary": "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv",
@@ -50,6 +51,7 @@
         {
             "label": "maps_entity_variant_names",
             "name": "Maps Entity Variant Names",
+            "themes": ["divisions"],
             "collection": {
                 "data_location": {
                     "primary": "https://osmdatapublishsa.z13.web.core.windows.net/AdditionalNamesList.txt",
@@ -89,6 +91,7 @@
         {
             "label": "microsoft",
             "name": "Microsoft",
+            "themes": ["places"],
             "collection": {
                 "data_location": {
                     "primary": "",
