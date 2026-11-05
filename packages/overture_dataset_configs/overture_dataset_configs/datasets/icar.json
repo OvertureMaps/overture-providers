@@ -1,0 +1,54 @@
+{
+    "provider": {
+        "label": "icar",
+        "name": "ICAR",
+        "url": {
+            "primary": "https://be.brussels/fr",
+            "archive": "https://web.archive.org/web/20240518122651/https://be.brussels/fr"
+        }
+    },
+    "resources": [
+        {
+            "label": "icar",
+            "name": "ICAR",
+            "collection": {
+                "data_location": {
+                    "primary": "https://geoportail.wallonie.be/home.html",
+                    "archive": "https://web.archive.org/web/20240518134246/https://be.brussels/fr/propos-de-la-region/structure-et-organisation/apercu-des-administrations-et-institutions-de-la-region/paradigm/nos-services/exploitation-des-donnees-cartographiques-regionales"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://opendata.bosa.be/download/best/openaddress-bewal.zip"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://opendata.bosa.be/index.fr.html",
+                        "archive": "https://web.archive.org/web/2025/https://opendata.bosa.be/index.fr.html"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "Licence: Creative Commons 4.0 Attribution",
+                    "attribution": "Inventaire Centralisé des Adresses et des Rues"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BE"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": "Daily",
+                    "source": "tf-data-platform",
+                    "type": "continuous",
+                    "month": []
+                },
+                "known_issues": "Features with '0' values in the EPSG:31370_x and EPSG:31370_y columns are filtered out during processing.",
+                "notes": "Accessed via https://opendata.bosa.be/."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

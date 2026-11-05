@@ -1,0 +1,407 @@
+{
+    "datasets": [
+        {
+            "source_name": "OpenStreetMap",
+            "dataset_name": "OpenStreetMap",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/20250224061839/https://www.openstreetmap.org/"
+                },
+                "data_location": {
+                    "primary": "https://planet.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/20250224111401/https://planet.openstreetmap.org/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/copyright",
+                    "archive": "https://web.archive.org/web/20250224023118/https://www.openstreetmap.org/copyright"
+                },
+                "type": "ODbL-1.0",
+                "requires_attribution": true,
+                "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                "attribution": "© OpenStreetMap contributors"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -179.9999966,
+                    -83.6500139,
+                    179.9972909,
+                    83.0940018
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Monthly"
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Esri",
+            "dataset_name": "Esri Community Maps",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "http://communitymaps.arcgis.com/home/",
+                    "archive": "https://web.archive.org/web/2025/http://communitymaps.arcgis.com/home/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "",
+                "attribution": "Esri Community Maps contributors"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -123.72658901299997,
+                    -46.66811052299994,
+                    178.54438254600007,
+                    70.09250572000008
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Microsoft - Global ML Building Footprints",
+            "dataset_name": "Microsoft ML Buildings",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+                    "archive": "https://web.archive.org/web/20250209220147/https://github.com/microsoft/GlobalMLBuildingFootprints/"
+                },
+                "data_location": {
+                    "primary": "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv",
+                    "archive": "https://web.archive.org/web/20241116105703/https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv"
+                },
+                "data_download": [
+                    "https://minedbuildings.z5.web.core.windows.net/global-buildings/buildings-coverage.geojson"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+                    "archive": "https://web.archive.org/web/20250209220147/https://github.com/microsoft/GlobalMLBuildingFootprints/"
+                },
+                "type": "ODbL-1.0",
+                "requires_attribution": true,
+                "text": "This data is licensed by Microsoft under the Open Data Commons Open Database License (ODbL).",
+                "attribution": "Microsoft - Global ML Building Footprints"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -160.204048,
+                    -55.90541208454877,
+                    166.70968501727685,
+                    80.68981307600387
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "Multiple",
+                "file_format": "GeoJSON"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Google",
+            "dataset_name": "Google Open Buildings",
+            "inception_date": "2023-10-19",
+            "source": {
+                "url": {
+                    "primary": "https://www.google.com/",
+                    "archive": "https://web.archive.org/web/2025/https://www.google.com/"
+                },
+                "data_location": {
+                    "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",
+                    "archive": "https://web.archive.org/web/2025/https://sites.research.google/gr/open-buildings/#open-buildings-download"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",
+                    "archive": "https://web.archive.org/web/2025/https://sites.research.google/gr/open-buildings/#open-buildings-download"
+                },
+                "type": "CC-BY-4.0 / ODbL-1.0",
+                "requires_attribution": true,
+                "text": "The data is shared under the Creative Commons Attribution (CC BY-4.0) license and the Open Data Commons Open Database License (ODbL) v1.0 license. As the user, you can pick which of the two licenses you prefer and use the data under the terms of that license. However, please note the liability disclaimer in the footnotes.",
+                "attribution": "Google Open Buildings"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -118.3280326,
+                    -55.9756776289873,
+                    141.019508613717,
+                    37.5312400184908
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "United States Geological Survey",
+            "dataset_name": "USGS Lidar",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "https://www.usgs.gov/3d-elevation-program",
+                    "archive": "https://web.archive.org/web/20250225184235/https://www.usgs.gov/3d-elevation-program"
+                },
+                "data_location": {
+                    "primary": "https://apps.nationalmap.gov/datasets/",
+                    "archive": "https://web.archive.org/web/20250218043410/https://apps.nationalmap.gov/datasets/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+                    "archive": "https://web.archive.org/web/2025/https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+                },
+                "type": "",
+                "requires_attribution": false,
+                "text": "USGS-authored or produced data and information are considered to be in the U.S. Public Domain.",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "US"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    -179.9999966,
+                    -55.9756776289873,
+                    178.54438254600007,
+                    80.68981307600387
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Zenodo",
+            "dataset_name": "doi:10.5281/zenodo.8174931",
+            "inception_date": "2025-01-22",
+            "source": {
+                "url": {
+                    "primary": "https://doi.org/10.5281/zenodo.8174931",
+                    "archive": "https://web.archive.org/web/2025/https://doi.org/10.5281/zenodo.8174931"
+                },
+                "data_location": {
+                    "primary": "https://zenodo.org/records/8174931",
+                    "archive": "https://web.archive.org/web/2025/https://zenodo.org/records/8174931"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://zenodo.org/records/8174931",
+                    "archive": "https://web.archive.org/web/2025/https://zenodo.org/records/8174931"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                "attribution": "Qian Shi, Jiajun Zhu, Zhengyu Liu, Haonan Guo, Mengxi Liu, Zihong Liu, & Xiaoping Liu. (2023). A first high-quality vector data of buildings in East Asian countries based on a comprehensive large-scale mapping framework [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8174931"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "CN"
+                    },
+                    {
+                        "iso_3166_1": "JP"
+                    },
+                    {
+                        "iso_3166_1": "KP"
+                    },
+                    {
+                        "iso_3166_1": "KR"
+                    },
+                    {
+                        "iso_3166_1": "MN"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    75.12412462051019,
+                    18.171146036194333,
+                    145.67718973268936,
+                    53.49846425890672
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "East_Asian_buildings.zip",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Instituto Geográfico Nacional (IGN)",
+            "dataset_name": "Instituto Geográfico Nacional (España)",
+            "inception_date": "2025-03-19",
+            "source": {
+                "url": {
+                    "primary": "https://www.ign.es/web/ign/portal",
+                    "archive": "https://web.archive.org/web/2025/https://www.ign.es/web/ign/portal"
+                },
+                "data_location": {
+                    "primary": "https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias",
+                    "archive": "https://web.archive.org/web/2025/https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf",
+                    "archive": "https://web.archive.org/web/2025/https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "The use of information from the geographic data products and services defined in Order FOM/2807/2015 , as well as its derivatives , implies the user's acceptance of the general conditions of said order, specified in a license for use compatible with CC BY 4.0 . This license requires acknowledgment and mention of the source and ownership.",
+                "attribution": "Work derived from BTN 2024 CC BY 4.0 ign.es"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "ES"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    -18.152401991999966,
+                    27.640404467000053,
+                    4.3270459290000645,
+                    43.78637087000004
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "Multiple",
+                "file_format": "shapefile"
+            },
+            "refresh_schedule": {
+                "frequency": "Monthly"
+            },
+            "known_issues": "",
+            "notes": "Multiple data download urls."
+        },
+        {
+            "source_name": "City of Vancouver",
+            "dataset_name": "City of Vancouver Buildings",
+            "inception_date": "2025-06-25",
+            "source": {
+                "url": {
+                    "primary": "https://opendata.vancouver.ca/pages/home/",
+                    "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/home/"
+                },
+                "data_location": {
+                    "primary": "https://opendata.vancouver.ca/pages/home/",
+                    "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/home/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://opendata.vancouver.ca/pages/licence/",
+                    "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/licence/"
+                },
+                "type": "OGL-Vancouver-1.0",
+                "requires_attribution": true,
+                "text": "You are free to: Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose. You must, where you do any of the above: Acknowledge the source of the Information by including any attribution statement specified by the Information Provider and, where possible, provide a link to this licence. If the Information Provider does not provide a specific attribution statement, or if you are using information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement: Contains information licensed under the Open Government Licence – Vancouver.",
+                "attribution": "City of Vancouver, BC, Canada"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "CA"
+                    }
+                ],
+                "description": "Local",
+                "bbox": [
+                    -123.72658901299997,
+                    -46.66811052299994,
+                    178.54438254600007,
+                    70.09250572000008
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "building-footprints-2015.geojson",
+                "file_format": "GeoJSON"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "Original source data processed by Esri."
+        }
+    ],
+    "license_priority": {}
+}

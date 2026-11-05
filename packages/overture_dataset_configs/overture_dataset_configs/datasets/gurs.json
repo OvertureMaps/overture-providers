@@ -1,0 +1,54 @@
+{
+  "provider": {
+    "label": "gurs",
+    "name": "Republic of Slovenia - Ministry of Natural Resources and Spatial Planning",
+    "url": {
+      "primary": "https://www.e-prostor.gov.si/",
+      "archive": "https://web.archive.org/web/2025/https://www.e-prostor.gov.si/"
+    }
+  },
+  "resources": [
+    {
+      "label": "gurs",
+      "name": "GURS",
+      "collection": {
+        "data_location": {
+          "primary": "https://ipi.eprostor.gov.si/jgp/data",
+          "archive": "https://web.archive.org/web/2025/https://ipi.eprostor.gov.si/jgp/data"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://ipi.eprostor.gov.si/jgp-service-api/display-views/groups/121/composite-products/141/file?filterParam=DRZAVA&filterValue=1"
+        },
+        "license": {
+          "url": {
+            "primary": "https://www.e-prostor.gov.si/dostopi/javni-dostop/?acitem=1821-1822",
+            "archive": "https://web.archive.org/web/2025/https://www.e-prostor.gov.si/dostopi/javni-dostop/?acitem=1821-1822"
+          },
+          "type": "CC-BY-4.0",
+          "requires_attribution": true,
+          "text": "Geodetic administration data have public information and are available under the terms of the Creative Commons 4.0 International License.",
+          "attribution": "Geodetska uprava Republike Slovenije / Surveying and Mapping Authority of the Republic of Slovenia, Register naslovov / Register of addresses, 2024"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "SI"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": "Weekly",
+          "source": "OpenAddresses",
+          "type": "continuous",
+          "month": []
+        },
+        "known_issues": "",
+        "notes": ""
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

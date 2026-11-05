@@ -1,0 +1,54 @@
+{
+  "provider": {
+    "label": "pdok",
+    "name": "PDOK (Publieke Dienstverlening Op de Kaart)",
+    "url": {
+      "primary": "https://www.pdok.nl/",
+      "archive": "https://web.archive.org/web/2025/https://www.pdok.nl/"
+    }
+  },
+  "resources": [
+    {
+      "label": "bag_light",
+      "name": "BAG Light",
+      "collection": {
+        "data_location": {
+          "primary": "https://service.pdok.nl/lv/bag/atom/index.xml",
+          "archive": "https://web.archive.org/web/2025/https://service.pdok.nl/lv/bag/atom/index.xml"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://service.pdok.nl/lv/bag/atom/downloads/bag-light.gpkg"
+        },
+        "license": {
+          "url": {
+            "primary": "https://creativecommons.org/publicdomain/zero/1.0/deed.nl",
+            "archive": ""
+          },
+          "type": "CC0-1.0",
+          "requires_attribution": false,
+          "text": "",
+          "attribution": ""
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "NL"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": "Monthly",
+          "source": "tf-data-platform",
+          "type": "continuous",
+          "month": []
+        },
+        "known_issues": "",
+        "notes": ""
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

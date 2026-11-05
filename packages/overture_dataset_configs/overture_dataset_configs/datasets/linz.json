@@ -1,0 +1,98 @@
+{
+  "provider": {
+    "label": "linz",
+    "name": "Land Information New Zealand",
+    "url": {
+      "primary": "https://www.linz.govt.nz/",
+      "archive": "https://web.archive.org/web/2025/https://www.linz.govt.nz/"
+    }
+  },
+  "resources": [
+    {
+      "label": "linz_suburbs_and_localities",
+      "name": "LINZ Suburbs and Localities",
+      "collection": {
+        "data_location": {
+          "primary": "https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/",
+          "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://data.linz.govt.nz/services/api/v1.x/layers/113764/"
+        },
+        "license": {
+          "url": {
+            "primary": "https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/",
+            "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/"
+          },
+          "type": "CC-BY-4.0",
+          "requires_attribution": true,
+          "text": "License: Creative Commons Attribution 4.0 International View License. You may use this work for commercial purposes. You must attribute the creator in your own works.",
+          "attribution": "Land Information New Zealand via LINZ Data Service"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "NZ"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": ""
+        },
+        "known_issues": "",
+        "notes": "Used to represent divisions features in New Zealand. Data access requires a login.",
+        "api": {
+          "url": "https://data.linz.govt.nz/services/api/v1.x/exports/"
+        },
+        "extras": {}
+      },
+      "ingestion": {},
+      "matching": {}
+    },
+    {
+      "label": "linz_suburb_locality_major_name",
+      "name": "LINZ Suburb Locality Major Name",
+      "collection": {
+        "data_location": {
+          "primary": "https://data.linz.govt.nz/table/113014-suburb-locality-major-name/",
+          "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/table/113014-suburb-locality-major-name/"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://data.linz.govt.nz/services/api/v1.x/tables/113014/"
+        },
+        "license": {
+          "url": {
+            "primary": "https://data.linz.govt.nz/table/113014-suburb-locality-major-name/",
+            "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/table/113014-suburb-locality-major-name/"
+          },
+          "type": "CC-BY-4.0",
+          "requires_attribution": true,
+          "text": "License: Creative Commons Attribution 4.0 International View License. You may use this work for commercial purposes. You must attribute the creator in your own works.",
+          "attribution": "Land Information New Zealand via LINZ Data Service"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "NZ"
+            }
+          ],
+          "description": "National"
+        },
+        "refresh_schedule": {
+          "frequency": ""
+        },
+        "known_issues": "",
+        "notes": "Provides stable major_name_id integers used as record_id for city-level locality divisions. Versioned independently from linz_suburbs_and_localities.",
+        "api": {
+          "url": "https://data.linz.govt.nz/services/api/v1.x/exports/"
+        },
+        "extras": {}
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}

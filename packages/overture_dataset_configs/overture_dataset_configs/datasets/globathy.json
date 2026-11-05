@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "globathy",
+        "name": "GLOBathy",
+        "url": {
+            "primary": "https://www.nature.com/articles/s41597-022-01132-9",
+            "archive": "https://web.archive.org/web/20221222105048/https://www.nature.com/articles/s41597-022-01132-9"
+        }
+    },
+    "resources": [
+        {
+            "label": "globathy",
+            "name": "GLOBathy",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.nature.com/articles/s41597-022-01132-9",
+                    "archive": "https://web.archive.org/web/20221222105048/https://www.nature.com/articles/s41597-022-01132-9"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://gee-community-catalog.org/projects/globathy/#license",
+                        "archive": "https://web.archive.org/web/20221222105048/https://gee-community-catalog.org/projects/globathy/#license"
+                    },
+                    "type": "CC0-1.0",
+                    "requires_attribution": false,
+                    "text": "The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "None"
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

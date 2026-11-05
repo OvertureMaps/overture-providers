@@ -1,1 +1,4 @@
-* @OvertureMaps/omf-eng-ops
+* @OvertureMaps/omf-public-reviewers
+
+/packages/overture_sources/ @OvertureMaps/omf-data-ops-reviewers
+/packages/overture_dataset_configs/ @OvertureMaps/omf-data-ops-reviewers

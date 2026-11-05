@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "label": "vancouver",
+        "name": "City of Vancouver",
+        "url": {
+            "primary": "https://opendata.vancouver.ca/pages/home/",
+            "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/home/"
+        }
+    },
+    "resources": [
+        {
+            "label": "buildings",
+            "name": "City of Vancouver Buildings",
+            "collection": {
+                "data_location": {
+                    "primary": "https://opendata.vancouver.ca/pages/home/",
+                    "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/home/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://opendata.vancouver.ca/pages/licence/",
+                        "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/licence/"
+                    },
+                    "type": "LicenseRef-Proprietary",
+                    "requires_attribution": true,
+                    "text": "You are free to: Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose. You must, where you do any of the above: Acknowledge the source of the Information by including any attribution statement specified by the Information Provider and, where possible, provide a link to this licence. If the Information Provider does not provide a specific attribution statement, or if you are using information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement: Contains information licensed under the Open Government Licence – Vancouver.",
+                    "attribution": "City of Vancouver, BC, Canada"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CA"
+                        }
+                    ],
+                    "description": "Local"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": "Original source data processed by Esri."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

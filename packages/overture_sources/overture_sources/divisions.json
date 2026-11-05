@@ -1,0 +1,299 @@
+{
+    "datasets": [
+        {
+            "source_name": "OpenStreetMap",
+            "dataset_name": "OpenStreetMap",
+            "inception_date": "2023-10-16",
+            "source": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/2024/https://www.openstreetmap.org/"
+                },
+                "data_location": {
+                    "primary": "https://planet.openstreetmap.org/",
+                    "archive": "https://web.archive.org/web/2024/https://planet.openstreetmap.org/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.openstreetmap.org/copyright",
+                    "archive": "https://web.archive.org/web/2024/https://www.openstreetmap.org/copyright"
+                },
+                "type": "ODbL-1.0",
+                "requires_attribution": true,
+                "text": "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF).",
+                "attribution": "© OpenStreetMap contributors"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180,
+                    -89.998,
+                    180,
+                    83.875172
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Monthly"
+            },
+            "known_issues": "",
+            "notes": "Inception date represents date added to (deprecated) admins theme."
+        },
+        {
+            "source_name": "geoBoundaries - Comprehensive Global Administrative Zones (CGAZ)",
+            "dataset_name": "geoBoundaries",
+            "inception_date": "2024-02-15",
+            "source": {
+                "url": {
+                    "primary": "https://geoboundaries.org/",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/"
+                },
+                "data_location": {
+                    "primary": "https://www.geoboundaries.org/globalDownloads.html",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/globalDownloads.html"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://www.geoboundaries.org/#tabs1-js",
+                    "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/#tabs1-js"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "geoBoundaries datasets are provided under the CC BY 4.0, which allows for most commercial, noncommercial, and academic uses.",
+                "attribution": "Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -90.13771319999995,
+                    -34.97393429799996,
+                    179.8116893452013,
+                    60.84566855001649
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": "Monthly"
+            },
+            "known_issues": "",
+            "notes": "Global coverage, but used within the theme in selected countries. Inception date represents date added to (deprecated) admins theme."
+        },
+        {
+            "source_name": "Esri",
+            "dataset_name": "Esri Community Maps",
+            "inception_date": "2023-07-26",
+            "source": {
+                "url": {
+                    "primary": "http://communitymaps.arcgis.com/home/",
+                    "archive": "https://web.archive.org/web/2024/http://communitymaps.arcgis.com/home/"
+                },
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "",
+                "attribution": "Esri Community Maps contributors"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180,
+                    -89.998,
+                    180,
+                    83.875172
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "",
+                "file_format": ""
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "Inception date represents date added to (deprecated) admins theme."
+        },
+        {
+            "source_name": "Microsoft - Maps Entity Variant Names",
+            "dataset_name": "Maps Entity Variant Names",
+            "inception_date": "2025-02-19",
+            "source": {
+                "url": {
+                    "primary": "https://www.microsoft.com/",
+                    "archive": "https://web.archive.org/web/2025/https://www.microsoft.com/"
+                },
+                "data_location": {
+                    "primary": "https://osmdatapublishsa.blob.core.windows.net/datapublish/Maps_entity_variant_names.tsv",
+                    "archive": ""
+                },
+                "data_download": [
+                    "https://osmdatapublishsa.blob.core.windows.net/datapublish/Maps_entity_variant_names.tsv"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://opendatacommons.org/licenses/odbl/",
+                    "archive": ""
+                },
+                "type": "ODbL-1.0",
+                "requires_attribution": true,
+                "text": "Maps Entity Variant Names is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/",
+                "attribution": "© Maps Entity Variant Names"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "GLOBAL"
+                    }
+                ],
+                "description": "Global",
+                "bbox": [
+                    -180,
+                    -89.998,
+                    180,
+                    83.875172
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "Maps_entity_variant_names.tsv",
+                "file_format": "tsv"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": ""
+        },
+        {
+            "source_name": "Secretaria Municipal da Habitação - SEHAB",
+            "dataset_name": "Núcleo Urbanizado da Cidade de São Paulo",
+            "inception_date": "2025-07-23",
+            "source": {
+                "url": {
+                    "primary": "http://dados.prefeitura.sp.gov.br",
+                    "archive": "https://web.archive.org/web/2025/http://dados.prefeitura.sp.gov.br"
+                },
+                "data_location": {
+                    "primary": "http://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a",
+                    "archive": "https://web.archive.org/web/2025/http://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a"
+                },
+                "data_download": [
+                    "http://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5/resource/2994844f-05ad-46f9-917f-79c92097f9c6/download/layernucleos2015.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "http://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a",
+                    "archive": "https://web.archive.org/web/2025/http://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a"
+                },
+                "type": "CC0-1.0",
+                "requires_attribution": false,
+                "text": "Licença: Creative Commons CCZero",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "BR"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    -46.79698640741965,
+                    -23.77333650825657,
+                    -46.37740046708943,
+                    -23.397769625384154
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "layernucleos2015.zip",
+                "file_format": "shp"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "Used to represent favelas in the Municipality of São Paulo."
+        },
+        {
+            "source_name": "Land Information New Zealand",
+            "dataset_name": "LINZ Suburbs and Localities",
+            "inception_date": "2025-07-23",
+            "source": {
+                "url": {
+                    "primary": "https://www.linz.govt.nz/",
+                    "archive": "https://web.archive.org/web/2025/https://www.linz.govt.nz/"
+                },
+                "data_location": {
+                    "primary": "https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/",
+                    "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/"
+                },
+                "data_download": []
+            },
+            "license": {
+                "url": {
+                    "primary": "https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/",
+                    "archive": "https://web.archive.org/web/2025/https://data.linz.govt.nz/layer/113764-nz-suburbs-and-localities/"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "License: Creative Commons Attribution 4.0 International View License. You may use this work for commercial purposes. You must attribute the creator in your own works.",
+                "attribution": "Land Information New Zealand via LINZ Data Service"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "NZ"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    167.071602006871,
+                    -46.9060110074277,
+                    178.550512003457,
+                    -34.3933910018432
+                ]
+            },
+            "file_information": {
+                "data_layer_name": "lds-nz-suburbs-and-localities-SHP.zip",
+                "file_format": "shp"
+            },
+            "refresh_schedule": {
+                "frequency": ""
+            },
+            "known_issues": "",
+            "notes": "Used to represent divisions features in New Zealand. Data access requires a login."
+        }
+    ],
+    "license_priority": {}
+}

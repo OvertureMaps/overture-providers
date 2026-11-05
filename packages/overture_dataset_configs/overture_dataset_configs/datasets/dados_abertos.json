@@ -1,0 +1,90 @@
+{
+    "provider": {
+        "label": "dados_abertos",
+        "name": "Dados Abertos — Prefeitura de São Paulo",
+        "url": {
+            "primary": "https://dados.prefeitura.sp.gov.br/",
+            "archive": "https://web.archive.org/web/2025/https://dados.prefeitura.sp.gov.br/"
+        }
+    },
+    "resources": [
+        {
+            "label": "favelas",
+            "name": "Favelas",
+            "collection": {
+                "data_location": {
+                    "primary": "https://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a",
+                    "archive": "https://web.archive.org/web/2025/https://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a/resource/f44914c7-5606-4bcc-97c8-9acb89fa3f19/download/favelas_2025.json"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a",
+                        "archive": "https://web.archive.org/web/2025/https://dados.prefeitura.sp.gov.br/dataset/b7242ef1-3add-4ce9-8e74-af7f9288762a"
+                    },
+                    "type": "CC0-1.0",
+                    "requires_attribution": false,
+                    "text": "Licença: Creative Commons CCZero",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BR"
+                        }
+                    ],
+                    "description": "Municipality of São Paulo"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": "Used to represent favelas in the Municipality of São Paulo."
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "nucleos",
+            "name": "Núcleos Urbanizados",
+            "collection": {
+                "data_location": {
+                    "primary": "https://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5",
+                    "archive": "https://web.archive.org/web/2025/https://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5/resource/ff6d4094-3952-4e9e-bf92-5c25fa82d3db/download/nucleos_2025.json"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5",
+                        "archive": "https://web.archive.org/web/2025/https://dados.prefeitura.sp.gov.br/dataset/710cd19a-e7a6-4419-b00f-d4bd4f1955b5"
+                    },
+                    "type": "CC0-1.0",
+                    "requires_attribution": false,
+                    "text": "Licença: Creative Commons CCZero",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "BR"
+                        }
+                    ],
+                    "description": "Municipality of São Paulo"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": "Used to represent núcleos urbanizados in the Municipality of São Paulo."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

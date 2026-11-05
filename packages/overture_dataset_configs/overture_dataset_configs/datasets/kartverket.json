@@ -1,0 +1,54 @@
+{
+    "provider": {
+        "label": "kartverket",
+        "name": "Kartverket",
+        "url": {
+            "primary": "https://kartkatalog.geonorge.no/",
+            "archive": "https://web.archive.org/web/2025/https://kartkatalog.geonorge.no/"
+        }
+    },
+    "resources": [
+        {
+            "label": "kartverket",
+            "name": "Kartverket",
+            "collection": {
+                "data_location": {
+                    "primary": "https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55",
+                    "archive": "https://web.archive.org/web/2026/https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://nedlasting.geonorge.no/geonorge/Basisdata/MatrikkelenAdresseLeilighetsniva/CSV/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55",
+                        "archive": "https://web.archive.org/web/2026/https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "Restrictions on use : No restrictions on use have been stated. Access restrictions : Open data. User restrictions : License. Lisens : Creative Commons BY 4.0 (CC BY 4.0). Other restrictions : No legal restrictions.",
+                    "attribution": "Kartverket"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "NO"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": "Daily",
+                    "source": "tf-data-platform",
+                    "type": "continuous",
+                    "month": []
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

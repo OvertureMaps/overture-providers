@@ -1,0 +1,56 @@
+# Package versioning and publishing
+
+Each package under [`packages/`](../packages) (`overture_sources`, `overture_dataset_configs`) is versioned and released independently, and fully automatically: there's no version to bump and no tag to create by hand.
+
+## Background: python-semantic-release
+
+This is the first use of [python-semantic-release](https://python-semantic-release.readthedocs.io/) (PSR) at Overture. It's the Python equivalent of the JS ecosystem's [`semantic-release`](https://semantic-release.gitbook.io/): both read a project's [Conventional Commits](https://www.conventionalcommits.org/) history and derive the next [SemVer](https://semver.org/) version from it (`fix:` → patch, `feat:` → minor, a `!`/`BREAKING CHANGE:` → major), instead of a human deciding and typing a version number. PSR then tags the release, generates release notes, and can build/publish the package, all from that one signal.
+
+The distinguishing feature this repo relies on is PSR's `conventional-monorepo` commit parser: it understands a monorepo has more than one independently versioned package and can attribute a single commit to the specific package(s) it touched, by directory. That's what lets `overture_sources` and `overture_dataset_configs` each get tagged and released on their own schedule, off the same shared commit history, in the same workflow run.
+
+## Version bump
+
+There is no `version` field to edit. Each package's `pyproject.toml` declares `dynamic = ["version"]`; [`setuptools-scm`](https://setuptools-scm.readthedocs.io/) resolves the version from that package's latest `<package_dir>-v<version>` git tag at build time.
+
+What you do control is the version *bump*, via Conventional Commits on your PR:
+
+| Commit prefix                            | Bump  |
+| ------------------------------------------ | ----- |
+| `fix: ...`                                | patch |
+| `feat: ...`                               | minor |
+| `feat!: ...` / a `BREAKING CHANGE:` footer | major |
+
+PSR attributes a commit to a package by which files it actually touched, not by a scope in the message: a plain `fix: ...` with no scope is fine, as long as the commit's diff falls under that package's directory. This means a single PR/commit that touches both packages correctly triggers an independent release for each.
+
+### PR title = the commit PSR reads
+
+This repo requires [Overture PR Checks (v2)](https://github.com/OvertureMaps/.github/blob/main/docs/pull-request-checks.md), which only accepts strict Conventional Commits titles (`type: description` / `type(scope): description`). Since PRs are squash-merged, GitHub's default squash-commit subject is the PR title verbatim, so the PR title has to be Conventional Commits for PSR to recognize it at all, but no particular scope is required.
+
+## Release
+
+On every push to `main`, [`publish_packages.yml`](../.github/workflows/publish_packages.yml) runs PSR for every package. PSR's tag history, not the push's diff, decides what's unreleased, so a push whose queued run GitHub replaced still gets released by the next run:
+
+```mermaid
+%%{init: {"theme": "dark", "flowchart": {"padding": 8}, "themeVariables": {"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif", "fontSize": "14px", "mainBkg": "#21262d", "nodeBorder": "#4493f8"}}}%%
+flowchart TD
+    classDef default rx:8,ry:8,stroke-width:0.75px
+    A[Push to main] --> C[Run PSR for each package]
+    C --> D{Commits touching the package<br/>since its last tag warrant a bump?}
+    D -->|no| E[Nothing tagged]
+    D -->|yes| F[Tag + push<br/>package_dir-vX.Y.Z]
+    F --> G[Publish GitHub Release<br/>with notes]
+    F --> H[uv build]
+    H --> I[Publish to PyPI<br/>via trusted publishing]
+```
+
+For each package, PSR looks at the commits since its last release tag and, if any warrant a bump, tags and pushes `<package_dir>-v<version>` (e.g. `overture_sources-v0.2.0`): **no commit is ever made back to `main`**, and no `CHANGELOG.md` is committed to the repo. Release notes are published to the tag's [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github) instead, and the same job then builds with `uv build` (`setuptools-scm` picks up the version it just tagged) and publishes to PyPI via [trusted publishing](https://docs.pypi.org/trusted-publishers/), no stored credentials.
+
+Changes that only touch Markdown under `packages/` (such as a package README) are excluded by each package's `path_filters` (`"!*.md"`), so they never cut a release. A README change reaches the PyPI project page with the package's next release.
+
+### Manual dispatch publishes to Test PyPI instead
+
+Running `publish_packages.yml` manually (`workflow_dispatch`) never tags, releases, or touches real PyPI: it's a smoke test of the build/publish pipeline, not a release mechanism. Every package builds from its current (unreleased) state and publishes to [Test PyPI](https://test.pypi.org/) instead, through a separate `testpypi-<package_dir>` GitHub Environment (distinct from the `pypi-<package_dir>` one a push uses) so its trusted-publisher scoping never overlaps with a real release. Each run builds as `0.0.0.dev<run_id><attempt>`, since Test PyPI rejects a re-upload of an existing version.
+
+## Adding a new package
+
+Auto-discovered testable packages need no CI changes, see [`CONTRIBUTING.md`](../.github/CONTRIBUTING.md) for the `pyproject.toml` shape (`dynamic = ["version"]`, `[tool.setuptools_scm]`, `[tool.semantic_release]`) each package needs for this to work. Publishing also needs a [trusted publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) on both pypi.org and test.pypi.org: this repo, workflow `publish_packages.yml`, and environment `pypi-<package_dir>` or `testpypi-<package_dir>` respectively.

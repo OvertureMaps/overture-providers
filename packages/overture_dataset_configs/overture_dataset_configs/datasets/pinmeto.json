@@ -1,0 +1,51 @@
+{
+    "provider": {
+        "label": "pinmeto",
+        "name": "PinMeTo",
+        "url": {
+            "primary": "https://www.pinmeto.com/",
+            "archive": "https://web.archive.org/web/20250425155801/https://www.pinmeto.com/"
+        }
+    },
+    "resources": [
+        {
+            "label": "pinmeto",
+            "name": "PinMeTo",
+            "collection": {
+                "data_location": {
+                    "primary": "https://www.pinmeto.com/products/local-business-listing",
+                    "archive": "https://web.archive.org/web/20250425155801/https://www.pinmeto.com/products/local-business-listing"
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://omf-places-data-providers/pinmeto/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/2025/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                    "attribution": "PinMeTo"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

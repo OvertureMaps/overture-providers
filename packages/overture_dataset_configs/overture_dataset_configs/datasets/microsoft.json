@@ -1,0 +1,129 @@
+{
+    "provider": {
+        "label": "microsoft",
+        "name": "Microsoft",
+        "url": {
+            "primary": "https://www.microsoft.com/",
+            "archive": "https://web.archive.org/web/20250225093926/https://www.microsoft.com/en-us/"
+        }
+    },
+    "resources": [
+        {
+            "label": "ml_buildings",
+            "name": "Microsoft ML Buildings",
+            "collection": {
+                "data_location": {
+                    "primary": "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv",
+                    "archive": "https://web.archive.org/web/20241116105703/https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv"
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/buildings-coverage.geojson"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+                        "archive": "https://web.archive.org/web/20250209220147/https://github.com/microsoft/GlobalMLBuildingFootprints/"
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "This data is licensed by Microsoft under the Open Data Commons Open Database License (ODbL).",
+                    "attribution": "Microsoft - Global ML Building Footprints"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "maps_entity_variant_names",
+            "name": "Maps Entity Variant Names",
+            "collection": {
+                "data_location": {
+                    "primary": "https://osmdatapublishsa.z13.web.core.windows.net/AdditionalNamesList.txt",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://osmdatapublishsa.z13.web.core.windows.net/AdditionalNamesList.txt"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://opendatacommons.org/licenses/odbl/",
+                        "archive": ""
+                    },
+                    "type": "ODbL-1.0",
+                    "requires_attribution": true,
+                    "text": "Maps Entity Variant Names is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/",
+                    "attribution": "© Maps Entity Variant Names"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        },
+        {
+            "label": "microsoft",
+            "name": "Microsoft",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "s3",
+                    "url": "s3://omf-places-data-providers/microsoft/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.",
+                    "attribution": "Microsoft"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

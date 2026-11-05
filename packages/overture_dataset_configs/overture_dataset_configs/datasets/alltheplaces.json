@@ -1,0 +1,51 @@
+{
+    "provider": {
+        "label": "alltheplaces",
+        "name": "AllThePlaces",
+        "url": {
+            "primary": "https://alltheplaces.xyz/",
+            "archive": "https://web.archive.org/web/2025/https://alltheplaces.xyz/"
+        }
+    },
+    "resources": [
+        {
+            "label": "alltheplaces",
+            "name": "AllThePlaces",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "data_download": {
+                    "type": "http",
+                    "url": "https://data.alltheplaces.xyz/runs/latest.json"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://creativecommons.org/publicdomain/zero/1.0/",
+                        "archive": "https://web.archive.org/web/2025/https://creativecommons.org/publicdomain/zero/1.0/"
+                    },
+                    "type": "CC0-1.0",
+                    "requires_attribution": false,
+                    "text": "The downloads provided above and the data contained therein are released under Creative Commons' CC-0 waiver.",
+                    "attribution": ""
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": "The data_download URL is the latest-run manifest; its output_url points to the current release archive. Overture ingests a subset of data provided by AllThePlaces."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

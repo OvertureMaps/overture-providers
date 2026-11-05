@@ -1,0 +1,135 @@
+# Publish Python Packages
+#
+# push to main: python-semantic-release tags and releases each changed package
+# (`<package_dir>-v<version>`), then it's built and published to PyPI.
+# workflow_dispatch: smoke test, builds every package and publishes a throwaway
+# dev version to Test PyPI. No tags or releases.
+#
+# If publishing fails after the tag is pushed, delete the tag and GitHub Release,
+# then re-run. Setup and versioning: docs/PACKAGE_VERSIONING.md.
+
+name: Publish Python Packages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false # never cancel a publish mid-flight
+
+jobs:
+  detect-changes:
+    name: detect-changes
+    permissions:
+      contents: read
+    uses: $/.github/workflows/discover-packages.yml
+    # Every package, every run: a queued push can be superseded, so PSR's tag
+    # history decides what's unreleased, not this push's diff.
+    with:
+      all: true
+
+  release:
+    name: release ${{ matrix.package }}
+    needs: detect-changes
+    if: needs.detect-changes.outputs.packages != '[]'
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.event_name == 'workflow_dispatch' && format('testpypi-{0}', matrix.package) || format('pypi-{0}', matrix.package) }}
+    permissions:
+      contents: write # release tag
+      id-token: write # trusted publishing
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJSON(needs.detect-changes.outputs.packages) }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # GITHUB_TOKEN can't push tags over history with workflow changes; use the
+      # overture-pull-requester app (contents + workflows write) instead.
+      - name: Configure AWS credentials for pull-requester PEM
+        if: github.event_name == 'push'
+        uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
+        with:
+          role-to-assume: arn:aws:iam::816069134238:role/gha-pull-requester-secrets-reader
+          aws-region: us-west-2
+
+      - name: Fetch pull-requester PEM from Secrets Manager
+        if: github.event_name == 'push'
+        uses: aws-actions/aws-secretsmanager-get-secrets@2297f9a879480a9e3af9b293ed15c70caf8e1c88 # v3.0.2
+        with:
+          secret-ids: |
+            PULL_REQUESTER_APP_PEM, omf-github-terraform/pull-requester/pem
+
+      - name: Generate release push token
+        if: github.event_name == 'push'
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: Iv23liiN80WEARreTV7m # overture-pull-requester
+          private-key: ${{ env.PULL_REQUESTER_APP_PEM }} # zizmor: ignore[secrets-outside-env]
+          owner: OvertureMaps
+          repositories: overture-providers
+          permission-contents: write
+          permission-workflows: write
+
+      - name: Release ${{ matrix.package }}
+        id: release
+        if: github.event_name == 'push'
+        uses: python-semantic-release/python-semantic-release@b700dbeb1f431a0fcc30a79f3f0869407fe07278 # v10.7.0
+        with:
+          directory: packages/${{ matrix.package }}
+          github_token: ${{ steps.app-token.outputs.token }}
+          commit: "false"
+          tag: "true"
+          push: "true"
+          changelog: "false"
+          vcs_release: "true"
+          build: "false"
+
+      - name: Install uv
+        if: github.event_name == 'workflow_dispatch' || steps.release.outputs.released == 'true'
+        uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: false # no cache in a publish job
+
+      - name: Build package
+        if: github.event_name == 'workflow_dispatch' || steps.release.outputs.released == 'true'
+        working-directory: packages/${{ matrix.package }}
+        env:
+          PACKAGE_DIR: ${{ matrix.package }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          # Test PyPI rejects re-uploaded filenames, so each smoke test gets a unique version.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            var="SETUPTOOLS_SCM_PRETEND_VERSION_FOR_$(printf '%s' "$PACKAGE_DIR" | tr 'a-z' 'A-Z')"
+            export "$var=0.0.0.dev${GITHUB_RUN_ID}${GITHUB_RUN_ATTEMPT}"
+          fi
+          uv build
+
+      - name: Check package metadata
+        if: github.event_name == 'workflow_dispatch' || steps.release.outputs.released == 'true'
+        working-directory: packages/${{ matrix.package }}
+        run: uvx twine check --strict dist/*
+
+      - name: Publish to PyPI
+        if: github.event_name == 'push' && steps.release.outputs.released == 'true'
+        uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          packages-dir: packages/${{ matrix.package }}/dist
+
+      - name: Publish to Test PyPI (smoke test)
+        if: github.event_name == 'workflow_dispatch'
+        uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          packages-dir: packages/${{ matrix.package }}/dist
+          repository-url: https://test.pypi.org/legacy/

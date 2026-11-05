@@ -1,0 +1,59 @@
+{
+    "provider": {
+        "label": "zenodo",
+        "name": "Zenodo",
+        "url": {
+            "primary": "https://doi.org/10.5281/zenodo.8174931",
+            "archive": "https://web.archive.org/web/2025/https://doi.org/10.5281/zenodo.8174931"
+        }
+    },
+    "resources": [
+        {
+            "label": "east_asian_buildings",
+            "name": "doi:10.5281/zenodo.8174931",
+            "collection": {
+                "data_location": {
+                    "primary": "https://zenodo.org/records/8174931",
+                    "archive": "https://web.archive.org/web/2025/https://zenodo.org/records/8174931"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://zenodo.org/records/8174931",
+                        "archive": "https://web.archive.org/web/2025/https://zenodo.org/records/8174931"
+                    },
+                    "type": "CC-BY-4.0",
+                    "requires_attribution": true,
+                    "text": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "attribution": "Qian Shi, Jiajun Zhu, Zhengyu Liu, Haonan Guo, Mengxi Liu, Zihong Liu, & Xiaoping Liu. (2023). A first high-quality vector data of buildings in East Asian countries based on a comprehensive large-scale mapping framework [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8174931"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "CN"
+                        },
+                        {
+                            "iso_3166_1": "JP"
+                        },
+                        {
+                            "iso_3166_1": "KP"
+                        },
+                        {
+                            "iso_3166_1": "KR"
+                        },
+                        {
+                            "iso_3166_1": "MN"
+                        }
+                    ],
+                    "description": "National"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

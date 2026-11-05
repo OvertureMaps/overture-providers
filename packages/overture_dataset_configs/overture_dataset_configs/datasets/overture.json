@@ -1,0 +1,49 @@
+{
+    "provider": {
+        "label": "overture",
+        "name": "Overture",
+        "url": {
+            "primary": "https://overturemaps.org/",
+            "archive": ""
+        }
+    },
+    "resources": [
+        {
+            "label": "quality_model_labels",
+            "name": "Places Quality Model Training Labels",
+            "collection": {
+                "data_location": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://cdla.dev/permissive-2-0/",
+                        "archive": "https://web.archive.org/web/20250124093850/https://cdla.dev/permissive-2-0/"
+                    },
+                    "type": "CDLA-Permissive-2.0",
+                    "requires_attribution": true,
+                    "text": "The Contributor acknowledges that by submitting the Contributed Data: 1. The data will be made available under CDLA 2.0, allowing public use, modification, and redistribution. 2. OMF and its members may integrate, process, and distribute the Contributed Data as part of the Overture Maps dataset. 3. OMF may make modifications to the Contributed Data, including but not limited to data formatting, enrichment, and conflation with other datasets.",
+                    "attribution": "Overture"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": "Infrequent",
+                    "source": "places-quality-model's build_labeled_samples.py",
+                    "type": "manual"
+                },
+                "known_issues": "",
+                "notes": "First-party training labels produced by OMF's own labeling team for places-quality-model. Manually uploaded to overture-managed-source-data as datasets/provider=overture/resource=quality_model_labels/version=<date>/run=<timestamp>/ (a SourceRawBundle); no collect DAG. License terms confirmed by data-ops (Jeff Underwood, Stephen Epps) on 2026-08-25."
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

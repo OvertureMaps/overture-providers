@@ -1,0 +1,51 @@
+{
+    "provider": {
+        "label": "foursquare",
+        "name": "Foursquare",
+        "url": {
+            "primary": "https://www.foursquare.com/",
+            "archive": "https://web.archive.org/web/20250725084943/https://www.foursquare.com/"
+        }
+    },
+    "resources": [
+        {
+            "label": "foursquare",
+            "name": "Foursquare",
+            "collection": {
+                "data_location": {
+                    "primary": "https://huggingface.co/datasets/foursquare/fsq-os-places",
+                    "archive": "https://web.archive.org/web/2026/https://huggingface.co/datasets/foursquare/fsq-os-places"
+                },
+                "data_download": {
+                    "type": "hf",
+                    "url": "hf://datasets/foursquare/fsq-os-places/release/"
+                },
+                "license": {
+                    "url": {
+                        "primary": "https://opensource.foursquare.com/places-notice-txt/",
+                        "archive": "https://web.archive.org/web/20251118012312/https://opensource.foursquare.com/places-notice-txt/"
+                    },
+                    "type": "Apache-2.0",
+                    "requires_attribution": true,
+                    "text": "Copyright 2024 Foursquare Labs, Inc. All rights reserved. Available under Apache 2.0. Foursquare data was transformed to the Overture schema. Changed: 2026-03-18. [NOTICE.txt](https://opensource.foursquare.com/places-notice-txt/).",
+                    "attribution": "Foursquare OS Places"
+                },
+                "coverage": {
+                    "areas": [
+                        {
+                            "iso_3166_1": "GLOBAL"
+                        }
+                    ],
+                    "description": "Global"
+                },
+                "refresh_schedule": {
+                    "frequency": ""
+                },
+                "known_issues": "",
+                "notes": ""
+            },
+            "ingestion": {},
+            "matching": {}
+        }
+    ]
+}

@@ -1,14 +1,19 @@
 # Discover Packages
 #
 # Reusable workflow that finds the packages/ subdirectories touched by the
-# diff (tj-actions/changed-files). On workflow_dispatch, considers every
-# directory under packages/ instead. A directory only counts if it looks like
-# a real package (has both pyproject.toml and tests/).
+# diff (tj-actions/changed-files). On workflow_dispatch or with `all: true`,
+# considers every directory under packages/ instead. A directory only counts if
+# it looks like a real package (has both pyproject.toml and tests/).
 
 name: Discover Packages
 
 on:
   workflow_call:
+    inputs:
+      all:
+        description: Return every package, ignoring the diff.
+        type: boolean
+        default: false
     outputs:
       packages:
         description: JSON array of package directory names (relative to packages/) for this event.
@@ -33,7 +38,7 @@ jobs:
 
       - name: Find changed package directories
         id: changed-dirs
-        if: github.event_name != 'workflow_dispatch'
+        if: github.event_name != 'workflow_dispatch' && !inputs.all
         uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
         with:
           files: packages/**
@@ -48,6 +53,7 @@ jobs:
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
+          ALL_PACKAGES: ${{ inputs.all }}
         with:
           script: |
             const fs = require('fs');
@@ -58,7 +64,7 @@ jobs:
               fs.existsSync(path.join('packages', name, 'tests'));
 
             const candidates =
-              context.eventName === 'workflow_dispatch'
+              context.eventName === 'workflow_dispatch' || process.env.ALL_PACKAGES === 'true'
                 ? fs
                     .readdirSync('packages', { withFileTypes: true })
                     .filter((entry) => entry.isDirectory())
