@@ -1,4 +1,4 @@
-"""Semantic checks beyond the structural schema in overture-core."""
+"""Semantic checks beyond the structural schema in ``schema.py``."""
 
 import re
 from collections import Counter

@@ -29,7 +29,7 @@ load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 | `attribution` | Flattening configs into license entries and rendering them as Markdown or plain text. |
 | `spdx` | Fetching canonical SPDX license texts from a pinned `license-list-data` release. |
 
-These modules are ported from overture-core's `overture_core.dataset`, which keeps the `overture-datasets` CLI.
+For a command line, overture-core's `overture-datasets` CLI validates and renders these configs.
 
 ## Concepts
 
