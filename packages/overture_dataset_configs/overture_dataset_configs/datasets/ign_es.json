@@ -36,7 +36,7 @@
                     "description": "National"
                 },
                 "refresh_schedule": {
-                    "frequency": "Monthly"
+                    "frequency": "Infrequent"
                 },
                 "known_issues": "",
                 "notes": "Multiple data download urls."
