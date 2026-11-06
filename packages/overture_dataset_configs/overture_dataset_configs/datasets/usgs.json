@@ -17,6 +17,12 @@
                     "primary": "https://apps.nationalmap.gov/datasets/",
                     "archive": "https://web.archive.org/web/20250218043410/https://apps.nationalmap.gov/datasets/"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",

@@ -21,6 +21,12 @@
                     "type": "http",
                     "url": "https://nedlasting.geonorge.no/geonorge/Basisdata/MatrikkelenAdresseLeilighetsniva/CSV/"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "formats": ["csv"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55",

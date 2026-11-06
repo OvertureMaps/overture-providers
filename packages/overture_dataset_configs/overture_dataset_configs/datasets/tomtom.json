@@ -17,6 +17,13 @@
                     "primary": "",
                     "archive": ""
                 },
+                "delivery": {
+                    "method": "api",
+                    "direction": "pull",
+                    "auth": "api_key",
+                    "trigger": "scheduled",
+                    "formats": ["osm_pbf"]
+                },
                 "license": {
                     "url": {
                         "primary": "",

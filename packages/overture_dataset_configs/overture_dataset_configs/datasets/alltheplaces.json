@@ -21,6 +21,13 @@
                     "type": "http",
                     "url": "https://data.alltheplaces.xyz/runs/latest.json"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "scheduled",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -40,7 +47,7 @@
                     "description": "Global"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "Biweekly"
                 },
                 "known_issues": "",
                 "notes": "The data_download URL is the latest-run manifest; its output_url points to the current release archive. Overture ingests a subset of data provided by AllThePlaces."

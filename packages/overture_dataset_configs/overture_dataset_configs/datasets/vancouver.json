@@ -17,6 +17,13 @@
                     "primary": "https://opendata.vancouver.ca/pages/home/",
                     "archive": "https://web.archive.org/web/2025/https://opendata.vancouver.ca/pages/home/"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://opendata.vancouver.ca/pages/licence/",

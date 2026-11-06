@@ -17,6 +17,12 @@
                     "primary": "https://www.ncei.noaa.gov/maps/grid-extract/",
                     "archive": "https://web.archive.org/web/20250202222352/https://www.ncei.noaa.gov/maps/grid-extract/"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/DEM//iso/xml/etopo_2022.xml&view=getDataView&header=none",

@@ -13,9 +13,11 @@ pipelines:
 Dataset definitions are stored as JSON files named ``<provider_label>.json``
 under a datasets directory, by default the configs shipped in this package
 (``DATASETS_DIR``).  Each JSON file contains a
-``provider`` section, an optional ``themes`` list and a ``resources`` array.
+``provider`` section, optional ``themes`` and ``delivery`` defaults and a
+``resources`` array.
 Every resource entry carries its own ``collection``, ``ingestion``, and
-``matching`` sections, and may set ``themes`` to replace the file-level list.
+``matching`` sections, and may set ``themes`` (or ``collection.delivery``) to
+replace the file-level value.
 
 ``Dataset`` loads a file permissively for runtime use: missing sections
 default to ``{}``. See ``overture_dataset_configs.schema`` for a strict
@@ -36,6 +38,7 @@ Usage
     print(ds.dataset_id)       # "osm_planet"
     print(ds.provider_name)    # "OpenStreetMap"
     print(ds.themes)           # ["base", "buildings", "divisions", "transportation"]
+    print(ds.delivery)         # {"method": "bucket", "direction": "pull", ...}
 
     places = Dataset.for_theme("places")  # every resource feeding places
 """
@@ -67,6 +70,9 @@ class Dataset:
         Identifier derived from ``<provider_label>_<resource>``.
     dataset_themes : list[str] | None
         The file-level ``themes``, used when the resource sets none.
+    dataset_delivery : dict[str, Any] | None
+        The file-level ``delivery``, used when the resource's ``collection``
+        sets none.
     """
 
     def __init__(
@@ -75,11 +81,13 @@ class Dataset:
         resource_data: dict[str, Any],
         dataset_id: str,
         dataset_themes: list[str] | None = None,
+        dataset_delivery: dict[str, Any] | None = None,
     ) -> None:
         self._provider = provider_data
         self._resource_data = resource_data
         self._dataset_id = dataset_id
         self._dataset_themes = list(dataset_themes or [])
+        self._dataset_delivery = dict(dataset_delivery or {})
 
     # ------------------------------------------------------------------
     # Factory methods
@@ -169,6 +177,7 @@ class Dataset:
             resource_data,
             dataset_id=dataset_id,
             dataset_themes=data.get("themes"),
+            dataset_delivery=data.get("delivery"),
         )
 
     @staticmethod
@@ -240,6 +249,7 @@ class Dataset:
                 res,
                 dataset_id=f"{provider_data['label']}_{res['label']}",
                 dataset_themes=data.get("themes"),
+                dataset_delivery=data.get("delivery"),
             )
             for res in data.get("resources", [])
         ]
@@ -397,6 +407,17 @@ class Dataset:
     def refresh_schedule(self) -> dict[str, str]:
         """Refresh schedule from the collection section."""
         return self.collection.get("refresh_schedule", {})
+
+    @property
+    def delivery(self) -> dict[str, Any]:
+        """How raw data reaches Overture (method, direction, auth, trigger, formats).
+
+        The resource's ``collection.delivery`` if set, otherwise the
+        file-level ``delivery``, otherwise ``{}``. A resource's value replaces
+        the file-level one whole; fields are not merged.
+        """
+        delivery = self.collection.get("delivery")
+        return dict(self._dataset_delivery if delivery is None else delivery)
 
     @property
     def download_url(self) -> str:

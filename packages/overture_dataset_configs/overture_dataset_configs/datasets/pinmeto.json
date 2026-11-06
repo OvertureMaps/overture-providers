@@ -21,6 +21,13 @@
                     "type": "s3",
                     "url": "s3://omf-places-data-providers/pinmeto/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "push",
+                    "auth": "iam",
+                    "trigger": "scheduled",
+                    "formats": ["json"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",
@@ -40,7 +47,7 @@
                     "description": "Global"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "Biweekly"
                 },
                 "known_issues": "",
                 "notes": ""

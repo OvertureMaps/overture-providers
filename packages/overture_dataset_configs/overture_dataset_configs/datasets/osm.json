@@ -21,6 +21,12 @@
                     "type": "s3",
                     "url": "s3://osm-planet-us-west-2/planet/pbf/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "pull",
+                    "auth": "none",
+                    "formats": ["osm_pbf"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://www.openstreetmap.org/copyright",
@@ -59,6 +65,12 @@
                 "data_download": {
                     "type": "s3",
                     "url": "s3://osm-planet-us-west-2/planet-full-history/pbf/"
+                },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "pull",
+                    "auth": "none",
+                    "formats": ["osm_pbf"]
                 },
                 "license": {
                     "url": {
@@ -99,6 +111,13 @@
                 "data_download": {
                     "type": "http",
                     "url": "https://osmdata.openstreetmap.de/download/"
+                },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "scheduled",
+                    "formats": ["shapefile"]
                 },
                 "license": {
                     "url": {

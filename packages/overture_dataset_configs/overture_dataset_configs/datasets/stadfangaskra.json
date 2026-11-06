@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://hmsstgsftpprodweu001.blob.core.windows.net/fasteignaskra/Stadfangaskra.csv"
         },
+        "delivery": {
+          "method": "file_download",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["csv"]
+        },
         "license": {
           "url": {
             "primary": "https://opingogn.is/pages/notkunarleidbeiningar",

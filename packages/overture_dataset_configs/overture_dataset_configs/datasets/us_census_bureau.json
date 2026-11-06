@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://www2.census.gov/geo/tiger/TIGER2024/COUNTY/tl_2024_us_county.zip"
         },
+        "delivery": {
+          "method": "file_download",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["shapefile"]
+        },
         "license": {
           "url": {
             "primary": "https://www.census.gov/data/developers/about/terms-of-service.html",

@@ -21,6 +21,13 @@
                     "type": "http",
                     "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/buildings-coverage.geojson"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://github.com/microsoft/GlobalMLBuildingFootprints",
@@ -60,6 +67,13 @@
                 "data_download": {
                     "type": "http",
                     "url": "https://osmdatapublishsa.z13.web.core.windows.net/AdditionalNamesList.txt"
+                },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "scheduled",
+                    "formats": ["tsv"]
                 },
                 "license": {
                     "url": {
@@ -101,6 +115,13 @@
                     "type": "s3",
                     "url": "s3://omf-places-data-providers/microsoft/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "push",
+                    "auth": "iam",
+                    "trigger": "scheduled",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",
@@ -120,7 +141,7 @@
                     "description": "Global"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "Monthly"
                 },
                 "known_issues": "",
                 "notes": ""
