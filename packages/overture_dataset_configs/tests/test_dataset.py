@@ -408,3 +408,70 @@ class TestForTheme:
     )
     def test_packaged_resolution(self, provider, resource, themes):
         assert Dataset.from_name(provider, resource).themes == themes
+
+
+# ── delivery ─────────────────────────────────────────────────────────────────
+
+
+@pytest.fixture()
+def delivery_file(tmp_path):
+    """File-level delivery, with one resource overriding and one inheriting."""
+    data = {
+        "provider": {"label": "hooli", "name": "Hooli", "url": {}},
+        "delivery": {"method": "bucket", "direction": "pull", "auth": "iam"},
+        "resources": [
+            {"label": "inherits", "name": "Inherits", "collection": {}},
+            {
+                "label": "overrides",
+                "name": "Overrides",
+                "collection": {"delivery": {"trigger": "manual"}},
+            },
+        ],
+    }
+    p = tmp_path / "hooli.json"
+    p.write_text(json.dumps(data), encoding="utf-8")
+    return p
+
+
+class TestDelivery:
+    def test_inherits_file_level(self, delivery_file):
+        assert Dataset.from_file(delivery_file, resource="inherits").delivery == {
+            "method": "bucket",
+            "direction": "pull",
+            "auth": "iam",
+        }
+
+    def test_resource_replaces_file_level_whole(self, delivery_file):
+        assert Dataset.from_file(delivery_file, resource="overrides").delivery == {
+            "trigger": "manual"
+        }
+
+    def test_all_from_file_resolves_each_resource(self, delivery_file):
+        resolved = {
+            ds.resource_label: ds.delivery
+            for ds in Dataset.all_from_file(delivery_file)
+        }
+        assert resolved["inherits"]["method"] == "bucket"
+        assert resolved["overrides"] == {"trigger": "manual"}
+
+    def test_defaults_to_empty(self, single_resource_file):
+        assert Dataset.from_file(single_resource_file).delivery == {}
+
+    def test_returns_a_copy(self, delivery_file):
+        ds = Dataset.from_file(delivery_file, resource="inherits")
+        ds.delivery["auth"] = "none"
+        assert ds.delivery["auth"] == "iam"
+
+    @pytest.mark.parametrize(
+        "provider, resource, expected",
+        [
+            ("open_addresses", "at_countrywide", {"method": "bucket", "auth": "iam"}),
+            ("meta", "meta", {"direction": "pull", "formats": ["parquet"]}),
+            ("pinmeto", "pinmeto", {"direction": "push", "trigger": "scheduled"}),
+            ("osm", "coastlines", {"method": "file_download", "auth": "none"}),
+            ("tomtom", "orbis", {"auth": "api_key", "formats": ["osm_pbf"]}),
+        ],
+    )
+    def test_packaged_resolution(self, provider, resource, expected):
+        delivery = Dataset.from_name(provider, resource).delivery
+        assert {k: delivery[k] for k in expected} == expected

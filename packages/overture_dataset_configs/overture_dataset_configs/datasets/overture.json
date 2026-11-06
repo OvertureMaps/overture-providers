@@ -17,6 +17,9 @@
                     "primary": "",
                     "archive": ""
                 },
+                "delivery": {
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",

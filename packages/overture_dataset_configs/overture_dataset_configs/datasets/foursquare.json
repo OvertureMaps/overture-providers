@@ -21,6 +21,13 @@
                     "type": "hf",
                     "url": "hf://datasets/foursquare/fsq-os-places/release/"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "api_key",
+                    "trigger": "scheduled",
+                    "formats": ["parquet"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://opensource.foursquare.com/places-notice-txt/",

@@ -17,6 +17,9 @@
                     "primary": "",
                     "archive": ""
                 },
+                "delivery": {
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://creativecommons.org/licenses/by/4.0/",
@@ -56,6 +59,10 @@
                 "data_download": {
                     "type": "s3",
                     "url": "s3://overture-managed-source-data/datasets/provider=esri/resource=community_maps_divisions/"
+                },
+                "delivery": {
+                    "trigger": "manual",
+                    "formats": ["tsv", "parquet"]
                 },
                 "license": {
                     "url": {

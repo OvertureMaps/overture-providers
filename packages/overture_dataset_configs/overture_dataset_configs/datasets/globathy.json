@@ -17,6 +17,9 @@
                     "primary": "https://www.nature.com/articles/s41597-022-01132-9",
                     "archive": "https://web.archive.org/web/20221222105048/https://www.nature.com/articles/s41597-022-01132-9"
                 },
+                "delivery": {
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://gee-community-catalog.org/projects/globathy/#license",

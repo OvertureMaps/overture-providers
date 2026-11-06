@@ -21,6 +21,13 @@
                     "type": "http",
                     "url": "https://data.alltheplaces.xyz/runs/latest.json"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "scheduled",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://creativecommons.org/publicdomain/zero/1.0/",

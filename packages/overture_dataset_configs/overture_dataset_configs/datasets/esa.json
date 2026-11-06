@@ -17,6 +17,12 @@
                     "primary": "https://esa-worldcover.org/en/data-access",
                     "archive": "https://web.archive.org/web/20250214095946/https://esa-worldcover.org/en/data-access"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://esa-worldcover.org/en/data-access",

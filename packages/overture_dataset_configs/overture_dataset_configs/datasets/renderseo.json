@@ -21,6 +21,13 @@
                     "type": "s3",
                     "url": "s3://omf-places-data-providers/renderseo/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "push",
+                    "auth": "iam",
+                    "trigger": "scheduled",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",

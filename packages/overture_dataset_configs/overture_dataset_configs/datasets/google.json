@@ -17,6 +17,12 @@
                     "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",
                     "archive": "https://web.archive.org/web/2025/https://sites.research.google/gr/open-buildings/#open-buildings-download"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual"
+                },
                 "license": {
                     "url": {
                         "primary": "https://sites.research.google/gr/open-buildings/#open-buildings-download",

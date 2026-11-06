@@ -8,6 +8,13 @@
         }
     },
     "themes": ["divisions"],
+    "delivery": {
+        "method": "api",
+        "direction": "pull",
+        "auth": "none",
+        "trigger": "scheduled",
+        "formats": ["geojson"]
+    },
     "resources": [
         {
             "label": "ago_adm2",

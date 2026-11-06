@@ -21,6 +21,13 @@
                     "type": "s3",
                     "url": "s3://omf-places-data-providers/brightquery/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "push",
+                    "auth": "iam",
+                    "trigger": "scheduled",
+                    "formats": ["parquet"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",

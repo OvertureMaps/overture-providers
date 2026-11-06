@@ -8,6 +8,13 @@
     }
   },
   "themes": ["addresses"],
+  "delivery": {
+    "method": "bucket",
+    "direction": "pull",
+    "auth": "iam",
+    "trigger": "scheduled",
+    "formats": ["geojson"]
+  },
   "resources": [
     {
       "label": "at_countrywide",

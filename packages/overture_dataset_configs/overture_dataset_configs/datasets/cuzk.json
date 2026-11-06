@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://vdp.cuzk.gov.cz/vymenny_format/csv/{date}_OB_ADR_csv.zip"
         },
+        "delivery": {
+          "method": "file_download",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["csv"]
+        },
         "license": {
           "url": {
             "primary": "https://cuzk.gov.cz/Predpisy/Podminky-poskytovani-prostor-dat-a-sitovych-sluzeb/Podminky-poskytovani-prostorovych-dat-CUZK.aspx",

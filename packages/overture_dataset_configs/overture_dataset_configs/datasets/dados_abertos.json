@@ -8,6 +8,13 @@
         }
     },
     "themes": ["divisions"],
+    "delivery": {
+        "method": "file_download",
+        "direction": "pull",
+        "auth": "none",
+        "trigger": "scheduled",
+        "formats": ["geojson"]
+    },
     "resources": [
         {
             "label": "favelas",

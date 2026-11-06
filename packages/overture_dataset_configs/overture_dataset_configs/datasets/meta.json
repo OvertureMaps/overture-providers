@@ -21,6 +21,13 @@
                     "type": "s3",
                     "url": "s3://meta-overture-staging/hive_uploads/pd2_in_overture_format/"
                 },
+                "delivery": {
+                    "method": "bucket",
+                    "direction": "pull",
+                    "auth": "iam",
+                    "trigger": "scheduled",
+                    "formats": ["parquet"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://cdla.dev/permissive-2-0/",

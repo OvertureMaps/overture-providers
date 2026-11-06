@@ -8,6 +8,13 @@
     }
   },
   "themes": ["divisions"],
+  "delivery": {
+    "method": "api",
+    "direction": "pull",
+    "auth": "api_key",
+    "trigger": "scheduled",
+    "formats": ["csv"]
+  },
   "resources": [
     {
       "label": "linz_suburbs_and_localities",

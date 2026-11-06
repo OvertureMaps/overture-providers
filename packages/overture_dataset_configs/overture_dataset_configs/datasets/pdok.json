@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://service.pdok.nl/lv/bag/atom/downloads/bag-light.gpkg"
         },
+        "delivery": {
+          "method": "file_download",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["gpkg"]
+        },
         "license": {
           "url": {
             "primary": "https://creativecommons.org/publicdomain/zero/1.0/deed.nl",

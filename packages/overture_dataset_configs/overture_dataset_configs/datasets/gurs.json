@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://ipi.eprostor.gov.si/jgp-service-api/display-views/groups/121/composite-products/141/file?filterParam=DRZAVA&filterValue=1"
         },
+        "delivery": {
+          "method": "api",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["csv"]
+        },
         "license": {
           "url": {
             "primary": "https://www.e-prostor.gov.si/dostopi/javni-dostop/?acitem=1821-1822",

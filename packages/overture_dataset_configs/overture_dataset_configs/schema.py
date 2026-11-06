@@ -55,16 +55,43 @@ Theme = Literal[
 THEMES: tuple[str, ...] = get_args(Theme)
 
 
-def _unique_themes(themes: list[str]) -> list[str]:
-    dupes = sorted({t for t in themes if themes.count(t) > 1})
-    if dupes:
-        raise ValueError(f"duplicate themes: {dupes}")
-    return themes
+def _no_duplicates(kind: str):
+    def check(values: list[str]) -> list[str]:
+        dupes = sorted({v for v in values if values.count(v) > 1})
+        if dupes:
+            raise ValueError(f"duplicate {kind}: {dupes}")
+        return values
+
+    return check
 
 
 # Overture themes a dataset feeds. Set on the file to cover every resource;
 # a resource's own value replaces the file-level one for that resource.
-Themes = Annotated[list[Theme], Field(min_length=1), AfterValidator(_unique_themes)]
+Themes = Annotated[
+    list[Theme], Field(min_length=1), AfterValidator(_no_duplicates("themes"))
+]
+
+# How raw data reaches Overture. See `Delivery`.
+DeliveryMethod = Literal["api", "bucket", "file_download"]
+DeliveryDirection = Literal["pull", "push"]
+DeliveryAuth = Literal["none", "iam", "api_key"]
+DeliveryTrigger = Literal["scheduled", "manual"]
+DataFormat = Literal[
+    "csv",
+    "geojson",
+    "gpkg",
+    "json",
+    "osm_pbf",
+    "parquet",
+    "shapefile",
+    "tsv",
+    "xlsx",
+]
+DELIVERY_METHODS: tuple[str, ...] = get_args(DeliveryMethod)
+DELIVERY_DIRECTIONS: tuple[str, ...] = get_args(DeliveryDirection)
+DELIVERY_AUTHS: tuple[str, ...] = get_args(DeliveryAuth)
+DELIVERY_TRIGGERS: tuple[str, ...] = get_args(DeliveryTrigger)
+DATA_FORMATS: tuple[str, ...] = get_args(DataFormat)
 
 
 class _StrictModel(BaseModel):
@@ -170,9 +197,53 @@ class DataDownload(_StrictModel):
         return self
 
 
+class Delivery(_StrictModel):
+    """How raw data reaches Overture: the omf_staff#52 ingest catalog fields.
+
+    Purely descriptive; nothing in the pipeline reads it. Every field is
+    optional so unknown values stay unset rather than guessed, but an empty
+    object is rejected. The endpoint lives in `data_download` / `api`, and
+    the source's update cadence in `refresh_schedule.frequency`.
+
+    - `method`: `api` (we call a service to query or export the data, or to
+      get a short-lived download link), `bucket` (an S3 object copy or read),
+      or `file_download` (a static file over HTTP or from Hugging Face).
+    - `direction`: `pull` (we fetch from the provider) or `push` (the
+      provider drops data into our bucket).
+    - `auth`: what our side needs to get the data: `none`, `iam` (AWS
+      credentials, e.g. a cross-account bucket policy or requester-pays),
+      or `api_key` (an API key or access token).
+    - `trigger`: what starts collecting a new version: `scheduled` (an
+      Airflow schedule fetches or checks for new data) or `manual` (a
+      person must run something or download or upload files).
+    - `formats`: file formats of the raw data as delivered, ignoring
+      compression and ZIP archives.
+    """
+
+    method: DeliveryMethod | None = None
+    direction: DeliveryDirection | None = None
+    auth: DeliveryAuth | None = None
+    trigger: DeliveryTrigger | None = None
+    formats: (
+        Annotated[
+            list[DataFormat],
+            Field(min_length=1),
+            AfterValidator(_no_duplicates("formats")),
+        ]
+        | None
+    ) = None
+
+    @model_validator(mode="after")
+    def _not_empty(self) -> Delivery:
+        if all(getattr(self, name) is None for name in type(self).model_fields):
+            raise ValueError("delivery must set at least one field")
+        return self
+
+
 class Collection(_StrictModel):
     data_location: UrlPair
     data_download: DataDownload | None = None
+    delivery: Delivery | None = None
     license: License | None
     coverage: Coverage
     refresh_schedule: RefreshSchedule | None = None
@@ -195,6 +266,9 @@ class Resource(_StrictModel):
 class DatasetFile(_StrictModel):
     provider: Provider
     themes: Themes | None = None
+    # Default for resources whose `collection` sets no `delivery`; a
+    # resource's own value replaces it whole, without merging fields.
+    delivery: Delivery | None = None
     resources: Annotated[list[Resource], Field(min_length=1)]
 
     @model_validator(mode="after")

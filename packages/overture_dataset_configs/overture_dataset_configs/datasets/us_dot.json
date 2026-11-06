@@ -17,6 +17,13 @@
                     "primary": "https://geo.dot.gov/server/rest/services/Hosted",
                     "archive": "https://web.archive.org/web/2025/https://geo.dot.gov/server/rest/services/Hosted"
                 },
+                "delivery": {
+                    "method": "api",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual",
+                    "formats": ["geojson"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://www.fhwa.dot.gov/policyinformation/hpms.cfm",
@@ -56,6 +63,13 @@
                 "data_download": {
                     "type": "http",
                     "url": "https://data.transportation.gov/download/fc2s-wawr/application%2Fx-zip-compressed"
+                },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "scheduled",
+                    "formats": ["csv"]
                 },
                 "license": {
                     "url": {

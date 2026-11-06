@@ -18,6 +18,7 @@ load_config("linz")  # raw dict from overture_dataset_configs/datasets/linz.json
 ds = Dataset.from_name("osm", "planet")  # packaged configs by default
 ds.dataset_id, ds.license_type, ds.download_url
 ds.themes  # ["base", "buildings", "divisions", "transportation"]
+ds.delivery  # {"method": "bucket", "direction": "pull", "auth": "none", ...}
 Dataset.for_theme("places")  # every packaged resource that feeds places
 
 load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
@@ -61,9 +62,36 @@ Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMa
 
 Here `footprints` feeds `buildings` and `roads` feeds only `transportation`. `Dataset.themes` returns this resolved list, or `[]` if neither level sets it, and `Dataset.for_theme()` loads every resource that feeds a theme.
 
+### Delivery
+
+`collection.delivery` records how a dataset's raw data reaches Overture. It is descriptive only; the pipeline still collects from `data_download` and `api`. Every field is optional, so leave a value out rather than guess, but the object can't be empty.
+
+| Field | Values | Meaning |
+| --- | --- | --- |
+| `method` | `api`, `bucket`, `file_download` | `api`: we call a service to query or export the data, or to get a short-lived download link. `bucket`: an S3 object copy or read. `file_download`: a static file over HTTP or from Hugging Face. |
+| `direction` | `pull`, `push` | `pull`: we fetch from the provider. `push`: the provider drops data into our bucket. |
+| `auth` | `none`, `iam`, `api_key` | What our side needs to get the data. `iam` covers AWS credentials, such as a cross-account bucket policy or a requester-pays bucket. `api_key` covers API keys and access tokens. Never put secret names or values here. |
+| `trigger` | `scheduled`, `manual` | `scheduled`: an Airflow schedule fetches or checks for new data. `manual`: a person runs a DAG or downloads or uploads the files. |
+| `formats` | `csv`, `geojson`, `gpkg`, `json`, `osm_pbf`, `parquet`, `shapefile`, `tsv`, `xlsx` | File formats of the raw data as delivered, ignoring compression and ZIP archives. `json` and `geojson` cover one document per file or one record per line. |
+
+```json
+"delivery": {
+    "method": "bucket",
+    "direction": "push",
+    "auth": "iam",
+    "trigger": "scheduled",
+    "formats": ["parquet"]
+}
+```
+
+Like `themes`, `delivery` can also be set at the top of a file as the default for every resource whose `collection` sets none. A resource's value replaces the file-level one whole; fields aren't merged. `Dataset.delivery` returns the resolved object, or `{}` if neither level sets it.
+
+These fields, with the endpoint in `data_download` (`url` and `endpoint`) or `api.url` and the provider's update cadence in `refresh_schedule.frequency`, cover the ingest catalog fields in [omf_staff#52](https://github.com/OvertureMaps/omf_staff/issues/52).
+
 ## Contributing
 
 1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
 2. A new field needs a matching change to `schema.py` in the same PR.
 3. Provider and resource labels feed dataset IDs and S3 paths, so don't rename them.
 4. Set `themes` on new datasets. The tests fail for a resource with no themes unless it is listed in `UNTAGGED` in `tests/test_configs.py`.
+5. Set the `delivery` fields you can verify against the provider or the collecting DAG, and leave the rest out.

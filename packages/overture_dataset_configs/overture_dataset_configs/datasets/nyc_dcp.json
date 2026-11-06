@@ -21,6 +21,13 @@
           "type": "http",
           "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/borough-boundaries/nybbwi_25a.zip"
         },
+        "delivery": {
+          "method": "file_download",
+          "direction": "pull",
+          "auth": "none",
+          "trigger": "scheduled",
+          "formats": ["shapefile"]
+        },
         "license": {
           "url": {
             "primary": "https://www.nyc.gov/home/terms-of-use.page",

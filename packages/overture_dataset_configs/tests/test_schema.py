@@ -12,8 +12,14 @@ import json
 import pytest
 
 from overture_dataset_configs.schema import (
+    DATA_FORMATS,
+    DELIVERY_AUTHS,
+    DELIVERY_DIRECTIONS,
+    DELIVERY_METHODS,
+    DELIVERY_TRIGGERS,
     THEMES,
     DataDownload,
+    Delivery,
     main,
     validate_all,
     validate_file,
@@ -38,6 +44,13 @@ def _valid_doc() -> dict:
                         "type": "http",
                         "url": "https://example.com/data.zip",
                         "endpoint": "",
+                    },
+                    "delivery": {
+                        "method": "file_download",
+                        "direction": "pull",
+                        "auth": "none",
+                        "trigger": "scheduled",
+                        "formats": ["csv", "geojson"],
                     },
                     "license": {
                         "url": {"primary": "", "archive": ""},
@@ -279,6 +292,62 @@ INVALID_CASES = [
         r"resources\.0\.themes",
         id="resource-themes-empty",
     ),
+    # delivery, at resource and file level
+    pytest.param(
+        _col("delivery", "method", "ftp"), r"delivery\.method", id="delivery-method"
+    ),
+    pytest.param(
+        _col("delivery", "direction", "both"),
+        r"delivery\.direction",
+        id="delivery-direction",
+    ),
+    pytest.param(
+        _col("delivery", "auth", "partnership"), r"delivery\.auth", id="delivery-auth"
+    ),
+    pytest.param(
+        _col("delivery", "trigger", "data_arrival"),
+        r"delivery\.trigger",
+        id="delivery-trigger",
+    ),
+    pytest.param(
+        _col("delivery", "formats", ["CSV"]),
+        r"delivery\.formats\.0",
+        id="delivery-format-wrong-case",
+    ),
+    pytest.param(
+        _col("delivery", "formats", ["csv", "csv"]),
+        r"duplicate formats: \['csv'\]",
+        id="delivery-formats-duplicate",
+    ),
+    pytest.param(
+        _col("delivery", "formats", []),
+        r"delivery\.formats",
+        id="delivery-formats-empty",
+    ),
+    pytest.param(
+        _col("delivery", "formats", "csv"),
+        r"delivery\.formats",
+        id="delivery-formats-not-a-list",
+    ),
+    pytest.param(
+        _col("delivery", "endpoint", "https://example.com/"),
+        r"delivery\.endpoint",
+        id="delivery-unknown-key",
+    ),
+    pytest.param(
+        _col("delivery", {}),
+        "delivery must set at least one field",
+        id="delivery-empty",
+    ),
+    pytest.param(
+        _col("delivery", {"method": None}),
+        "delivery must set at least one field",
+        id="delivery-all-null",
+    ),
+    pytest.param(_set("delivery", {}), "delivery must set", id="file-delivery-empty"),
+    pytest.param(
+        _set("delivery", {"auth": "login"}), r"delivery\.auth", id="file-delivery-auth"
+    ),
 ]
 
 
@@ -335,6 +404,63 @@ def test_accepts_themes(tmp_path, file_themes, resource_themes):
 def test_rejects_data_download_scheme_mismatch_direct():
     with pytest.raises(ValueError, match="url scheme does not match type"):
         DataDownload(type="s3", url="https://example.com/data.zip")
+
+
+def test_delivery_optional_at_both_levels(tmp_path):
+    doc = _valid_doc()
+    del doc["resources"][0]["collection"]["delivery"]
+    parsed = validate_file(_write(tmp_path, doc))
+    assert parsed.delivery is None
+    assert parsed.resources[0].collection.delivery is None
+
+
+@pytest.mark.parametrize(
+    "fields",
+    [
+        pytest.param({"trigger": "manual"}, id="single-field"),
+        pytest.param(
+            {
+                "method": "bucket",
+                "direction": "push",
+                "auth": "iam",
+                "trigger": "scheduled",
+                "formats": ["parquet"],
+            },
+            id="every-field",
+        ),
+    ],
+)
+def test_accepts_delivery_at_both_levels(tmp_path, fields):
+    doc = _valid_doc()
+    doc["delivery"] = fields
+    doc["resources"][0]["collection"]["delivery"] = fields
+    parsed = validate_file(_write(tmp_path, doc))
+    assert parsed.delivery.model_dump(exclude_none=True) == fields
+    assert parsed.resources[0].collection.delivery == Delivery(**fields)
+
+
+@pytest.mark.parametrize(
+    "field, values",
+    [
+        ("method", DELIVERY_METHODS),
+        ("direction", DELIVERY_DIRECTIONS),
+        ("auth", DELIVERY_AUTHS),
+        ("trigger", DELIVERY_TRIGGERS),
+    ],
+)
+def test_accepts_every_delivery_value(field, values):
+    for value in values:
+        assert getattr(Delivery(**{field: value}), field) == value
+
+
+def test_accepts_every_format():
+    assert Delivery(formats=list(DATA_FORMATS)).formats == list(DATA_FORMATS)
+
+
+def test_delivery_unset_fields_default_to_none():
+    delivery = Delivery(trigger="manual")
+    assert (delivery.method, delivery.direction, delivery.auth) == (None, None, None)
+    assert delivery.formats is None
 
 
 def test_accepts_s3_region():

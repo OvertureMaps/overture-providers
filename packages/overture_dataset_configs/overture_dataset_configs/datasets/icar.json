@@ -21,6 +21,12 @@
                     "type": "http",
                     "url": "https://opendata.bosa.be/download/best/openaddress-bewal.zip"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "formats": ["csv"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://opendata.bosa.be/index.fr.html",

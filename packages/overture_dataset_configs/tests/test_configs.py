@@ -66,3 +66,23 @@ def test_every_resource_resolves_to_a_theme():
         if not ds.themes
     }
     assert untagged == UNTAGGED
+
+
+# The delivery.method values consistent with each data_download.type.
+METHODS_BY_DOWNLOAD_TYPE = {
+    "s3": {"bucket"},
+    "http": {"api", "file_download"},
+    "hf": {"file_download"},
+}
+
+
+def test_delivery_method_matches_data_download():
+    mismatched = []
+    for path in FILES:
+        for ds in Dataset.all_from_file(path):
+            method = ds.delivery.get("method")
+            download = ds.collection.get("data_download")
+            if method and download:
+                if method not in METHODS_BY_DOWNLOAD_TYPE[download["type"]]:
+                    mismatched.append((ds.dataset_id, download["type"], method))
+    assert mismatched == []

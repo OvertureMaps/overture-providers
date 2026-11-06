@@ -17,6 +17,13 @@
                     "primary": "https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias",
                     "archive": "https://web.archive.org/web/2025/https://centrodedescargas.cnig.es/CentroDescargas/btn#licencias"
                 },
+                "delivery": {
+                    "method": "file_download",
+                    "direction": "pull",
+                    "auth": "none",
+                    "trigger": "manual",
+                    "formats": ["shapefile"]
+                },
                 "license": {
                     "url": {
                         "primary": "https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf",
