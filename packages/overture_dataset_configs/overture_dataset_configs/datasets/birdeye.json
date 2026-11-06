@@ -47,7 +47,7 @@
                     "description": "Global"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "Infrequent"
                 },
                 "known_issues": "",
                 "notes": ""

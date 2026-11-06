@@ -71,6 +71,20 @@ Themes = Annotated[
     list[Theme], Field(min_length=1), AfterValidator(_no_duplicates("themes"))
 ]
 
+# How often the source publishes new data. "Biweekly" means every two weeks.
+Frequency = Literal[
+    "",
+    "None",
+    "Daily",
+    "Weekly",
+    "Biweekly",
+    "Monthly",
+    "Semi-annually",
+    "Annually",
+    "Infrequent",
+]
+FREQUENCIES: tuple[str, ...] = get_args(Frequency)
+
 # How raw data reaches Overture. See `Delivery`.
 DeliveryMethod = Literal["api", "bucket", "file_download"]
 DeliveryDirection = Literal["pull", "push"]
@@ -138,16 +152,7 @@ class Coverage(_StrictModel):
 
 
 class RefreshSchedule(_StrictModel):
-    frequency: Literal[
-        "",
-        "None",
-        "Daily",
-        "Weekly",
-        "Monthly",
-        "Semi-annually",
-        "Annually",
-        "Infrequent",
-    ]
+    frequency: Frequency
     source: str | None = None
     type: Literal["continuous", "manual"] | None = None
     month: list[Month] | None = None

@@ -141,7 +141,7 @@
                     "description": "Global"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "Monthly"
                 },
                 "known_issues": "",
                 "notes": ""

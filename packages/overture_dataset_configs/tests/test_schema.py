@@ -17,9 +17,11 @@ from overture_dataset_configs.schema import (
     DELIVERY_DIRECTIONS,
     DELIVERY_METHODS,
     DELIVERY_TRIGGERS,
+    FREQUENCIES,
     THEMES,
     DataDownload,
     Delivery,
+    RefreshSchedule,
     main,
     validate_all,
     validate_file,
@@ -222,6 +224,16 @@ INVALID_CASES = [
     ),
     pytest.param(
         _col("refresh_schedule", "frequency", 5), "frequency", id="frequency-wrong-type"
+    ),
+    pytest.param(
+        _col("refresh_schedule", "frequency", "biweekly"),
+        "frequency",
+        id="frequency-wrong-case",
+    ),
+    pytest.param(
+        _col("refresh_schedule", "frequency", "Bi-weekly"),
+        "frequency",
+        id="frequency-hyphenated-biweekly",
     ),
     pytest.param(
         _col("refresh_schedule", "type", "automatic"),
@@ -455,6 +467,11 @@ def test_accepts_every_delivery_value(field, values):
 
 def test_accepts_every_format():
     assert Delivery(formats=list(DATA_FORMATS)).formats == list(DATA_FORMATS)
+
+
+@pytest.mark.parametrize("frequency", FREQUENCIES)
+def test_accepts_every_frequency(frequency):
+    assert RefreshSchedule(frequency=frequency).frequency == frequency
 
 
 def test_delivery_unset_fields_default_to_none():

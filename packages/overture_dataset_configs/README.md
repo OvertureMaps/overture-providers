@@ -86,7 +86,7 @@ Here `footprints` feeds `buildings` and `roads` feeds only `transportation`. `Da
 
 Like `themes`, `delivery` can also be set at the top of a file as the default for every resource whose `collection` sets none. A resource's value replaces the file-level one whole; fields aren't merged. `Dataset.delivery` returns the resolved object, or `{}` if neither level sets it.
 
-These fields, with the endpoint in `data_download` (`url` and `endpoint`) or `api.url` and the provider's update cadence in `refresh_schedule.frequency`, cover the ingest catalog fields in [omf_staff#52](https://github.com/OvertureMaps/omf_staff/issues/52).
+These fields, with the endpoint in `data_download` (`url` and `endpoint`) or `api.url` and the provider's update cadence in `refresh_schedule.frequency`, cover the ingest catalog fields in [omf_staff#52](https://github.com/OvertureMaps/omf_staff/issues/52). The allowed cadences are listed in `FREQUENCIES` in `schema.py`; `Biweekly` means every two weeks.
 
 ## Contributing
 
