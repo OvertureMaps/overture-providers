@@ -13,8 +13,9 @@ pipelines:
 Dataset definitions are stored as JSON files named ``<provider_label>.json``
 under a datasets directory, by default the configs shipped in this package
 (``DATASETS_DIR``).  Each JSON file contains a
-``provider`` section and a ``resources`` array.  Every resource entry
-carries its own ``collection``, ``ingestion``, and ``matching`` sections.
+``provider`` section, an optional ``themes`` list and a ``resources`` array.
+Every resource entry carries its own ``collection``, ``ingestion``, and
+``matching`` sections, and may set ``themes`` to replace the file-level list.
 
 ``Dataset`` loads a file permissively for runtime use: missing sections
 default to ``{}``. See ``overture_dataset_configs.schema`` for a strict
@@ -34,6 +35,9 @@ Usage
 
     print(ds.dataset_id)       # "osm_planet"
     print(ds.provider_name)    # "OpenStreetMap"
+    print(ds.themes)           # ["base", "buildings", "divisions", "transportation"]
+
+    places = Dataset.for_theme("places")  # every resource feeding places
 """
 
 from __future__ import annotations
@@ -42,6 +46,8 @@ import json
 import logging
 from pathlib import Path
 from typing import Any
+
+from overture_dataset_configs.schema import THEMES
 
 log = logging.getLogger(__name__)
 
@@ -59,6 +65,8 @@ class Dataset:
         The matched entry from the ``resources`` array.
     dataset_id : str
         Identifier derived from ``<provider_label>_<resource>``.
+    dataset_themes : list[str] | None
+        The file-level ``themes``, used when the resource sets none.
     """
 
     def __init__(
@@ -66,10 +74,12 @@ class Dataset:
         provider_data: dict[str, Any],
         resource_data: dict[str, Any],
         dataset_id: str,
+        dataset_themes: list[str] | None = None,
     ) -> None:
         self._provider = provider_data
         self._resource_data = resource_data
         self._dataset_id = dataset_id
+        self._dataset_themes = list(dataset_themes or [])
 
     # ------------------------------------------------------------------
     # Factory methods
@@ -154,7 +164,12 @@ class Dataset:
         resource_data = cls._resolve_resource(resources, resource, path)
         dataset_id = f"{provider_data['label']}_{resource_data['label']}"
         log.info("Loaded dataset '%s' from %s", dataset_id, path)
-        return cls(provider_data, resource_data, dataset_id=dataset_id)
+        return cls(
+            provider_data,
+            resource_data,
+            dataset_id=dataset_id,
+            dataset_themes=data.get("themes"),
+        )
 
     @staticmethod
     def _resolve_resource(
@@ -224,8 +239,46 @@ class Dataset:
                 provider_data,
                 res,
                 dataset_id=f"{provider_data['label']}_{res['label']}",
+                dataset_themes=data.get("themes"),
             )
             for res in data.get("resources", [])
+        ]
+
+    @classmethod
+    def for_theme(
+        cls, theme: str, datasets_dir: str | Path | None = None
+    ) -> list[Dataset]:
+        """Load every resource dataset that feeds *theme*.
+
+        Scans all ``*.json`` provider files in *datasets_dir* and keeps the
+        resources whose resolved ``themes`` include *theme*.
+
+        Parameters
+        ----------
+        theme : str
+            Overture theme, e.g. ``"places"``. See ``schema.THEMES``.
+        datasets_dir : str | Path | None
+            Directory containing the provider JSON files. Defaults to
+            ``DATASETS_DIR``.
+
+        Returns
+        -------
+        list[Dataset]
+            Sorted by provider file name, then by resource order in the file.
+
+        Raises
+        ------
+        ValueError
+            If *theme* is not a known Overture theme.
+        """
+        if theme not in THEMES:
+            raise ValueError(f"Unknown theme '{theme}'. Expected one of: {THEMES}")
+        directory = Path(datasets_dir or DATASETS_DIR)
+        return [
+            ds
+            for path in sorted(directory.glob("*.json"))
+            for ds in cls.all_from_file(path)
+            if theme in ds.themes
         ]
 
     # ------------------------------------------------------------------
@@ -271,6 +324,16 @@ class Dataset:
     def resource_name(self) -> str:
         """Human-readable resource name (e.g. ``"Microsoft ML Buildings"``)."""
         return self._resource_data["name"]
+
+    @property
+    def themes(self) -> list[str]:
+        """Overture themes this dataset feeds (e.g. ``["buildings"]``).
+
+        The resource's own ``themes`` if set, otherwise the file-level
+        ``themes``, otherwise ``[]``.
+        """
+        themes = self._resource_data.get("themes")
+        return list(self._dataset_themes if themes is None else themes)
 
     # ------------------------------------------------------------------
     # Pipeline section accessors

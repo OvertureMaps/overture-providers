@@ -11,6 +11,7 @@
         {
             "label": "hpms",
             "name": "Highway Performance Monitoring System",
+            "themes": ["transportation"],
             "collection": {
                 "data_location": {
                     "primary": "https://geo.dot.gov/server/rest/services/Hosted",
@@ -46,6 +47,7 @@
         {
             "label": "nad",
             "name": "National Address Database",
+            "themes": ["addresses"],
             "collection": {
                 "data_location": {
                     "primary": "https://www.transportation.gov/gis/national-address-database",

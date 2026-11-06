@@ -7,6 +7,7 @@
             "archive": "https://web.archive.org/web/2025/https://www.ign.es/web/ign/portal"
         }
     },
+    "themes": ["buildings"],
     "resources": [
         {
             "label": "instituto_geografico_nacional_espana",
@@ -35,7 +36,7 @@
                     "description": "National"
                 },
                 "refresh_schedule": {
-                    "frequency": "Monthly"
+                    "frequency": "Infrequent"
                 },
                 "known_issues": "",
                 "notes": "Multiple data download urls."

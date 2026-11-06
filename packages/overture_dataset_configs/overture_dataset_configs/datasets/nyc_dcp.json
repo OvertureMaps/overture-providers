@@ -7,6 +7,7 @@
       "archive": "https://web.archive.org/web/2025/https://www.nyc.gov/site/planning/index.page"
     }
   },
+  "themes": ["addresses"],
   "resources": [
     {
       "label": "nyc_borough_boundaries",

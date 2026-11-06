@@ -7,6 +7,7 @@
             "archive": "https://web.archive.org/web/20250225184235/https://www.usgs.gov/3d-elevation-program"
         }
     },
+    "themes": ["buildings"],
     "resources": [
         {
             "label": "lidar",
@@ -35,7 +36,7 @@
                     "description": "National"
                 },
                 "refresh_schedule": {
-                    "frequency": ""
+                    "frequency": "None"
                 },
                 "known_issues": "",
                 "notes": ""

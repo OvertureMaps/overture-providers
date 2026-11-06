@@ -11,6 +11,7 @@
         {
             "label": "community_maps_buildings",
             "name": "Esri Community Maps",
+            "themes": ["buildings"],
             "collection": {
                 "data_location": {
                     "primary": "",
@@ -46,6 +47,7 @@
         {
             "label": "community_maps_divisions",
             "name": "Esri Community Maps",
+            "themes": ["divisions"],
             "collection": {
                 "data_location": {
                     "primary": "",

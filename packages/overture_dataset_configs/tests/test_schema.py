@@ -12,6 +12,7 @@ import json
 import pytest
 
 from overture_dataset_configs.schema import (
+    THEMES,
     DataDownload,
     main,
     validate_all,
@@ -253,6 +254,31 @@ INVALID_CASES = [
     pytest.param(_col("api", "https://example.com/api"), "api", id="api-wrong-type"),
     pytest.param(_col("extras", {"key": 1}), "extras", id="extras-non-string-value"),
     pytest.param(_col("notes", 1), "notes", id="notes-wrong-type"),
+    # themes, at file and resource level
+    pytest.param(_set("themes", ["roads"]), r"themes\.0", id="themes-unknown-value"),
+    pytest.param(_set("themes", ["Places"]), r"themes\.0", id="themes-wrong-case"),
+    pytest.param(
+        _set("themes", ["places", "base", "places"]),
+        r"duplicate themes: \['places'\]",
+        id="themes-duplicate",
+    ),
+    pytest.param(_set("themes", []), "themes", id="themes-empty"),
+    pytest.param(_set("themes", "places"), "themes", id="themes-not-a-list"),
+    pytest.param(
+        _set("resources", 0, "themes", ["roads"]),
+        r"resources\.0\.themes\.0",
+        id="resource-themes-unknown-value",
+    ),
+    pytest.param(
+        _set("resources", 0, "themes", ["base", "base"]),
+        "duplicate themes",
+        id="resource-themes-duplicate",
+    ),
+    pytest.param(
+        _set("resources", 0, "themes", []),
+        r"resources\.0\.themes",
+        id="resource-themes-empty",
+    ),
 ]
 
 
@@ -278,6 +304,32 @@ def test_accepts_license_without_type(tmp_path, mutate):
     doc = _valid_doc()
     mutate(doc)
     validate_file(_write(tmp_path, doc))
+
+
+def test_themes_optional_at_both_levels(tmp_path):
+    parsed = validate_file(_write(tmp_path, _valid_doc()))
+    assert parsed.themes is None
+    assert parsed.resources[0].themes is None
+
+
+@pytest.mark.parametrize(
+    "file_themes, resource_themes",
+    [
+        pytest.param(["buildings"], None, id="file-only"),
+        pytest.param(None, ["places", "divisions"], id="resource-only"),
+        pytest.param(["buildings"], ["base", "transportation"], id="both-levels"),
+        pytest.param(list(THEMES), list(THEMES), id="every-theme"),
+    ],
+)
+def test_accepts_themes(tmp_path, file_themes, resource_themes):
+    doc = _valid_doc()
+    if file_themes is not None:
+        doc["themes"] = file_themes
+    if resource_themes is not None:
+        doc["resources"][0]["themes"] = resource_themes
+    parsed = validate_file(_write(tmp_path, doc))
+    assert parsed.themes == file_themes
+    assert parsed.resources[0].themes == resource_themes
 
 
 def test_rejects_data_download_scheme_mismatch_direct():
