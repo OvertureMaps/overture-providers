@@ -300,8 +300,8 @@
                 "oa_path": [
                     "dk/countrywide-addresses-country.geojson"
                 ],
-                "data_layer_name": "adresser.csv",
-                "file_format": "csv",
+                "data_layer_name": "N/A",
+                "file_format": "json",
                 "address_levels": [
                     "region",
                     "city"
@@ -871,8 +871,8 @@
                 "oa_path": [
                     "lu/countrywide-addresses-country.geojson"
                 ],
-                "data_layer_name": "addresses.geojson",
-                "file_format": "GeoJSON",
+                "data_layer_name": "addresses.shp",
+                "file_format": "shapefile",
                 "address_levels": [
                     "city"
                 ]
@@ -1147,8 +1147,8 @@
                     "archive": "https://web.archive.org/web/2025/https://www.admin.ch/"
                 },
                 "data_location": {
-                    "primary": "https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register",
-                    "archive": "https://web.archive.org/web/20231002085755/https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register"
+                    "primary": "https://www.swisstopo.admin.ch/de/amtliches-verzeichnis-der-gebaeudeadressen",
+                    "archive": "https://web.archive.org/web/2026/https://www.swisstopo.admin.ch/de/amtliches-verzeichnis-der-gebaeudeadressen"
                 },
                 "data_download": [
                     "https://data.geo.admin.ch/ch.swisstopo.amtliches-gebaeudeadressverzeichnis/amtliches-gebaeudeadressverzeichnis_ch/amtliches-gebaeudeadressverzeichnis_ch_2056.csv.zip"
@@ -1156,13 +1156,13 @@
             },
             "license": {
                 "url": {
-                    "primary": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-66999.html",
-                    "archive": "https://web.archive.org/web/20240911054010/https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-66999.html"
+                    "primary": "https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste",
+                    "archive": "https://web.archive.org/web/2026/https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste"
                 },
                 "type": "",
-                "requires_attribution": false,
-                "text": "The Federal Council has also decided that certain GWR data will be made public (open data) unless it concerns personal data. Data protection is guaranteed.",
-                "attribution": "N/A"
+                "requires_attribution": true,
+                "text": "Die kostenlosen Geodaten und Geodienste von swisstopo dürfen genutzt, verbreitet und zugänglich gemacht werden. Weiter dürfen sie angereichert, bearbeitet sowie auch kommerziell genutzt werden.",
+                "attribution": "Bundesamt für Landestopografie swisstopo"
             },
             "coverage": {
                 "areas": [
@@ -1182,7 +1182,7 @@
                 "oa_path": [
                     "ch/countrywide-addresses-country.geojson"
                 ],
-                "data_layer_name": "CH.zip",
+                "data_layer_name": "amtliches-gebaeudeadressverzeichnis_ch_2056.csv",
                 "file_format": "csv",
                 "address_levels": [
                     "city"
@@ -1833,7 +1833,7 @@
                 },
                 "data_location": {
                     "primary": "https://geodaten.schleswig-holstein.de/gaialight-sh/_apps/dladownload/dl-hk_alkis.html",
-                    "archive": "https://web.archive.org/web/20250225163631/https://geodaten.schleswig-holstein.de/gaialight-sh/_apps/dladownload/dl-hk_alkis.htmle"
+                    "archive": "https://web.archive.org/web/20250225163631/https://geodaten.schleswig-holstein.de/gaialight-sh/_apps/dladownload/dl-hk_alkis.html"
                 },
                 "data_download": [
                     "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-08-04-kzl3h/adressen-sh.txt.zip"
@@ -3084,8 +3084,8 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.lv/"
                 },
                 "data_location": {
-                    "primary": "https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45",
-                    "archive": "https://web.archive.org/web/2025/https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45"
+                    "primary": "https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati",
+                    "archive": "https://web.archive.org/web/2026/https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati"
                 },
                 "data_download": [
                     "https://data.gov.lv/dati/dataset/6b06a7e8-dedf-4705-a47b-2a7c51177473/resource/b643b1b3-223f-4394-9beb-18524f8b0b82/download/aw_shp.zip"
@@ -3093,8 +3093,8 @@
             },
             "license": {
                 "url": {
-                    "primary": "https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45",
-                    "archive": "https://web.archive.org/web/2025/https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45"
+                    "primary": "https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati",
+                    "archive": "https://web.archive.org/web/2026/https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati"
                 },
                 "type": "CC-BY-4.0",
                 "requires_attribution": true,
@@ -3119,8 +3119,8 @@
                 "oa_path": [
                     "lv/countrywide-addresses-country.geojson"
                 ],
-                "data_layer_name": "Address.gml",
-                "file_format": "gml",
+                "data_layer_name": "Ekas.shp",
+                "file_format": "shapefile",
                 "address_levels": [
                     "region",
                     "district",
@@ -8589,8 +8589,8 @@
                 "oa_path": [
                     "us/fl/seminole-addresses-county.geojson"
                 ],
-                "data_layer_name": "situs.shp",
-                "file_format": "shapefile",
+                "data_layer_name": "Addresses.gdb",
+                "file_format": "geodatabase",
                 "address_levels": [
                     "region",
                     "city"
@@ -11089,8 +11089,8 @@
                 "oa_path": [
                     "us/ca/san_diego-addresses-county.geojson"
                 ],
-                "data_layer_name": "N/A",
-                "file_format": "geojson",
+                "data_layer_name": "Address_Points.shp",
+                "file_format": "shapefile",
                 "address_levels": [
                     "region",
                     "city"
@@ -12644,17 +12644,17 @@
             "notes": "Distributed by OpenAddresses. For more license information, see: https://github.com/OvertureMaps/tf-address/issues/227"
         },
         {
-            "source_name": "Minnesota Department of Public Safety",
-            "dataset_name": "OpenAddresses/MN/Department of Public Safety",
+            "source_name": "Minnesota Geospatial Information Office",
+            "dataset_name": "OpenAddresses/MN/MnGeo",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
-                    "primary": "https://dps.mn.gov/",
-                    "archive": "https://web.archive.org/web/2025/https://dps.mn.gov/"
+                    "primary": "https://mn.gov/mngeo/",
+                    "archive": "https://web.archive.org/web/2026/https://mn.gov/mngeo/"
                 },
                 "data_location": {
-                    "primary": "https://dps.mn.gov/divisions/ecn/contact-ecn/submit-ecn-data-request",
-                    "archive": "https://web.archive.org/web/2025/https://dps.mn.gov/divisions/ecn/contact-ecn/submit-ecn-data-request"
+                    "primary": "https://gis.data.mn.gov/datasets/39e1d5e08885476c82adcad9896681b6",
+                    "archive": "https://web.archive.org/web/2026/https://gis.data.mn.gov/datasets/39e1d5e08885476c82adcad9896681b6"
                 },
                 "data_download": [
                     "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/loc_addresses_open/FeatureServer/0"
@@ -12662,12 +12662,12 @@
             },
             "license": {
                 "url": {
-                    "primary": "",
-                    "archive": ""
+                    "primary": "https://mn.gov/mngeo/gis-data-and-maps/disclaimer.jsp",
+                    "archive": "https://web.archive.org/web/2026/https://mn.gov/mngeo/gis-data-and-maps/disclaimer.jsp"
                 },
                 "type": "",
                 "requires_attribution": false,
-                "text": "",
+                "text": "Redistribution Conditions: ... it is understood that you and/or your organization have the right to use it for any purpose. THE USER ACCEPTS THE DATA AS IS AND ASSUMES ALL RISKS ASSOCIATED WITH ITS USE.",
                 "attribution": ""
             },
             "coverage": {
@@ -12691,23 +12691,21 @@
                 "oa_path": [
                     "us/mn/statewide-addresses-state.geojson"
                 ],
-                "data_layer_name": "Snapshot20250401.gdb",
-                "file_format": "geodatabase",
+                "data_layer_name": "N/A",
+                "file_format": "geojson",
                 "address_levels": [
                     "region",
                     "city"
                 ]
             },
             "refresh_schedule": {
-                "frequency": "Infrequent",
+                "frequency": "",
                 "source": "OpenAddresses",
-                "type": "manual",
-                "month": [
-                    1
-                ]
+                "type": "continuous",
+                "month": []
             },
             "known_issues": "",
-            "notes": "Distributed by OpenAddresses. Data was requested in April 2025, Public Domain license terms confirmed with agency in June 2025."
+            "notes": "Distributed by OpenAddresses. Address points compiled by MnGeo from counties that opt in to open data (about 56 of 87 counties as of October 2026), not full statewide coverage. Before May 2026 OpenAddresses used an April 2025 Minnesota Department of Public Safety snapshot (public domain terms confirmed with the agency in June 2025); see https://github.com/openaddresses/openaddresses/pull/8187."
         },
         {
             "source_name": "City of Scranton, PA",
