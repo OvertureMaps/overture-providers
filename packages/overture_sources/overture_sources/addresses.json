@@ -2,7 +2,7 @@
     "datasets": [
         {
             "source_name": "Austrian Address Register",
-            "dataset_name": "OpenAddresses/Bundesamt für Eich- und Vermessungswesen",
+            "dataset_name": "OpenAddresses/AT/Bundesamt für Eich- und Vermessungswesen",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -66,7 +66,7 @@
         },
         {
             "source_name": "Geoscape Australia",
-            "dataset_name": "OpenAddresses/Geoscape Australia",
+            "dataset_name": "OpenAddresses/AU/Geoscape Australia",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -132,7 +132,7 @@
         },
         {
             "source_name": "Statistics Canada",
-            "dataset_name": "OpenAddresses/Statistics Canada",
+            "dataset_name": "OpenAddresses/CA/Statistics Canada",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -196,7 +196,7 @@
         },
         {
             "source_name": "Departamento Administrativo Nacional de Estadística (DANE)",
-            "dataset_name": "OpenAddresses/AddressForAll/DANE",
+            "dataset_name": "OpenAddresses/CO/AddressForAll/DANE",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -257,7 +257,7 @@
         },
         {
             "source_name": "Danish Agency for Data Supply and Infrastructure",
-            "dataset_name": "OpenAddresses/DAWA",
+            "dataset_name": "OpenAddresses/DK/DAWA",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -318,7 +318,7 @@
         },
         {
             "source_name": "Estonian Land Board (MAA-AMET)",
-            "dataset_name": "OpenAddresses/MAA-AMET",
+            "dataset_name": "OpenAddresses/EE/MAA-AMET",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -380,7 +380,7 @@
         },
         {
             "source_name": "The National Address Site of the French Republic",
-            "dataset_name": "OpenAddresses/adresse.data.gouv.fr",
+            "dataset_name": "OpenAddresses/FR/adresse.data.gouv.fr",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -646,7 +646,7 @@
         },
         {
             "source_name": "Gouvernement de la Nouvelle-Calédonie",
-            "dataset_name": "OpenAddresses/Gouvernement de la Nouvelle-Calédonie",
+            "dataset_name": "OpenAddresses/NC/Gouvernement de la Nouvelle-Calédonie",
             "inception_date": "2026-09-08",
             "source": {
                 "url": {
@@ -706,7 +706,7 @@
         },
         {
             "source_name": "Gouvernement de la Polynésie Française",
-            "dataset_name": "OpenAddresses/Gouvernement de la Polynésie Française",
+            "dataset_name": "OpenAddresses/PF/Gouvernement de la Polynésie Française",
             "inception_date": "2026-09-08",
             "source": {
                 "url": {
@@ -766,7 +766,7 @@
         },
         {
             "source_name": "State Enterprise Centre of Registers",
-            "dataset_name": "OpenAddresses/Registrų Centras",
+            "dataset_name": "OpenAddresses/LT/Registrų Centras",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -828,7 +828,7 @@
         },
         {
             "source_name": "The Luxembourg open data platform",
-            "dataset_name": "OpenAddresses/data.public.lu",
+            "dataset_name": "OpenAddresses/LU/data.public.lu",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -888,7 +888,7 @@
         },
         {
             "source_name": "Instituto Nacional de Estadística y Geografía (INEGI), Censos Económicos",
-            "dataset_name": "OpenAddresses/AddressForAll/INEGI",
+            "dataset_name": "OpenAddresses/MX/AddressForAll/INEGI",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -1006,7 +1006,7 @@
         },
         {
             "source_name": "Land Information New Zealand (LINZ)",
-            "dataset_name": "OpenAddresses/LINZ",
+            "dataset_name": "OpenAddresses/NZ/LINZ",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -1135,11 +1135,11 @@
                 ]
             },
             "known_issues": "Coverage varies county-to-county; this source does not include full coverage in the US.",
-            "notes": "Distributed by OpenAddresses. NAD addresses in New York City have been replaced with address data from the City of New York."
+            "notes": ""
         },
         {
             "source_name": "SwissTopo",
-            "dataset_name": "OpenAddresses/Swisstopo",
+            "dataset_name": "OpenAddresses/CH/Swisstopo",
             "inception_date": "2024-08-07",
             "source": {
                 "url": {
@@ -1199,7 +1199,7 @@
         },
         {
             "source_name": "NYC Department of City Planning",
-            "dataset_name": "OpenAddresses/NY/City of New York",
+            "dataset_name": "OpenAddresses/US/NY/City of New York",
             "inception_date": "2024-09-04",
             "source": {
                 "url": {
@@ -1263,7 +1263,7 @@
         },
         {
             "source_name": "IBGE (Instituto Brasileiro de Geografia e Estatística)",
-            "dataset_name": "OpenAddresses/IBGE",
+            "dataset_name": "OpenAddresses/BR/IBGE",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1375,7 +1375,7 @@
         },
         {
             "source_name": "Instituto Nacional de Estadísticas",
-            "dataset_name": "OpenAddresses/CL-INE",
+            "dataset_name": "OpenAddresses/CL/CL-INE",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1436,7 +1436,7 @@
         },
         {
             "source_name": "Geoportal Berlin",
-            "dataset_name": "OpenAddresses/Geoportal Berlin",
+            "dataset_name": "OpenAddresses/DE/BE/Geoportal Berlin",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1464,7 +1464,10 @@
             "coverage": {
                 "areas": [
                     {
-                        "iso_3166_1": "DE"
+                        "iso_3166_1": "DE",
+                        "iso_3166_2": [
+                            "DE-BE"
+                        ]
                     }
                 ],
                 "description": "Regional",
@@ -1496,7 +1499,7 @@
         },
         {
             "source_name": "Landesvermessung und Geobasinformation Brandenburg",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LGB",
+            "dataset_name": "OpenAddresses/DE/BB/GeoBasis-DE/LGB",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1562,7 +1565,7 @@
         },
         {
             "source_name": "Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung",
-            "dataset_name": "OpenAddresses/HVBG",
+            "dataset_name": "OpenAddresses/DE/HH/HVBG",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1630,7 +1633,7 @@
         },
         {
             "source_name": "Hessischen Verwaltung für Bodenmanagement und Geoinformation",
-            "dataset_name": "OpenAddresses/HLBG",
+            "dataset_name": "OpenAddresses/DE/HE/HLBG",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1698,7 +1701,7 @@
         },
         {
             "source_name": "Geobasis NRW",
-            "dataset_name": "OpenAddresses/Geobasis NRW",
+            "dataset_name": "OpenAddresses/DE/NW/Geobasis NRW",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1761,7 +1764,7 @@
         },
         {
             "source_name": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen",
-            "dataset_name": "OpenAddresses/SGVS",
+            "dataset_name": "OpenAddresses/DE/SN/SGVS",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1824,7 +1827,7 @@
         },
         {
             "source_name": "Landesamt für Vermessung und Geoinformation Schleswig-Holstein",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LVermGeo SH",
+            "dataset_name": "OpenAddresses/DE/SH/GeoBasis-DE/LVermGeo SH",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1887,7 +1890,7 @@
         },
         {
             "source_name": "Freistaat Thüringen",
-            "dataset_name": "OpenAddresses/Freistaat Thüringen",
+            "dataset_name": "OpenAddresses/DE/TH/Freistaat Thüringen",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -1950,7 +1953,7 @@
         },
         {
             "source_name": "Syke",
-            "dataset_name": "OpenAddresses/Syke",
+            "dataset_name": "OpenAddresses/FI/Syke",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -2014,7 +2017,7 @@
         },
         {
             "source_name": "Državna geodetska uprava (State Geodetic Administration in the Republic of Croatia)",
-            "dataset_name": "OpenAddresses/Državna geodetska uprava",
+            "dataset_name": "OpenAddresses/HR/Državna geodetska uprava",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -5176,7 +5179,7 @@
         },
         {
             "source_name": "Kartverket",
-            "dataset_name": "OpenAddresses/Kartverket",
+            "dataset_name": "OpenAddresses/NO/Kartverket",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -5236,7 +5239,7 @@
         },
         {
             "source_name": "Polish Law on Geodesy and Cartography",
-            "dataset_name": "OpenAddresses/Polish Law on Geodesy and Cartography",
+            "dataset_name": "OpenAddresses/PL/Polish Law on Geodesy and Cartography",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -5334,7 +5337,7 @@
         },
         {
             "source_name": "Ministerstvo vnútra Slovenskej republiky / Ministry of Interior of the Slovak Republic",
-            "dataset_name": "OpenAddresses/Ministerstvo vnútra Slovenskej republiky",
+            "dataset_name": "OpenAddresses/SK/Ministerstvo vnútra Slovenskej republiky",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -5401,7 +5404,7 @@
         },
         {
             "source_name": "Instituto Nacional de Estatística, I.P.",
-            "dataset_name": "OpenAddresses/PT-INE",
+            "dataset_name": "OpenAddresses/PT/PT-INE",
             "inception_date": "2024-10-23",
             "source": {
                 "url": {
@@ -5464,7 +5467,7 @@
         },
         {
             "source_name": "Agentschap Digitaal Vlaanderen Adressenregister",
-            "dataset_name": "OpenAddresses/Digitaal Vlaanderen",
+            "dataset_name": "OpenAddresses/BE/VLG/Digitaal Vlaanderen",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5492,7 +5495,10 @@
             "coverage": {
                 "areas": [
                     {
-                        "iso_3166_1": "BE"
+                        "iso_3166_1": "BE",
+                        "iso_3166_2": [
+                            "BE-VLG"
+                        ]
                     }
                 ],
                 "description": "Regional",
@@ -5525,7 +5531,7 @@
         },
         {
             "source_name": "Region de Bruxelles-Capitale",
-            "dataset_name": "OpenAddresses/Paradigm.Brussels",
+            "dataset_name": "OpenAddresses/BE/BRU/Paradigm.Brussels",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5553,7 +5559,10 @@
             "coverage": {
                 "areas": [
                     {
-                        "iso_3166_1": "BE"
+                        "iso_3166_1": "BE",
+                        "iso_3166_2": [
+                            "BE-BRU"
+                        ]
                     }
                 ],
                 "description": "Regional",
@@ -5586,7 +5595,7 @@
         },
         {
             "source_name": "Inventaire Centralisé des Adresses et des Rues (ICAR)",
-            "dataset_name": "OpenAddresses/Service public de Wallonie",
+            "dataset_name": "OpenAddresses/BE/WAL/Service public de Wallonie",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5614,7 +5623,10 @@
             "coverage": {
                 "areas": [
                     {
-                        "iso_3166_1": "BE"
+                        "iso_3166_1": "BE",
+                        "iso_3166_2": [
+                            "BE-WAL"
+                        ]
                     }
                 ],
                 "description": "Regional",
@@ -5647,7 +5659,7 @@
         },
         {
             "source_name": "Katasterverwaltung Rheinland-Pfalz",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LVermGeo RP",
+            "dataset_name": "OpenAddresses/DE/RP/GeoBasis-DE/LVermGeo RP",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5711,7 +5723,7 @@
         },
         {
             "source_name": "State Office for Geoinformation and Rural Development Baden-Württemberg",
-            "dataset_name": "OpenAddresses/LGL",
+            "dataset_name": "OpenAddresses/DE/BW/LGL",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5774,7 +5786,7 @@
         },
         {
             "source_name": "GeoBasis-DE/LVermGeo ST",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LVermGeo ST",
+            "dataset_name": "OpenAddresses/DE/ST/GeoBasis-DE/LVermGeo ST",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5837,7 +5849,7 @@
         },
         {
             "source_name": "Landesamt GeoInformation Bremen",
-            "dataset_name": "OpenAddresses/Landesamt GeoInformation Bremen",
+            "dataset_name": "OpenAddresses/DE/HB/Landesamt GeoInformation Bremen",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -5900,7 +5912,7 @@
         },
         {
             "source_name": "Instituto Geográfico Nacional - Sistema Cartografico Nacional España",
-            "dataset_name": "OpenAddresses/scne.es",
+            "dataset_name": "OpenAddresses/ES/scne.es",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6081,7 +6093,7 @@
         },
         {
             "source_name": "Valsts zemes dienests",
-            "dataset_name": "OpenAddresses/Valsts zemes dienests",
+            "dataset_name": "OpenAddresses/LV/Valsts zemes dienests",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6207,7 +6219,7 @@
         },
         {
             "source_name": "Taoyuan City Government Civil Affairs Bureau, Taiwan",
-            "dataset_name": "OpenAddresses/Taoyuan City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/TAO/Taoyuan City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6275,7 +6287,7 @@
         },
         {
             "source_name": "Yunlin County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Yunlin County Government",
+            "dataset_name": "OpenAddresses/TW/YUN/Yunlin County Government",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6342,7 +6354,7 @@
         },
         {
             "source_name": "Kaohsiung City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/Kaohsiung City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/KHH/Kaohsiung City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6410,7 +6422,7 @@
         },
         {
             "source_name": "Taichung City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/Taichung City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/TXG/Taichung City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6478,7 +6490,7 @@
         },
         {
             "source_name": "Keelung City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/Keelung City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/KEE/Keelung City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6546,7 +6558,7 @@
         },
         {
             "source_name": "Changhua County Government Civil Affairs Office",
-            "dataset_name": "OpenAddresses/Changhua County Government Civil Affairs Office",
+            "dataset_name": "OpenAddresses/TW/CHA/Changhua County Government Civil Affairs Office",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6613,7 +6625,7 @@
         },
         {
             "source_name": "Taipei City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/Taipei City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/TPE/Taipei City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6681,7 +6693,7 @@
         },
         {
             "source_name": "Tainan City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/Tainan City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/TNN/Tainan City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6748,7 +6760,7 @@
         },
         {
             "source_name": "New Taipei City Government Civil Affairs Bureau",
-            "dataset_name": "OpenAddresses/New Taipei City Government Civil Affairs Bureau",
+            "dataset_name": "OpenAddresses/TW/NWT/New Taipei City Government Civil Affairs Bureau",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6816,7 +6828,7 @@
         },
         {
             "source_name": "Miaoli Civil Affairs Office",
-            "dataset_name": "OpenAddresses/Miaoli Civil Affairs Office",
+            "dataset_name": "OpenAddresses/TW/MIA/Miaoli Civil Affairs Office",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -6884,7 +6896,7 @@
         },
         {
             "source_name": "Fresno County, California",
-            "dataset_name": "OpenAddresses/CA/Fresno County",
+            "dataset_name": "OpenAddresses/US/CA/Fresno County",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -7006,7 +7018,7 @@
         },
         {
             "source_name": "GeoBasis-DE/LVermGeo SL",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LVermGeo SL",
+            "dataset_name": "OpenAddresses/DE/SL/GeoBasis-DE/LVermGeo SL",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7074,7 +7086,7 @@
         },
         {
             "source_name": "Liechtensteinische Landesverwaltung",
-            "dataset_name": "OpenAddresses/Liechtensteinische Landesverwaltung",
+            "dataset_name": "OpenAddresses/LI/Liechtensteinische Landesverwaltung",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7134,7 +7146,7 @@
         },
         {
             "source_name": "Santa Cruz County, California",
-            "dataset_name": "OpenAddresses/CA/Santa Cruz County",
+            "dataset_name": "OpenAddresses/US/CA/Santa Cruz County",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7198,7 +7210,7 @@
         },
         {
             "source_name": "San Francisco County, California",
-            "dataset_name": "OpenAddresses/CA/San Francisco County",
+            "dataset_name": "OpenAddresses/US/CA/San Francisco County",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7262,7 +7274,7 @@
         },
         {
             "source_name": "County of Los Angeles, California",
-            "dataset_name": "OpenAddresses/CA/County of Los Angeles",
+            "dataset_name": "OpenAddresses/US/CA/County of Los Angeles",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7326,7 +7338,7 @@
         },
         {
             "source_name": "Office of Geographic Information (MassGIS), Commonwealth of Massachusetts, MassIT",
-            "dataset_name": "OpenAddresses/MA/MassGIS",
+            "dataset_name": "OpenAddresses/US/MA/MassGIS",
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
@@ -7390,7 +7402,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/AR/Artigas",
+            "dataset_name": "OpenAddresses/UY/AR/Artigas",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7454,7 +7466,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/CA/Canelones",
+            "dataset_name": "OpenAddresses/UY/CA/Canelones",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7518,7 +7530,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/CL/Cerro Largo",
+            "dataset_name": "OpenAddresses/UY/CL/Cerro Largo",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7582,7 +7594,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/CO/Colonia",
+            "dataset_name": "OpenAddresses/UY/CO/Colonia",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7646,7 +7658,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/DU/Durazno",
+            "dataset_name": "OpenAddresses/UY/DU/Durazno",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7710,7 +7722,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/FS/Flores",
+            "dataset_name": "OpenAddresses/UY/FS/Flores",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7774,7 +7786,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/FD/Florida",
+            "dataset_name": "OpenAddresses/UY/FD/Florida",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7838,7 +7850,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/LA/Lavalleja",
+            "dataset_name": "OpenAddresses/UY/LA/Lavalleja",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7902,7 +7914,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/MA/Maldonado",
+            "dataset_name": "OpenAddresses/UY/MA/Maldonado",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -7966,7 +7978,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/MO/Montevideo",
+            "dataset_name": "OpenAddresses/UY/MO/Montevideo",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8030,7 +8042,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/PA/Paysandú",
+            "dataset_name": "OpenAddresses/UY/PA/Paysandú",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8094,7 +8106,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/RN/Río Negro",
+            "dataset_name": "OpenAddresses/UY/RN/Río Negro",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8158,7 +8170,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/RV/Rivera",
+            "dataset_name": "OpenAddresses/UY/RV/Rivera",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8222,7 +8234,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/RO/Rocha",
+            "dataset_name": "OpenAddresses/UY/RO/Rocha",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8286,7 +8298,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/SA/Salto",
+            "dataset_name": "OpenAddresses/UY/SA/Salto",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8350,7 +8362,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/SJ/San José",
+            "dataset_name": "OpenAddresses/UY/SJ/San José",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8414,7 +8426,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/SO/Soriano",
+            "dataset_name": "OpenAddresses/UY/SO/Soriano",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8478,7 +8490,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/TA/Tacuarembó",
+            "dataset_name": "OpenAddresses/UY/TA/Tacuarembó",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8542,7 +8554,7 @@
         },
         {
             "source_name": "Infraestructura de Datos Espaciales",
-            "dataset_name": "OpenAddresses/TT/Treinta y Tres",
+            "dataset_name": "OpenAddresses/UY/TT/Treinta y Tres",
             "inception_date": "2026-09-30",
             "source": {
                 "url": {
@@ -8606,7 +8618,7 @@
         },
         {
             "source_name": "Kinmen County Civil Affairs Office, Taiwan",
-            "dataset_name": "OpenAddresses/Kinmen County Civil Affairs Office",
+            "dataset_name": "OpenAddresses/TW/KIN/Kinmen County Civil Affairs Office",
             "inception_date": "2025-01-22",
             "source": {
                 "url": {
@@ -8673,7 +8685,7 @@
         },
         {
             "source_name": "Penghu County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Penghu County Government",
+            "dataset_name": "OpenAddresses/TW/PEN/Penghu County Government",
             "inception_date": "2025-01-22",
             "source": {
                 "url": {
@@ -8740,7 +8752,7 @@
         },
         {
             "source_name": "Hsinchu City Civil Affairs Office, Taiwan",
-            "dataset_name": "OpenAddresses/Hsinchu City Civil Affairs Office",
+            "dataset_name": "OpenAddresses/TW/HSZ/Hsinchu City Civil Affairs Office",
             "inception_date": "2025-01-22",
             "source": {
                 "url": {
@@ -8807,7 +8819,7 @@
         },
         {
             "source_name": "Hsinchu County Civil Affairs Office, Taiwan",
-            "dataset_name": "OpenAddresses/Hsinchu County Civil Affairs Office",
+            "dataset_name": "OpenAddresses/TW/HSQ/Hsinchu County Civil Affairs Office",
             "inception_date": "2025-01-22",
             "source": {
                 "url": {
@@ -8874,7 +8886,7 @@
         },
         {
             "source_name": "Pingtung County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Pingtung County Government",
+            "dataset_name": "OpenAddresses/TW/PIF/Pingtung County Government",
             "inception_date": "2025-01-22",
             "source": {
                 "url": {
@@ -8941,7 +8953,7 @@
         },
         {
             "source_name": "Geomatics Yukon",
-            "dataset_name": "OpenAddresses/Yukon",
+            "dataset_name": "OpenAddresses/CA/YT/Yukon",
             "inception_date": "2025-02-19",
             "source": {
                 "url": {
@@ -9005,7 +9017,7 @@
         },
         {
             "source_name": "Manatee County, Florida",
-            "dataset_name": "OpenAddresses/FL/Manatee County",
+            "dataset_name": "OpenAddresses/US/FL/Manatee County",
             "inception_date": "2025-02-19",
             "source": {
                 "url": {
@@ -9069,7 +9081,7 @@
         },
         {
             "source_name": "DeKalb County, Georgia",
-            "dataset_name": "OpenAddresses/GA/DeKalb County",
+            "dataset_name": "OpenAddresses/US/GA/DeKalb County",
             "inception_date": "2025-02-19",
             "source": {
                 "url": {
@@ -9133,7 +9145,7 @@
         },
         {
             "source_name": "Oakland County, Michigan",
-            "dataset_name": "OpenAddresses/MI/Oakland County",
+            "dataset_name": "OpenAddresses/US/MI/Oakland County",
             "inception_date": "2025-02-19",
             "source": {
                 "url": {
@@ -9197,7 +9209,7 @@
         },
         {
             "source_name": "Hillsborough County, Florida",
-            "dataset_name": "OpenAddresses/FL/Hillsborough County",
+            "dataset_name": "OpenAddresses/US/FL/Hillsborough County",
             "inception_date": "2025-02-19",
             "source": {
                 "url": {
@@ -9261,7 +9273,7 @@
         },
         {
             "source_name": "Hong Kong Digital Policy Office",
-            "dataset_name": "OpenAddresses/Hong Kong Digital Policy Office",
+            "dataset_name": "OpenAddresses/HK/Hong Kong Digital Policy Office",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9325,7 +9337,7 @@
         },
         {
             "source_name": "Florida Department of Revenue",
-            "dataset_name": "OpenAddresses/FL/Florida Department of Revenue",
+            "dataset_name": "OpenAddresses/US/FL/Florida Department of Revenue",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9436,7 +9448,7 @@
         },
         {
             "source_name": "Alachua County, Florida",
-            "dataset_name": "OpenAddresses/FL/Alachua County",
+            "dataset_name": "OpenAddresses/US/FL/Alachua County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9500,7 +9512,7 @@
         },
         {
             "source_name": "Baker County, Florida",
-            "dataset_name": "OpenAddresses/FL/Baker County",
+            "dataset_name": "OpenAddresses/US/FL/Baker County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9564,7 +9576,7 @@
         },
         {
             "source_name": "Bay County, Florida",
-            "dataset_name": "OpenAddresses/FL/Bay County",
+            "dataset_name": "OpenAddresses/US/FL/Bay County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9628,7 +9640,7 @@
         },
         {
             "source_name": "Brevard County, Florida",
-            "dataset_name": "OpenAddresses/FL/Brevard County",
+            "dataset_name": "OpenAddresses/US/FL/Brevard County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9692,7 +9704,7 @@
         },
         {
             "source_name": "Broward County, Florida",
-            "dataset_name": "OpenAddresses/FL/Broward County",
+            "dataset_name": "OpenAddresses/US/FL/Broward County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9756,7 +9768,7 @@
         },
         {
             "source_name": "Charlotte County, Florida",
-            "dataset_name": "OpenAddresses/FL/Charlotte County",
+            "dataset_name": "OpenAddresses/US/FL/Charlotte County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9820,7 +9832,7 @@
         },
         {
             "source_name": "Citrus County, Florida",
-            "dataset_name": "OpenAddresses/FL/Citrus County",
+            "dataset_name": "OpenAddresses/US/FL/Citrus County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9884,7 +9896,7 @@
         },
         {
             "source_name": "Clay County, Florida",
-            "dataset_name": "OpenAddresses/FL/Clay County",
+            "dataset_name": "OpenAddresses/US/FL/Clay County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -9948,7 +9960,7 @@
         },
         {
             "source_name": "Collier County, Florida",
-            "dataset_name": "OpenAddresses/FL/Collier County",
+            "dataset_name": "OpenAddresses/US/FL/Collier County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10012,7 +10024,7 @@
         },
         {
             "source_name": "Columbia County, Florida",
-            "dataset_name": "OpenAddresses/FL/Columbia County",
+            "dataset_name": "OpenAddresses/US/FL/Columbia County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10076,7 +10088,7 @@
         },
         {
             "source_name": "Desoto County, Florida",
-            "dataset_name": "OpenAddresses/FL/Desoto County",
+            "dataset_name": "OpenAddresses/US/FL/Desoto County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10140,7 +10152,7 @@
         },
         {
             "source_name": "Duval County, Florida",
-            "dataset_name": "OpenAddresses/FL/Duval County",
+            "dataset_name": "OpenAddresses/US/FL/Duval County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10204,7 +10216,7 @@
         },
         {
             "source_name": "Flagler County, Florida",
-            "dataset_name": "OpenAddresses/FL/Flagler County",
+            "dataset_name": "OpenAddresses/US/FL/Flagler County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10268,7 +10280,7 @@
         },
         {
             "source_name": "Hardee County, Florida",
-            "dataset_name": "OpenAddresses/FL/Hardee County",
+            "dataset_name": "OpenAddresses/US/FL/Hardee County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10332,7 +10344,7 @@
         },
         {
             "source_name": "Hendry County, Florida",
-            "dataset_name": "OpenAddresses/FL/Hendry County",
+            "dataset_name": "OpenAddresses/US/FL/Hendry County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10396,7 +10408,7 @@
         },
         {
             "source_name": "Hernando County, Florida",
-            "dataset_name": "OpenAddresses/FL/Hernando County",
+            "dataset_name": "OpenAddresses/US/FL/Hernando County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10460,7 +10472,7 @@
         },
         {
             "source_name": "Highlands County, Florida",
-            "dataset_name": "OpenAddresses/FL/Highlands County",
+            "dataset_name": "OpenAddresses/US/FL/Highlands County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10524,7 +10536,7 @@
         },
         {
             "source_name": "Indian River County, Florida",
-            "dataset_name": "OpenAddresses/FL/Indian River County",
+            "dataset_name": "OpenAddresses/US/FL/Indian River County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10588,7 +10600,7 @@
         },
         {
             "source_name": "Lake County, Florida",
-            "dataset_name": "OpenAddresses/FL/Lake County",
+            "dataset_name": "OpenAddresses/US/FL/Lake County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10652,7 +10664,7 @@
         },
         {
             "source_name": "Leon County, Florida",
-            "dataset_name": "OpenAddresses/FL/Leon County",
+            "dataset_name": "OpenAddresses/US/FL/Leon County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10716,7 +10728,7 @@
         },
         {
             "source_name": "Martin County, Florida",
-            "dataset_name": "OpenAddresses/FL/Martin County",
+            "dataset_name": "OpenAddresses/US/FL/Martin County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10780,7 +10792,7 @@
         },
         {
             "source_name": "Miami-Dade County, Florida",
-            "dataset_name": "OpenAddresses/FL/Miami-Dade County",
+            "dataset_name": "OpenAddresses/US/FL/Miami-Dade County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10844,7 +10856,7 @@
         },
         {
             "source_name": "Nassau County, Florida",
-            "dataset_name": "OpenAddresses/FL/Nassau County",
+            "dataset_name": "OpenAddresses/US/FL/Nassau County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10908,7 +10920,7 @@
         },
         {
             "source_name": "Okaloosa County, Florida",
-            "dataset_name": "OpenAddresses/FL/Okaloosa County",
+            "dataset_name": "OpenAddresses/US/FL/Okaloosa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -10972,7 +10984,7 @@
         },
         {
             "source_name": "Osceola County, Florida",
-            "dataset_name": "OpenAddresses/FL/Osceola County",
+            "dataset_name": "OpenAddresses/US/FL/Osceola County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11036,7 +11048,7 @@
         },
         {
             "source_name": "Pasco County, Florida",
-            "dataset_name": "OpenAddresses/FL/Pasco County",
+            "dataset_name": "OpenAddresses/US/FL/Pasco County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11100,7 +11112,7 @@
         },
         {
             "source_name": "Pinellas County, Florida",
-            "dataset_name": "OpenAddresses/FL/Pinellas County",
+            "dataset_name": "OpenAddresses/US/FL/Pinellas County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11164,7 +11176,7 @@
         },
         {
             "source_name": "Polk County, Florida",
-            "dataset_name": "OpenAddresses/FL/Polk County",
+            "dataset_name": "OpenAddresses/US/FL/Polk County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11228,7 +11240,7 @@
         },
         {
             "source_name": "Putnam County, Florida",
-            "dataset_name": "OpenAddresses/FL/Putnam County",
+            "dataset_name": "OpenAddresses/US/FL/Putnam County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11292,7 +11304,7 @@
         },
         {
             "source_name": "St. Johns County, Florida",
-            "dataset_name": "OpenAddresses/FL/St. Johns County",
+            "dataset_name": "OpenAddresses/US/FL/St. Johns County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11356,7 +11368,7 @@
         },
         {
             "source_name": "St. Lucie County, Florida",
-            "dataset_name": "OpenAddresses/FL/St. Lucie County",
+            "dataset_name": "OpenAddresses/US/FL/St. Lucie County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11420,7 +11432,7 @@
         },
         {
             "source_name": "Santa Rosa County, Florida",
-            "dataset_name": "OpenAddresses/FL/Santa Rosa County",
+            "dataset_name": "OpenAddresses/US/FL/Santa Rosa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11484,7 +11496,7 @@
         },
         {
             "source_name": "Sarasota County, Florida",
-            "dataset_name": "OpenAddresses/FL/Sarasota County",
+            "dataset_name": "OpenAddresses/US/FL/Sarasota County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11548,7 +11560,7 @@
         },
         {
             "source_name": "Seminole County, Florida",
-            "dataset_name": "OpenAddresses/FL/Seminole County",
+            "dataset_name": "OpenAddresses/US/FL/Seminole County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11612,7 +11624,7 @@
         },
         {
             "source_name": "Sumter County, Florida",
-            "dataset_name": "OpenAddresses/FL/Sumter County",
+            "dataset_name": "OpenAddresses/US/FL/Sumter County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11676,7 +11688,7 @@
         },
         {
             "source_name": "Volusia County, Florida",
-            "dataset_name": "OpenAddresses/FL/Volusia County",
+            "dataset_name": "OpenAddresses/US/FL/Volusia County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11740,7 +11752,7 @@
         },
         {
             "source_name": "Walton County, Florida",
-            "dataset_name": "OpenAddresses/FL/Walton County",
+            "dataset_name": "OpenAddresses/US/FL/Walton County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11804,7 +11816,7 @@
         },
         {
             "source_name": "State of Oregon",
-            "dataset_name": "OpenAddresses/OR/State of Oregon",
+            "dataset_name": "OpenAddresses/US/OR/State of Oregon",
             "inception_date": "2026-01-21",
             "source": {
                 "url": {
@@ -11869,7 +11881,7 @@
         },
         {
             "source_name": "Alameda County, California",
-            "dataset_name": "OpenAddresses/CA/Alameda County",
+            "dataset_name": "OpenAddresses/US/CA/Alameda County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11933,7 +11945,7 @@
         },
         {
             "source_name": "Alpine County, California",
-            "dataset_name": "OpenAddresses/CA/Alpine County",
+            "dataset_name": "OpenAddresses/US/CA/Alpine County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -11997,7 +12009,7 @@
         },
         {
             "source_name": "Amador County, California",
-            "dataset_name": "OpenAddresses/CA/Amador County",
+            "dataset_name": "OpenAddresses/US/CA/Amador County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12061,7 +12073,7 @@
         },
         {
             "source_name": "Butte County, California",
-            "dataset_name": "OpenAddresses/CA/Butte County",
+            "dataset_name": "OpenAddresses/US/CA/Butte County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12125,7 +12137,7 @@
         },
         {
             "source_name": "Calaveras County, California",
-            "dataset_name": "OpenAddresses/CA/Calaveras County",
+            "dataset_name": "OpenAddresses/US/CA/Calaveras County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12189,7 +12201,7 @@
         },
         {
             "source_name": "Colusa County, California",
-            "dataset_name": "OpenAddresses/CA/Colusa County",
+            "dataset_name": "OpenAddresses/US/CA/Colusa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12253,7 +12265,7 @@
         },
         {
             "source_name": "Contra Costa County, California",
-            "dataset_name": "OpenAddresses/CA/Contra Costa County",
+            "dataset_name": "OpenAddresses/US/CA/Contra Costa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12317,7 +12329,7 @@
         },
         {
             "source_name": "Del Norte County, California",
-            "dataset_name": "OpenAddresses/CA/Del Norte County",
+            "dataset_name": "OpenAddresses/US/CA/Del Norte County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12381,7 +12393,7 @@
         },
         {
             "source_name": "El Dorado County, California",
-            "dataset_name": "OpenAddresses/CA/El Dorado County",
+            "dataset_name": "OpenAddresses/US/CA/El Dorado County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12445,7 +12457,7 @@
         },
         {
             "source_name": "Glenn County, California",
-            "dataset_name": "OpenAddresses/CA/Glenn County",
+            "dataset_name": "OpenAddresses/US/CA/Glenn County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12509,7 +12521,7 @@
         },
         {
             "source_name": "Humboldt County, California",
-            "dataset_name": "OpenAddresses/CA/Humboldt County",
+            "dataset_name": "OpenAddresses/US/CA/Humboldt County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12573,7 +12585,7 @@
         },
         {
             "source_name": "Imperial County, California",
-            "dataset_name": "OpenAddresses/CA/Imperial County",
+            "dataset_name": "OpenAddresses/US/CA/Imperial County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12637,7 +12649,7 @@
         },
         {
             "source_name": "Inyo County, California",
-            "dataset_name": "OpenAddresses/CA/Inyo County",
+            "dataset_name": "OpenAddresses/US/CA/Inyo County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12701,7 +12713,7 @@
         },
         {
             "source_name": "Kern County, California",
-            "dataset_name": "OpenAddresses/CA/Kern County",
+            "dataset_name": "OpenAddresses/US/CA/Kern County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12765,7 +12777,7 @@
         },
         {
             "source_name": "Kings County, California",
-            "dataset_name": "OpenAddresses/CA/Kings County",
+            "dataset_name": "OpenAddresses/US/CA/Kings County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12829,7 +12841,7 @@
         },
         {
             "source_name": "Lake County, California",
-            "dataset_name": "OpenAddresses/CA/Lake County",
+            "dataset_name": "OpenAddresses/US/CA/Lake County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12893,7 +12905,7 @@
         },
         {
             "source_name": "Lassen County, California",
-            "dataset_name": "OpenAddresses/CA/Lassen County",
+            "dataset_name": "OpenAddresses/US/CA/Lassen County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -12957,7 +12969,7 @@
         },
         {
             "source_name": "Madera County, California",
-            "dataset_name": "OpenAddresses/CA/Madera County",
+            "dataset_name": "OpenAddresses/US/CA/Madera County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13021,7 +13033,7 @@
         },
         {
             "source_name": "Marin County, California",
-            "dataset_name": "OpenAddresses/CA/Marin County",
+            "dataset_name": "OpenAddresses/US/CA/Marin County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13085,7 +13097,7 @@
         },
         {
             "source_name": "Mariposa County, California",
-            "dataset_name": "OpenAddresses/CA/Mariposa County",
+            "dataset_name": "OpenAddresses/US/CA/Mariposa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13149,7 +13161,7 @@
         },
         {
             "source_name": "Mendocino County, California",
-            "dataset_name": "OpenAddresses/CA/Mendocino County",
+            "dataset_name": "OpenAddresses/US/CA/Mendocino County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13213,7 +13225,7 @@
         },
         {
             "source_name": "Merced County, California",
-            "dataset_name": "OpenAddresses/CA/Merced County",
+            "dataset_name": "OpenAddresses/US/CA/Merced County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13277,7 +13289,7 @@
         },
         {
             "source_name": "Modoc County, California",
-            "dataset_name": "OpenAddresses/CA/Modoc County",
+            "dataset_name": "OpenAddresses/US/CA/Modoc County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13341,7 +13353,7 @@
         },
         {
             "source_name": "Mono County, California",
-            "dataset_name": "OpenAddresses/CA/Mono County",
+            "dataset_name": "OpenAddresses/US/CA/Mono County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13405,7 +13417,7 @@
         },
         {
             "source_name": "Monterey County, California",
-            "dataset_name": "OpenAddresses/CA/Monterey County",
+            "dataset_name": "OpenAddresses/US/CA/Monterey County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13469,7 +13481,7 @@
         },
         {
             "source_name": "Napa County, California",
-            "dataset_name": "OpenAddresses/CA/Napa County",
+            "dataset_name": "OpenAddresses/US/CA/Napa County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13533,7 +13545,7 @@
         },
         {
             "source_name": "Nevada County, California",
-            "dataset_name": "OpenAddresses/CA/Nevada County",
+            "dataset_name": "OpenAddresses/US/CA/Nevada County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13597,7 +13609,7 @@
         },
         {
             "source_name": "Orange County, California",
-            "dataset_name": "OpenAddresses/CA/Orange County",
+            "dataset_name": "OpenAddresses/US/CA/Orange County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13661,7 +13673,7 @@
         },
         {
             "source_name": "Placer County, California",
-            "dataset_name": "OpenAddresses/CA/Placer County",
+            "dataset_name": "OpenAddresses/US/CA/Placer County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13725,7 +13737,7 @@
         },
         {
             "source_name": "Plumas County, California",
-            "dataset_name": "OpenAddresses/CA/Plumas County",
+            "dataset_name": "OpenAddresses/US/CA/Plumas County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13792,7 +13804,7 @@
         },
         {
             "source_name": "Riverside County, California",
-            "dataset_name": "OpenAddresses/CA/Riverside County",
+            "dataset_name": "OpenAddresses/US/CA/Riverside County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13856,7 +13868,7 @@
         },
         {
             "source_name": "Sacramento County, California",
-            "dataset_name": "OpenAddresses/CA/Sacramento County",
+            "dataset_name": "OpenAddresses/US/CA/Sacramento County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13920,7 +13932,7 @@
         },
         {
             "source_name": "San Benito County, California",
-            "dataset_name": "OpenAddresses/CA/San Benito County",
+            "dataset_name": "OpenAddresses/US/CA/San Benito County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -13984,7 +13996,7 @@
         },
         {
             "source_name": "San Bernardino County, California",
-            "dataset_name": "OpenAddresses/CA/San Bernardino County",
+            "dataset_name": "OpenAddresses/US/CA/San Bernardino County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14048,7 +14060,7 @@
         },
         {
             "source_name": "San Diego County, California",
-            "dataset_name": "OpenAddresses/CA/San Diego County",
+            "dataset_name": "OpenAddresses/US/CA/San Diego County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14112,7 +14124,7 @@
         },
         {
             "source_name": "San Joaquin County, California",
-            "dataset_name": "OpenAddresses/CA/San Joaquin County",
+            "dataset_name": "OpenAddresses/US/CA/San Joaquin County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14176,7 +14188,7 @@
         },
         {
             "source_name": "San Luis Obispo County, California",
-            "dataset_name": "OpenAddresses/CA/San Luis Obispo County",
+            "dataset_name": "OpenAddresses/US/CA/San Luis Obispo County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14240,7 +14252,7 @@
         },
         {
             "source_name": "San Mateo County, California",
-            "dataset_name": "OpenAddresses/CA/San Mateo County",
+            "dataset_name": "OpenAddresses/US/CA/San Mateo County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14304,7 +14316,7 @@
         },
         {
             "source_name": "Santa Barbara County, California",
-            "dataset_name": "OpenAddresses/CA/Santa Barbara County",
+            "dataset_name": "OpenAddresses/US/CA/Santa Barbara County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14368,7 +14380,7 @@
         },
         {
             "source_name": "Santa Clara County, California",
-            "dataset_name": "OpenAddresses/CA/Santa Clara County",
+            "dataset_name": "OpenAddresses/US/CA/Santa Clara County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14432,7 +14444,7 @@
         },
         {
             "source_name": "Shasta County, California",
-            "dataset_name": "OpenAddresses/CA/Shasta County",
+            "dataset_name": "OpenAddresses/US/CA/Shasta County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14496,7 +14508,7 @@
         },
         {
             "source_name": "Siskiyou County, California",
-            "dataset_name": "OpenAddresses/CA/Siskiyou County",
+            "dataset_name": "OpenAddresses/US/CA/Siskiyou County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14560,7 +14572,7 @@
         },
         {
             "source_name": "Solano County, California",
-            "dataset_name": "OpenAddresses/CA/Solano County",
+            "dataset_name": "OpenAddresses/US/CA/Solano County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14624,7 +14636,7 @@
         },
         {
             "source_name": "Sonoma County, California",
-            "dataset_name": "OpenAddresses/CA/Sonoma County",
+            "dataset_name": "OpenAddresses/US/CA/Sonoma County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14688,7 +14700,7 @@
         },
         {
             "source_name": "Stanislaus County, California",
-            "dataset_name": "OpenAddresses/CA/Stanislaus County",
+            "dataset_name": "OpenAddresses/US/CA/Stanislaus County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14752,7 +14764,7 @@
         },
         {
             "source_name": "Sutter County, California",
-            "dataset_name": "OpenAddresses/CA/Sutter County",
+            "dataset_name": "OpenAddresses/US/CA/Sutter County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14816,7 +14828,7 @@
         },
         {
             "source_name": "Tehama County, California",
-            "dataset_name": "OpenAddresses/CA/Tehama County",
+            "dataset_name": "OpenAddresses/US/CA/Tehama County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14880,7 +14892,7 @@
         },
         {
             "source_name": "Trinity County, California",
-            "dataset_name": "OpenAddresses/CA/Trinity County",
+            "dataset_name": "OpenAddresses/US/CA/Trinity County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -14944,7 +14956,7 @@
         },
         {
             "source_name": "Tulare County, California",
-            "dataset_name": "OpenAddresses/CA/Tulare County",
+            "dataset_name": "OpenAddresses/US/CA/Tulare County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -15008,7 +15020,7 @@
         },
         {
             "source_name": "Tuolumne County, California",
-            "dataset_name": "OpenAddresses/CA/Tuolumne County",
+            "dataset_name": "OpenAddresses/US/CA/Tuolumne County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -15072,7 +15084,7 @@
         },
         {
             "source_name": "Yolo County, California",
-            "dataset_name": "OpenAddresses/CA/Yolo County",
+            "dataset_name": "OpenAddresses/US/CA/Yolo County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -15136,7 +15148,7 @@
         },
         {
             "source_name": "Yuba County, California",
-            "dataset_name": "OpenAddresses/CA/Yuba County",
+            "dataset_name": "OpenAddresses/US/CA/Yuba County",
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
@@ -15200,7 +15212,7 @@
         },
         {
             "source_name": "Lee County, Florida",
-            "dataset_name": "OpenAddresses/FL/Lee County",
+            "dataset_name": "OpenAddresses/US/FL/Lee County",
             "inception_date": "2025-04-23",
             "source": {
                 "url": {
@@ -15264,7 +15276,7 @@
         },
         {
             "source_name": "Istat e dall'Agenzia delle Entrate",
-            "dataset_name": "OpenAddresses/Istat e dall'Agenzia delle Entrate",
+            "dataset_name": "OpenAddresses/IT/Istat e dall'Agenzia delle Entrate",
             "inception_date": "2025-05-21",
             "source": {
                 "url": {
@@ -15328,7 +15340,7 @@
         },
         {
             "source_name": "Waupaca County, Wisconsin",
-            "dataset_name": "OpenAddresses/WI/Waupaca County",
+            "dataset_name": "OpenAddresses/US/WI/Waupaca County",
             "inception_date": "2025-05-21",
             "source": {
                 "url": {
@@ -15392,7 +15404,7 @@
         },
         {
             "source_name": "Sierra County, California",
-            "dataset_name": "OpenAddresses/CA/Sierra County",
+            "dataset_name": "OpenAddresses/US/CA/Sierra County",
             "inception_date": "2025-05-21",
             "source": {
                 "url": {
@@ -15458,7 +15470,7 @@
         },
         {
             "source_name": "Asiaq - Greenland Survey",
-            "dataset_name": "OpenAddresses/Asiaq, Greenland Survey",
+            "dataset_name": "OpenAddresses/GL/Asiaq, Greenland Survey",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15522,7 +15534,7 @@
         },
         {
             "source_name": "Singapore Land Authority",
-            "dataset_name": "OpenAddresses/Singapore Land Authority",
+            "dataset_name": "OpenAddresses/SG/Singapore Land Authority",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15586,7 +15598,7 @@
         },
         {
             "source_name": "State of Colorado Governor's Office of Information Technology",
-            "dataset_name": "OpenAddresses/CO/Governor's Office of Information Technology",
+            "dataset_name": "OpenAddresses/US/CO/Governor's Office of Information Technology",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15650,7 +15662,7 @@
         },
         {
             "source_name": "Minnesota Geospatial Information Office",
-            "dataset_name": "OpenAddresses/MN/MnGeo",
+            "dataset_name": "OpenAddresses/US/MN/MnGeo",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15714,7 +15726,7 @@
         },
         {
             "source_name": "City of Scranton, PA",
-            "dataset_name": "OpenAddresses/PA/City of Scranton GIS",
+            "dataset_name": "OpenAddresses/US/PA/City of Scranton GIS",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15778,7 +15790,7 @@
         },
         {
             "source_name": "Athens-Clarke County, GA",
-            "dataset_name": "OpenAddresses/GA/Athens-Clarke County GIS",
+            "dataset_name": "OpenAddresses/US/GA/Athens-Clarke County GIS",
             "inception_date": "2025-06-25",
             "source": {
                 "url": {
@@ -15842,7 +15854,7 @@
         },
         {
             "source_name": "Orange County, FL",
-            "dataset_name": "OpenAddresses/FL/Orange County",
+            "dataset_name": "OpenAddresses/US/FL/Orange County",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -15905,7 +15917,7 @@
         },
         {
             "source_name": "Palm Beach County, FL",
-            "dataset_name": "OpenAddresses/FL/Palm Beach County",
+            "dataset_name": "OpenAddresses/US/FL/Palm Beach County",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -15969,7 +15981,7 @@
         },
         {
             "source_name": "Carson City, NV",
-            "dataset_name": "OpenAddresses/US/Carson City, NV",
+            "dataset_name": "OpenAddresses/US/NV/Carson City",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16030,7 +16042,7 @@
         },
         {
             "source_name": "Allegan County, MI",
-            "dataset_name": "OpenAddresses/US/Allegan County, MI",
+            "dataset_name": "OpenAddresses/US/MI/Allegan County",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16094,7 +16106,7 @@
         },
         {
             "source_name": "Muskegon County, MI",
-            "dataset_name": "OpenAddresses/MI/Muskegon County",
+            "dataset_name": "OpenAddresses/US/MI/Muskegon County",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16222,7 +16234,7 @@
         },
         {
             "source_name": "City of Boise",
-            "dataset_name": "OpenAddresses/ID/City of Boise",
+            "dataset_name": "OpenAddresses/US/ID/City of Boise",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16286,7 +16298,7 @@
         },
         {
             "source_name": "Mississippi Automated Resource Information System",
-            "dataset_name": "OpenAddresses/MS/MARIS",
+            "dataset_name": "OpenAddresses/US/MS/MARIS",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16399,7 +16411,7 @@
         },
         {
             "source_name": "Desoto County, MS",
-            "dataset_name": "OpenAddresses/MS/Desoto County",
+            "dataset_name": "OpenAddresses/US/MS/Desoto County",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16464,7 +16476,7 @@
         },
         {
             "source_name": "The Faroese Environment Agency, Umhvørvisstovan",
-            "dataset_name": "OpenAddresses/The Faroese Environment Agency, Umhvørvisstovan",
+            "dataset_name": "OpenAddresses/FO/The Faroese Environment Agency, Umhvørvisstovan",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16525,7 +16537,7 @@
         },
         {
             "source_name": "Republički geodetski zavod",
-            "dataset_name": "OpenAddresses/Republički geodetski zavod",
+            "dataset_name": "OpenAddresses/RS/Republički geodetski zavod",
             "inception_date": "2025-10-22",
             "source": {
                 "url": {
@@ -16588,7 +16600,7 @@
         },
         {
             "source_name": "Le ministère des Ressources naturelles et des Forêts",
-            "dataset_name": "OpenAddresses/Le ministère des Ressources naturelles et des Forêts",
+            "dataset_name": "OpenAddresses/CA/QC/Le ministère des Ressources naturelles et des Forêts",
             "inception_date": "2025-12-17",
             "source": {
                 "url": {
@@ -16652,7 +16664,7 @@
         },
         {
             "source_name": "Landesamt für innere Verwaltung Mecklenburg-Vorpommern",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/MV",
+            "dataset_name": "OpenAddresses/DE/MV/GeoBasis-DE/MV",
             "inception_date": "2026-03-18",
             "source": {
                 "url": {
@@ -16720,7 +16732,7 @@
         },
         {
             "source_name": "Landesamt für Geoinformation und Landesvermessung Niedersachsen",
-            "dataset_name": "OpenAddresses/GeoBasis-DE/LGLN",
+            "dataset_name": "OpenAddresses/DE/NI/GeoBasis-DE/LGLN",
             "inception_date": "2026-03-18",
             "source": {
                 "url": {
@@ -16788,7 +16800,7 @@
         },
         {
             "source_name": "Hualien County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Hualien County Government",
+            "dataset_name": "OpenAddresses/TW/HUA/Hualien County Government",
             "inception_date": "2026-09-03",
             "source": {
                 "url": {
@@ -16855,7 +16867,7 @@
         },
         {
             "source_name": "Chiayi County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Chiayi County Government",
+            "dataset_name": "OpenAddresses/TW/CYQ/Chiayi County Government",
             "inception_date": "2026-09-03",
             "source": {
                 "url": {
@@ -16922,7 +16934,7 @@
         },
         {
             "source_name": "Taitung County Government, Taiwan",
-            "dataset_name": "OpenAddresses/Taitung County Government",
+            "dataset_name": "OpenAddresses/TW/TTT/Taitung County Government",
             "inception_date": "2026-09-03",
             "source": {
                 "url": {
@@ -16989,7 +17001,7 @@
         },
         {
             "source_name": "City of New Orleans, Louisiana",
-            "dataset_name": "OpenAddresses/LA/City of New Orleans",
+            "dataset_name": "OpenAddresses/US/LA/City of New Orleans",
             "inception_date": "2026-09-11",
             "source": {
                 "url": {

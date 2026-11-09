@@ -52,5 +52,21 @@ def test_dataset_keys_unique(theme):
     assert not [k for k, n in keys.items() if n > 1]
 
 
+def test_openaddresses_dataset_names_include_country():
+    """OpenAddresses names are OpenAddresses/<iso_3166_1>[/<subdivision>]/<name>, so
+    subdivision codes from different countries (US-CA, UY-CA) can't collide."""
+    for dataset in load_sources("addresses")["datasets"]:
+        name = dataset["dataset_name"]
+        if not name.startswith("OpenAddresses/"):
+            continue
+        areas = dataset["coverage"]["areas"]
+        (country,) = {a["iso_3166_1"] for a in areas}
+        subdivisions = [s for a in areas for s in a.get("iso_3166_2", [])]
+        prefix = f"OpenAddresses/{country}/"
+        if len(subdivisions) == 1:
+            prefix += subdivisions[0].split("-", 1)[1] + "/"
+        assert name.startswith(prefix) and len(name) > len(prefix), (name, prefix)
+
+
 def test_property_descriptions():
     assert load_sources("property_descriptions")["properties"]
