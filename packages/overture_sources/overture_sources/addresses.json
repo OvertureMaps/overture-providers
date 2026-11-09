@@ -6043,22 +6043,22 @@
                     "archive": "https://web.archive.org/web/2025/https://www.byggdastofnun.is/"
                 },
                 "data_location": {
-                    "primary": "https://gis.lmi.is/geoserver/byggdastofnun/wfs",
+                    "primary": "https://ogc.gis.is/geoserver/byggdastofnun/wfs",
                     "archive": ""
                 },
                 "data_download": [
-                    "https://gis.lmi.is/geoserver/byggdastofnun/wfs?request=GetFeature&service=WFS&version=1.1.0&typeName=byggdastofnun:postnumer&outputFormat=csv"
+                    "https://ogc.gis.is/geoserver/byggdastofnun/wfs?request=GetFeature&service=WFS&version=1.1.0&typeName=byggdastofnun:postnumer&outputFormat=csv"
                 ]
             },
             "license": {
                 "url": {
-                    "primary": "",
-                    "archive": ""
+                    "primary": "https://gatt.lmi.is/geonetwork/srv/ice/catalog.search#/metadata/22e98d21-a86b-4b62-ad58-a6d17703b612",
+                    "archive": "https://web.archive.org/web/20261109232727/https://gatt.lmi.is/geonetwork/srv/api/records/22e98d21-a86b-4b62-ad58-a6d17703b612"
                 },
                 "type": "LicenseRef-Proprietary",
-                "requires_attribution": false,
-                "text": "",
-                "attribution": ""
+                "requires_attribution": true,
+                "text": "Anyone may copy, reuse and publish the data freely, provided it is stated that the information comes from Byggðastofnun with the text: Byggt á gögnum frá Byggðastofnun. Byggðastofnun does not guarantee accuracy nor accept liability for use.",
+                "attribution": "Byggt á gögnum frá Byggðastofnun"
             },
             "coverage": {
                 "areas": [
