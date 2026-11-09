@@ -133,7 +133,7 @@
         "license": {
           "url": {
             "primary": "https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/#gsc.tab=0",
-            "archive": "https://web.archive.org/web/2025/http://web.archive.org/web/20231113180209/https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/"
+            "archive": "https://web.archive.org/web/20231113180209/https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/"
           },
           "type": "CC-BY-4.0",
           "requires_attribution": true,
@@ -4525,18 +4525,18 @@
       "name": "ch/countrywide",
       "collection": {
         "data_location": {
-          "primary": "https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register",
-          "archive": "https://web.archive.org/web/20231002085755/https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register"
+          "primary": "https://www.swisstopo.admin.ch/de/amtliches-verzeichnis-der-gebaeudeadressen",
+          "archive": "https://web.archive.org/web/2026/https://www.swisstopo.admin.ch/de/amtliches-verzeichnis-der-gebaeudeadressen"
         },
         "license": {
           "url": {
-            "primary": "https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-66999.html",
-            "archive": "https://web.archive.org/web/20240911054010/https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-66999.html"
+            "primary": "https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste",
+            "archive": "https://web.archive.org/web/2026/https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste"
           },
           "type": "LicenseRef-Proprietary",
-          "requires_attribution": false,
-          "text": "The Federal Council has also decided that certain GWR data will be made public (open data) unless it concerns personal data. Data protection is guaranteed.",
-          "attribution": "N/A"
+          "requires_attribution": true,
+          "text": "Die kostenlosen Geodaten und Geodienste von swisstopo dürfen genutzt, verbreitet und zugänglich gemacht werden. Weiter dürfen sie angereichert, bearbeitet sowie auch kommerziell genutzt werden.",
+          "attribution": "Bundesamt für Landestopografie swisstopo"
         },
         "coverage": {
           "areas": [
@@ -7704,13 +7704,13 @@
       "name": "lv/countrywide",
       "collection": {
         "data_location": {
-          "primary": "https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45",
-          "archive": "https://web.archive.org/web/2025/https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45"
+          "primary": "https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati",
+          "archive": "https://web.archive.org/web/2026/https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati"
         },
         "license": {
           "url": {
-            "primary": "https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45",
-            "archive": "https://web.archive.org/web/2025/https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45"
+            "primary": "https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati",
+            "archive": "https://web.archive.org/web/2026/https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati"
           },
           "type": "CC-BY-4.0",
           "requires_attribution": true,
@@ -8084,8 +8084,8 @@
       "name": "tw/mia/regionwide-zh",
       "collection": {
         "data_location": {
-          "primary": "https://opendata.miaoli.gov.tw/OpenDataDetail.aspx?n=9404&sms=0&s=1955",
-          "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
+          "primary": "https://data.gov.tw/dataset/178083",
+          "archive": "https://web.archive.org/web/2026/https://data.gov.tw/dataset/178083"
         },
         "license": {
           "url": {
@@ -9362,8 +9362,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://kortforsyning.asiaq.gl/Downloads/EN_Terms%20of%20use.pdf",
-            "archive": "https://web.archive.org/web/2025/https://kortforsyning.asiaq.gl/Downloads/EN_Terms%20of%20use.pdf"
+            "primary": "https://www.asiaq.gl/wp-content/uploads/2026/04/EN_Terms_of_use_for_Asiaq_geodata.pdf",
+            "archive": "https://web.archive.org/web/2026/https://www.asiaq.gl/wp-content/uploads/2026/04/EN_Terms_of_use_for_Asiaq_geodata.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": true,
@@ -14732,12 +14732,12 @@
         },
         "license": {
           "url": {
-            "primary": "",
-            "archive": ""
+            "primary": "https://mn.gov/mngeo/gis-data-and-maps/disclaimer.jsp",
+            "archive": "https://web.archive.org/web/2026/https://mn.gov/mngeo/gis-data-and-maps/disclaimer.jsp"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
-          "text": "License varies by source; see https://github.com/openaddresses/openaddresses/tree/master/sources/us for per-source terms.",
+          "text": "Redistribution Conditions: ... it is understood that you and/or your organization have the right to use it for any purpose. THE USER ACCEPTS THE DATA AS IS AND ASSUMES ALL RISKS ASSOCIATED WITH ITS USE.",
           "attribution": "OpenAddresses contributors"
         },
         "coverage": {
@@ -15122,8 +15122,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15161,8 +15161,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15200,8 +15200,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15239,8 +15239,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15278,8 +15278,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15317,8 +15317,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15356,8 +15356,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15395,8 +15395,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15434,8 +15434,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15473,8 +15473,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15512,8 +15512,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15551,8 +15551,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15590,8 +15590,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15629,8 +15629,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15668,8 +15668,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15707,8 +15707,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15746,8 +15746,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15785,8 +15785,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15824,8 +15824,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15863,8 +15863,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15902,8 +15902,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15941,8 +15941,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -15980,8 +15980,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -16019,8 +16019,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -16058,8 +16058,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
@@ -16097,8 +16097,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-            "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+            "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+            "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
           },
           "type": "LicenseRef-Proprietary",
           "requires_attribution": false,
