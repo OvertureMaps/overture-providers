@@ -10,17 +10,17 @@
                     "archive": "https://web.archive.org/web/2025/https://data.bev.gv.at/"
                 },
                 "data_location": {
-                    "primary": "https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512",
-                    "archive": "https://web.archive.org/web/20240305115833/https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512"
+                    "primary": "https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e",
+                    "archive": "https://web.archive.org/web/2026/https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e"
                 },
                 "data_download": [
-                    "https://data.bev.gv.at/download/Adressregister/Archiv_Adressregister_INSPIRE/gpkg/AT-INSPIRE_AD_Address_20231022.gpkg"
+                    "https://data.bev.gv.at/download/Adressregister/Archiv_Adressregister/Adresse_Relationale_Tabellen_Stichtagsdaten_20260401.zip"
                 ]
             },
             "license": {
                 "url": {
-                    "primary": "https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512",
-                    "archive": "https://web.archive.org/web/20240305115833/https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512"
+                    "primary": "https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e",
+                    "archive": "https://web.archive.org/web/2026/https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e"
                 },
                 "type": "CC-BY-4.0",
                 "requires_attribution": true,
@@ -78,7 +78,7 @@
                     "archive": "https://web.archive.org/web/20240309072243/https://data.gov.au/data/dataset/geocoded-national-address-file-g-naf"
                 },
                 "data_download": [
-                    "https://f001.backblazeb2.com/file/alantgeo-public/au-aug2024.zip"
+                    "https://f001.backblazeb2.com/file/alantgeo-public/au-aug2026.zip"
                 ]
             },
             "license": {
@@ -144,7 +144,7 @@
                     "archive": "https://web.archive.org/web/20230516022419/https://www150.statcan.gc.ca/n1/pub/46-26-0002/462600022022001-eng.htm"
                 },
                 "data_download": [
-                    "https://www150.statcan.gc.ca/n1/en/pub/46-26-0002/2022001/2024.zip?st=aPlTr8TR"
+                    "https://www150.statcan.gc.ca/n1/pub/46-26-0002/2022001/202606.zip"
                 ]
             },
             "license": {
@@ -208,13 +208,13 @@
                     "archive": "https://web.archive.org/web/20240911053341/https://github.com/digital-guard/preserv-CO/tree/main/data/_pk0006.02"
                 },
                 "data_download": [
-                    "https://dl.digital-guard.org/aaa8c908e179e07841aed287de18277811fedc3bd9a078100e63fd7e63c4e90b.zip"
+                    "https://www.addressforall.org/_official/co202307_ghs.csv.zip"
                 ]
             },
             "license": {
                 "url": {
                     "primary": "https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/#gsc.tab=0",
-                    "archive": "https://web.archive.org/web/2025/http://web.archive.org/web/20231113180209/https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/"
+                    "archive": "https://web.archive.org/web/20231113180209/https://geoportal.dane.gov.co/acerca-del-geoportal/licencia-y-condiciones-de-uso/"
                 },
                 "type": "CC-BY-4.0",
                 "requires_attribution": true,
@@ -269,7 +269,7 @@
                     "archive": "https://web.archive.org/web/20240830133357/https://dawadocs.dataforsyningen.dk/"
                 },
                 "data_download": [
-                    "https://api.dataforsyningen.dk/adresser?format=csv"
+                    "https://api.datafordeler.dk/FileDownloads/GetFile?Register=DAR&LatestTotalForEntity=Adresse&type=current&format=JSON"
                 ]
             },
             "license": {
@@ -314,7 +314,7 @@
                 "month": []
             },
             "known_issues": "",
-            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/dk/countrywide.json."
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/dk/countrywide.json. DAWA was retired (HTTP 410); DAR is now distributed by Datafordeler as weekly per-entity total downloads (Adresse, Husnummer, Adressepunkt, NavngivenVej, Postnummer, ...) that require a free 'Kendt bruger' account and an apikey parameter. See https://confluence.kds.dk/pages/viewpage.action?pageId=148452334."
         },
         {
             "source_name": "Estonian Land Board (MAA-AMET)",
@@ -330,7 +330,7 @@
                     "archive": "https://web.archive.org/web/20240110135437/https://xgis.maaamet.ee/adsavalik/extracts"
                 },
                 "data_download": [
-                    "https://xgis.maaamet.ee/adsavalik/valjav6te/1_23112024_03701.zip"
+                    "https://address.dev.peatus.ee/"
                 ]
             },
             "license": {
@@ -840,7 +840,7 @@
                     "archive": "https://web.archive.org/web/20240702152247/https://data.public.lu/en/datasets/adresses-georeferencees-bd-adresses/"
                 },
                 "data_download": [
-                    "https://download.data.public.lu/resources/adresses-georeferencees-bd-adresses/20180219-053201/addresses.geojson"
+                    "https://data.public.lu/fr/datasets/r/2a17ddc2-b961-45ce-83a2-be751d3af9b8"
                 ]
             },
             "license": {
@@ -900,7 +900,7 @@
                     "archive": "https://web.archive.org/web/20240823012627/https://inegi.org.mx/app/mapas/"
                 },
                 "data_download": [
-                    "https://dl.digital-guard.org/out/a4a_mx_geoaddress_48400000201102_csv.zip"
+                    "https://dl.digital-guard.org/090735bf608a3202a141da670d960a05dbe464893ba49208fc37c30485f5bedc.zip"
                 ]
             },
             "license": {
@@ -1018,7 +1018,7 @@
                     "archive": "https://web.archive.org/web/20240000000000*/https://data.linz.govt.nz/layer/105689-nz-addresses/"
                 },
                 "data_download": [
-                    "https://data.linz.govt.nz/services;key=441c0097257f45ab84d5ea4d24723f23/wfs?service=WFS&request=GetFeature&outputformat=CSV&typeNames=layer-105689"
+                    "https://data.linz.govt.nz/services;key=441c0097257f45ab84d5ea4d24723f23/wfs?service=WFS&request=GetFeature&outputformat=JSON&typeNames=layer-123113"
                 ]
             },
             "license": {
@@ -1067,7 +1067,7 @@
         },
         {
             "source_name": "National Address Database (NAD)",
-            "dataset_name": "NAD",
+            "dataset_name": "National Address Database",
             "inception_date": "2024-07-07",
             "source": {
                 "url": {
@@ -1079,7 +1079,7 @@
                     "archive": "https://web.archive.org/web/20240909200927/https://www.transportation.gov/gis/national-address-database"
                 },
                 "data_download": [
-                    "https://nationaladdressdata.s3.amazonaws.com/NAD_r18_TXT.zip"
+                    "https://data.transportation.gov/download/fc2s-wawr/application%2Fx-zip-compressed"
                 ]
             },
             "license": {
@@ -1087,7 +1087,7 @@
                     "primary": "https://www.transportation.gov/mission/open/gis/national-address-database/national-address-database-nad-disclaimer",
                     "archive": "https://web.archive.org/web/20240906160337/https://www.transportation.gov/mission/open/gis/national-address-database/national-address-database-nad-disclaimer"
                 },
-                "type": "National Address Database Access and Usage License",
+                "type": "LicenseRef-Public-Domain-US",
                 "requires_attribution": true,
                 "text": "Published data made available as a part of the NAD is provided as a public service to enhance open government, transparency, and accountability.  The NAD is a compilation of data provided by state, local, and tribal governments and is made available “as is.”  Although the NAD is open data, it is not intended for use as a mailing list and is subject to individual state statutes that prohibit it’s use as a mailing list. The NAD is a work of the federal government and as such is not subject to copyright protection in accordance with 17 U.S.C. § 105.  It is available for re-use without limitation or restriction.",
                 "attribution": "N/A"
@@ -1108,8 +1108,8 @@
             },
             "file_information": {
                 "oa_path": [],
-                "data_layer_name": "NAD_r18_TXT.zip",
-                "file_format": "Geodatabase",
+                "data_layer_name": "TXT.zip",
+                "file_format": "txt",
                 "address_levels": [
                     "region",
                     "city"
@@ -1151,7 +1151,7 @@
                     "archive": "https://web.archive.org/web/20231002085755/https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register"
                 },
                 "data_download": [
-                    "https://data.geo.admin.ch/ch.bfs.gebaeude_wohnungs_register/CSV/CH/CH.zip"
+                    "https://data.geo.admin.ch/ch.swisstopo.amtliches-gebaeudeadressverzeichnis/amtliches-gebaeudeadressverzeichnis_ch/amtliches-gebaeudeadressverzeichnis_ch_2056.csv.zip"
                 ]
             },
             "license": {
@@ -1207,8 +1207,8 @@
                     "archive": "https://web.archive.org/web/2025/https://data.cityofnewyork.us/"
                 },
                 "data_location": {
-                    "primary": "https://data.cityofnewyork.us/City-Government/NYC-Address-Points/g6pj-hd8k",
-                    "archive": "https://web.archive.org/web/20240720033338/https://data.cityofnewyork.us/City-Government/NYC-Address-Points/g6pj-hd8k"
+                    "primary": "https://data.cityofnewyork.us/City-Government/AddressPoint/uf93-f8nk/about_data",
+                    "archive": "https://web.archive.org/web/2026/https://data.cityofnewyork.us/City-Government/AddressPoint/uf93-f8nk/about_data"
                 },
                 "data_download": [
                     "https://services6.arcgis.com/yG5s3afENB5iO9fj/arcgis/rest/services/AddressPoint_view/FeatureServer/0"
@@ -1574,7 +1574,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.govdata.de/suche/daten/alkis-adressen-hamburg"
                 },
                 "data_download": [
-                    "https://daten-hamburg.de/opendata/ALKIS_Adressen/ALKIS_Adressen_HH_2025-07-04.zip"
+                    "https://daten-hamburg.de/opendata/ALKIS_Adressen/ALKIS_Adressen_HH_2026-07-03.zip"
                 ]
             },
             "license": {
@@ -1642,7 +1642,7 @@
                     "archive": "https://web.archive.org/web/20250224215756/https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start?path=Liegenschaftskataster/Hauskoordinaten%20ohne%20Postalische%20Angaben%20(txt)"
                 },
                 "data_download": [
-                    "https://gds.hessen.de/downloadcenter/20250225/Liegenschaftskataster/Hauskoordinaten%20ohne%20Postalische%20Angaben%20(txt)/Hauskoordinaten%20ohne%20Postalische%20Angaben-%20Ausgabedatum%20September%202024.zip"
+                    "https://gds.hessen.de/downloadcenter/20261018/Liegenschaftskataster/Hauskoordinaten%20ohne%20Postalische%20Angaben%20(txt)/Hauskoordinaten%20ohne%20Postalische%20Angaben-2026-01.zip"
                 ]
             },
             "license": {
@@ -1773,7 +1773,7 @@
                     "archive": "https://web.archive.org/web/20250108213545/https://www.geodaten.sachsen.de/downloadbereich-hauskoordinaten-4172.html"
                 },
                 "data_download": [
-                    "https://geocloud.landesvermessung.sachsen.de/index.php/s/N48p4uE0Qx00Hfz/download?path=%2F&files=hk_sn_ascii.zip"
+                    "https://geocloud.landesvermessung.sachsen.de/public.php/dav/files/B3HnXbDDgAkw69a/hk_sn_ascii.zip"
                 ]
             },
             "license": {
@@ -1832,10 +1832,12 @@
                     "archive": "https://web.archive.org/web/2025/https://geodaten.schleswig-holstein.de/"
                 },
                 "data_location": {
-                    "primary": "https://hub.arcgis.com/datasets/esri-de-content::adressen-schleswig-holstein/explore",
-                    "archive": "https://web.archive.org/web/20250225163631/https://hub.arcgis.com/datasets/esri-de-content::adressen-schleswig-holstein/explore"
+                    "primary": "https://geodaten.schleswig-holstein.de/gaialight-sh/_apps/dladownload/dl-hk_alkis.html",
+                    "archive": "https://web.archive.org/web/20250225163631/https://geodaten.schleswig-holstein.de/gaialight-sh/_apps/dladownload/dl-hk_alkis.htmle"
                 },
-                "data_download": []
+                "data_download": [
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-08-04-kzl3h/adressen-sh.txt.zip"
+                ]
             },
             "license": {
                 "url": {
@@ -2084,54 +2086,53 @@
                     "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
                 },
                 "data_download": [
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/24000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/23000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/05000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/02000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/12000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/38000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/18000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/40000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/07000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/21000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/10000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/34000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/01000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/28000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/08000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/17000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/03000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/37000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/46000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/14000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/39000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/43000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/26000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/24000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/04000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/45000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/20000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/42000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/29000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/15000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/44000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/33000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/47000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/27000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/41000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/11000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/25000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/32000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/22000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/09000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/36000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/13000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/31000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/16000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/30000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/06000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/35000-22.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/22.0a/19000-22.0a.zip"
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/23000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/05000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/02000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/12000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/38000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/18000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/40000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/07000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/21000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/10000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/34000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/01000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/28000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/08000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/17000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/03000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/37000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/46000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/14000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/39000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/43000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/26000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/24000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/04000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/45000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/20000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/42000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/29000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/15000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/44000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/33000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/47000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/27000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/41000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/11000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/25000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/32000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/22000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/09000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/36000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/13000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/31000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/16000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/30000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/06000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/35000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/19000-24.0a.zip"
                 ]
             },
             "license": {
@@ -2300,7 +2301,22 @@
                     "archive": "https://web.archive.org/web/2025/https://mapy.geoportal.gov.pl/imap/Imgp_2.html?SRS=2180&resources=map:wms@https://mapy.geoportal.gov.pl/wss/ext/KrajowaIntegracjaNumeracjiAdresowej"
                 },
                 "data_download": [
-                    "https://opendata.geoportal.gov.pl/prg/adresy/PRG-punkty_adresowe.zip"
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/02/02.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/04/04.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/10/10.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/06/06.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/08/08.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/12/12.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/14/14.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/16/16.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/18/18.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/20/20.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/22/22.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/24/24.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/26/26.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/28/28.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/30/30.zip",
+                    "https://opendata.geoportal.gov.pl/prg/adresy/PunktyAdresowe/32/32.zip"
                 ]
             },
             "license": {
@@ -2383,7 +2399,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.slovensko.sk/datasety/db1e7bd7-a7d4-4eac-8e5e-0c843b9dc7d5"
                 },
                 "data_download": [
-                    "https://data.slovensko.sk/download?id=c72bbe2e-58e2-4100-9093-f6d960b23db7"
+                    "https://data.slovensko.sk/download?id=d22c42f3-82b5-450d-b8fb-4245d50a31ec"
                 ]
             },
             "license": {
@@ -2450,7 +2466,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.ine.pt/scripts/hvd/en/geo.html"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/sergiyprotsiv/fc77c5/pt_addresses.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-02-23-921i3/pt_addresses.csv.zip"
                 ]
             },
             "license": {
@@ -2823,7 +2839,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.lvermgeo.sachsen-anhalt.de/de/gdp-open-data.html"
                 },
                 "data_download": [
-                    "https://www.lvermgeo.sachsen-anhalt.de/datei/anzeigen/id/258997/501/gebaeudereferenzen.zip"
+                    "https://www.lvermgeo.sachsen-anhalt.de/datei/anzeigen/id/258997,501/gebaeudereferenzen.zip"
                 ]
             },
             "license": {
@@ -2834,7 +2850,7 @@
                 "type": "DL-DE-BY-2.0",
                 "requires_attribution": true,
                 "text": "The terms of use of LVermGeo apply to the geodata provided free of charge , according to which these data and services may be used under the open data license \" Data License Germany – Attribution – Version 2.0 \" ",
-                "attribution": "©GeoBasis-DE/LVermGeo SH/DL-DE->BY-2.0"
+                "attribution": "©GeoBasis-DE/LVermGeo ST/DL-DE->BY-2.0"
             },
             "coverage": {
                 "areas": [
@@ -2886,7 +2902,7 @@
                     "archive": "https://web.archive.org/web/2025/https://metaver.de/trefferanzeige?docuuid=4edfa0d5-e615-4784-a0c5-ed4dcf3905e5"
                 },
                 "data_download": [
-                    "https://gdi2.geo.bremen.de/inspire/download/ALKIS_Gebaeudeadressen/data/AX_GeoreferenzierteGebaeudeadresse_FHB_2024_02_SHP.zip"
+                    "https://gdi2.geo.bremen.de/inspire/download/ALKIS_Gebaeudeadressen/data/GEBAEUDEADRESSEN_SHP_FHB.zip"
                 ]
             },
             "license": {
@@ -2949,7 +2965,7 @@
                     "archive": "https://web.archive.org/web/2025/https://centrodedescargas.cnig.es/CentroDescargas/buscadorCatalogo.do"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/bbc9ff/spain_addresses.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-5omy1/es_addresses.csv.zip"
                 ]
             },
             "license": {
@@ -3006,26 +3022,26 @@
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
-                    "primary": "https://fasteignaskra.is",
-                    "archive": "https://web.archive.org/web/2025/https://fasteignaskra.is"
+                    "primary": "https://hms.is",
+                    "archive": "https://web.archive.org/web/2026/https://hms.is"
                 },
                 "data_location": {
-                    "primary": "https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/",
-                    "archive": "https://web.archive.org/web/2025/https://fasteignaskra.is/gogn/grunngogn-til-nidurhals/stadfangaskra/"
+                    "primary": "https://hms.is/gogn-og-maelabord/grunngogntilnidurhals/stadfangaskra",
+                    "archive": "https://web.archive.org/web/20260508111355/https://hms.is/gogn-og-maelabord/grunngogntilnidurhals/stadfangaskra"
                 },
                 "data_download": [
-                    "https://fasteignaskra.is/Stadfangaskra.csv"
+                    "https://hmsstgsftpprodweu001.blob.core.windows.net/fasteignaskra/Stadfangaskra.csv"
                 ]
             },
             "license": {
                 "url": {
-                    "primary": "https://opingogn.is/pages/notkunarleidbeiningar",
-                    "archive": "https://web.archive.org/web/20241116140612/https://opingogn.is/pages/notkunarleidbeiningar"
+                    "primary": "https://gatt.lmi.is/geonetwork/srv/ice/catalog.search#/metadata/%7BA879D973-CA98-49D7-AA50-7BC35047E461%7D",
+                    "archive": "https://web.archive.org/web/20261105174831/https://gatt.lmi.is/geonetwork/srv/ice/catalog.search#/metadata/%7BA879D973-CA98-49D7-AA50-7BC35047E461%7D"
                 },
                 "type": "Leiðbeiningar varðandi endurnot opinberra upplýsinga",
                 "requires_attribution": true,
                 "text": "User must: state the origin of the information and it is recommended that it be done in the manner requested by the right holder of the information.",
-                "attribution": "Fasteignaskra"
+                "attribution": "Húsnæðis-, mannvirkja- og skipulagsstofnun"
             },
             "coverage": {
                 "areas": [
@@ -3072,7 +3088,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.lv/dati/eng/dataset/adreses-inspire/resource/22e0163f-b107-4f5b-9588-26a065f01c45"
                 },
                 "data_download": [
-                    "https://grafws.kadastrs.lv/atom/ad/20241028/Address.gml.zip"
+                    "https://data.gov.lv/dati/dataset/6b06a7e8-dedf-4705-a47b-2a7c51177473/resource/b643b1b3-223f-4394-9beb-18524f8b0b82/download/aw_shp.zip"
                 ]
             },
             "license": {
@@ -3198,7 +3214,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/f796d0/taoyuan_addresses_2024_08.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-gqoew/Taoyuan_2026_04.zip"
                 ]
             },
             "license": {
@@ -3266,7 +3282,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/55f72f/yunlin_addresses_2023.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-07-22-3tkao/Yunlin_2025_05_05.zip"
                 ]
             },
             "license": {
@@ -3333,7 +3349,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/71cacd/kaohsiung_addresses_2024_10.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-hc9vz/kaohsiung_2026_06.zip"
                 ]
             },
             "license": {
@@ -3401,7 +3417,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/a682ba/taichung_addresses_2024_06.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-10-12-eczmp/Taichung_2026_08.zip"
                 ]
             },
             "license": {
@@ -3469,7 +3485,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/75b8be/keelung_addresses_2024.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-p46b9/keelung_2026_06.zip"
                 ]
             },
             "license": {
@@ -3537,7 +3553,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/720b5a/changhua_addresses_2024.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-h1b1t/Changua_2026_06.zip"
                 ]
             },
             "license": {
@@ -3604,7 +3620,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/155472"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/af53d6/taipei_city_addresses_2024_10_02.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-h331x/Taipei_city_2026_06.zip"
                 ]
             },
             "license": {
@@ -3672,7 +3688,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/6ff385/tainan_addresses_2023.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-yzkpb/Tainan_2025.zip"
                 ]
             },
             "license": {
@@ -3739,7 +3755,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/168887"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/22864b/new_taipei_city_addresses_2024.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-o3vbb/New_Taipei_2026_05.zip"
                 ]
             },
             "license": {
@@ -3803,11 +3819,11 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/"
                 },
                 "data_location": {
-                    "primary": "https://opendata.miaoli.gov.tw/OpenDataDetail.aspx?n=9404&sms=0&s=1955",
-                    "archive": "https://web.archive.org/web/2025/https://data.gov.tw/license"
+                    "primary": "https://data.gov.tw/dataset/178083",
+                    "archive": "https://web.archive.org/web/2026/https://data.gov.tw/dataset/178083"
                 },
                 "data_download": [
-                    "https://jeffu.dev/data/miaoli_addresses_2024.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-10-12-n2wsb/Miaoli_2026_06.zip"
                 ]
             },
             "license": {
@@ -3859,7 +3875,7 @@
                 ]
             },
             "known_issues": "",
-            "notes": "Distributed by OpenAddresses."
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/tw/mia/regionwide-zh.json."
         },
         {
             "source_name": "Fresno County, California",
@@ -3875,7 +3891,7 @@
                     "archive": "https://web.archive.org/web/2025/https://datasharing-cofgisonline.hub.arcgis.com/pages/our-data"
                 },
                 "data_download": [
-                    "https://services3.arcgis.com/ibgDyuD2DLBge82s/ArcGIS/rest/services/Regional_Addresses/FeatureServer/0"
+                    "https://services3.arcgis.com/ibgDyuD2DLBge82s/arcgis/rest/services/REGIONAL_ADDRESS_VW/FeatureServer/1"
                 ]
             },
             "license": {
@@ -3997,7 +4013,7 @@
                     "archive": "https://geoportal.saarland.de/mapbender/php/mod_iso19139ToHtml.php?url=https%3A%2F%2Fgeoportal.saarland.de%2Fmapbender%2Fphp%2Fmod_dataISOMetadata.php%3FoutputFormat%3Diso19139%26id%3Dcfc63fce-d914-4486-8f4f-c3c0973ddb64"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2024-11-11-z9wlb/Saarland.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-09-30-7qhpm/Saarland.zip"
                 ]
             },
             "license": {
@@ -4057,14 +4073,16 @@
             "inception_date": "2024-12-18",
             "source": {
                 "url": {
-                    "primary": "http://geodaten.llv.li/geoportal/gebaeudeidentifikator.html",
-                    "archive": "https://web.archive.org/web/2025/http://geodaten.llv.li/geoportal/gebaeudeidentifikator.html"
+                    "primary": "https://service.geo.llv.li/download/",
+                    "archive": "https://web.archive.org/web/2026/https://service.geo.llv.li/download/"
                 },
                 "data_location": {
                     "primary": "https://service.geo.llv.li/download//getfile.php?theme=officialAdress",
                     "archive": "https://web.archive.org/web/2025/https://service.geo.llv.li/download//getfile.php?theme=officialAdress"
                 },
-                "data_download": []
+                "data_download": [
+                    "https://service.geo.llv.li/download//getfile.php?theme=officialAdress"
+                ]
             },
             "license": {
                 "url": {
@@ -4187,7 +4205,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.sfgov.org/Geographic-Locations-and-Boundaries/Addresses-with-Units-Enterprise-Addressing-System/ramy-di5m"
                 },
                 "data_download": [
-                    "https://data.sfgov.org/api/views/ramy-di5m/rows.csv?accessType=DOWNLOAD&api_foundry=true"
+                    "https://data.sfgov.org/api/v3/views/ramy-di5m/query.csv?query=SELECT%20%60eas_fullid%60%2C%20%60address_number%60%2C%20%60address_number_suffix%60%2C%20%60street_name%60%2C%20%60street_type%60%2C%20%60unit_number%60%2C%20%60zip_code%60%2C%20%60longitude%60%20AS%20%60Longitude%60%2C%20%60latitude%60%20AS%20%60Latitude%60"
                 ]
             },
             "license": {
@@ -5595,7 +5613,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/171571"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-01-08-ub8z2/kinmen_county.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-o7emf/kinmen_2026_06.zip"
                 ]
             },
             "license": {
@@ -5662,7 +5680,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/170852"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-01-08-g1zpm/penghu_county.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-jjevw/Penghu_2026_05.zip"
                 ]
             },
             "license": {
@@ -5796,7 +5814,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/172380"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-01-08-745q1/hsinchu_county.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-gni20/Hsinchu_county_2026_06.zip"
                 ]
             },
             "license": {
@@ -5863,7 +5881,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data.gov.tw/dataset/170847"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-01-08-6cvyv/pingtung_county.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-04-j4sks/Pingtung_2026_01.zip"
                 ]
             },
             "license": {
@@ -5994,7 +6012,7 @@
                     "archive": "https://web.archive.org/web/2025/https://public-manateegis.opendata.arcgis.com/datasets/2ff6cd907c9b4951869e70921fd14607_5/explore?location=27.425345%2C-82.400550%2C10.54"
                 },
                 "data_download": [
-                    "https://www.mymanatee.org/gisits/rest/services/opendata/General/MapServer/5"
+                    "https://services1.arcgis.com/t03WDvnSR7gSDOB2/arcgis/rest/services/ADDRESS_POINTS/FeatureServer/2"
                 ]
             },
             "license": {
@@ -6186,7 +6204,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gis2017-01-10t133755357z-hillsborough.opendata.arcgis.com/datasets/hillsborough::siteaddresspoint/about"
                 },
                 "data_download": [
-                    "https://arcgis.tampagov.net/arcgis/rest/services/Address/AddressPoints/FeatureServer/0"
+                    "https://services.arcgis.com/apTfC6SUmnNfnxuF/arcgis/rest/services/Site_Address_Point/FeatureServer/0"
                 ]
             },
             "license": {
@@ -6314,31 +6332,29 @@
                     "archive": "https://web.archive.org/web/2025/https://pointmatch.floridarevenue.com/General/AddressFiles.aspx"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2025-03-05-ank2u/BRADFORD_2025-01-01.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-yl6l4/CALHOUN_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-dkwyd/DIXIE_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-7dssb/ESCAMBIA_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-72wuc/FRANKLIN_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-wydt9/GADSDEN_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-w1xbz/GILCHRIST_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-4cnre/GLADES_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-xr7x4/GULF_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-oc6il/HAMILTON_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-bsb94/HOLMES_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-yowa9/JACKSON_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-bmb3s/JEFFERSON_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-gij87/LAFAYETTE_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-iwlxe/LEVY_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-jy3cw/LIBERTY_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-ofnz5/MADISON_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-vygr9/MARION_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-ha622/MONROE_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-nf8sr/OKEECHOBEE_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-d2gfl/SUWANNEE_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-3svxj/TAYLOR_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-kpkte/UNION_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-ftxym/WAKULLA_2025-01-01.csv.zip",
-                    "https://data.openaddresses.io/cache/uploads/stepps00/2025-03-06-ewtfj/WASHINGTON_2025-01-01.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-ovz8h/BRADFORD_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-pb2rg/CALHOUN_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-bqvl5/DIXIE_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-wa4w1/ESCAMBIA_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-p9xjk/FRANKLIN_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-385ey/GADSDEN_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-c7wir/GILCHRIST_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-x0l9p/GLADES_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-5wa6r/GULF_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-xjahh/HAMILTON_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-29nuv/JEFFERSON_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-u723m/LAFAYETTE_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-rufmj/LEVY_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-gy8ep/LIBERTY_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-3v592/MADISON_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-sfq2w/MARION_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-ivyiw/MONROE_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-f5zr1/OKEECHOBEE_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-8jk6v/SUWANNEE_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-tl6g0/TAYLOR_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-kewll/UNION_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-qk9mm/WAKULLA_2026-07-01.csv",
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-06-03-9a01l/WASHINGTON_2026-07-01.csv"
                 ]
             },
             "license": {
@@ -6939,7 +6955,7 @@
                     "archive": "https://web.archive.org/web/2025/https://hub-collierbcc.opendata.arcgis.com/datasets/CollierBCC::address-points/about"
                 },
                 "data_download": [
-                    "https://gmdnags.colliercountyfl.gov/arcgis/rest/services/Public/AddressIdentify/MapServer//0"
+                    "https://services2.arcgis.com/SlIq32SqARUHIhSx/arcgis/rest/services/Site_Address_Points_b/FeatureServer/3"
                 ]
             },
             "license": {
@@ -7383,11 +7399,11 @@
                     "archive": "https://web.archive.org/web/2025/https://www.hernandocounty.us/"
                 },
                 "data_location": {
-                    "primary": "https://gis.hernandopa-fl.us/",
-                    "archive": "https://web.archive.org/web/2025/https://gis.hernandopa-fl.us/"
+                    "primary": "https://data-hccentralgis.hub.arcgis.com/",
+                    "archive": "https://web.archive.org/web/2026/https://data-hccentralgis.hub.arcgis.com/"
                 },
                 "data_download": [
-                    "https://server.hernandopa-fl.us/server/rest/services/Basemap/MapServer/1"
+                    "https://services2.arcgis.com/x5zvhhxfUuRDntRe/arcgis/rest/services/Basemap_PublicMapGallery/FeatureServer/1"
                 ]
             },
             "license": {
@@ -7707,7 +7723,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data-mcgov.opendata.arcgis.com/"
                 },
                 "data_download": [
-                    "http://geoweb.martin.fl.us/arcgis/rest/services/geocoding/address_points/MapServer/0"
+                    "https://geoweb.martin.fl.us/arcgis/rest/services/geocoding/address_points/MapServer/0"
                 ]
             },
             "license": {
@@ -7835,7 +7851,7 @@
                     "archive": "https://web.archive.org/web/2025/https://maps.ncpafl.com/portal/apps/sites/#/data"
                 },
                 "data_download": [
-                    "https://maps.nassauflpa.com/ncflpa_arcgis/rest/services/nassau/TaxMap4_CitrixV2/MapServer/231"
+                    "https://maps.ncpafl.com/ncflpa_arcgis/rest/services/nassau/TaxMap4_CitrixV2/MapServer/231"
                 ]
             },
             "license": {
@@ -8027,7 +8043,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.pascocountyfl.net/services/gis/index.php"
                 },
                 "data_download": [
-                    "https://services6.arcgis.com/Mo4MddfRHpFwT7UF/ArcGIS/rest/services/Addressing/FeatureServer/16"
+                    "https://services6.arcgis.com/Mo4MddfRHpFwT7UF/ArcGIS/rest/services/PascoMapper_Addresses/FeatureServer/16"
                 ]
             },
             "license": {
@@ -8219,7 +8235,7 @@
                     "archive": "https://web.archive.org/web/2025/https://putnam-pcgis.hub.arcgis.com/datasets/6006770008e44a56ac751f042043b8d2_0/about"
                 },
                 "data_download": [
-                    "https://services1.arcgis.com/YZc1OyqL6jbIOeOv/arcgis/rest/services/Site_Address_Point__new_hub/FeatureServer/0"
+                    "https://services1.arcgis.com/YZc1OyqL6jbIOeOv/ArcGIS/rest/services/Address_Points_from_Pro/FeatureServer/1"
                 ]
             },
             "license": {
@@ -8411,7 +8427,7 @@
                     "archive": "https://web.archive.org/web/2025/http://data1-santarosagis.opendata.arcgis.com/datasets/structures"
                 },
                 "data_download": [
-                    "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/Structures/FeatureServer/0"
+                    "https://services.arcgis.com/Eg4L1xEv2R3abuQd/arcgis/rest/services/Structures/FeatureServer/327"
                 ]
             },
             "license": {
@@ -8539,7 +8555,7 @@
                     "archive": "https://web.archive.org/web/2025/http://www.seminolecountyfl.gov/departments-services/information-services/gis-geographic-information-systems/gis-data.stml"
                 },
                 "data_download": [
-                    "http://www.apps.seminolecountyfl.gov/is/gis/GISData/Addresses.zip"
+                    "https://scwebapp2.seminolecountyfl.gov:6443/is/gis/GISData/addresses.gdb.zip"
                 ]
             },
             "license": {
@@ -8603,7 +8619,7 @@
                     "archive": "https://web.archive.org/web/2025/https://sumtercountyfl.gov/105/GIS"
                 },
                 "data_download": [
-                    "https://gis.sumtercountyfl.gov/sumtergis/rest/services/Interactive/Address3/MapServer/0"
+                    "https://gis.sumtercountyfl.gov/sumtergis/rest/services/Public/SCAS_Base/MapServer/0"
                 ]
             },
             "license": {
@@ -8984,11 +9000,11 @@
                     "archive": "https://web.archive.org/web/2025/https://www.amadorgov.org/"
                 },
                 "data_location": {
-                    "primary": "https://gisviewer.amadorgov.org/gpv/Viewer.aspx",
-                    "archive": "https://web.archive.org/web/2025/https://gisviewer.amadorgov.org/gpv/Viewer.aspx"
+                    "primary": "https://www.amadorcounty.gov/departments/planning/gis-and-mapping",
+                    "archive": "https://web.archive.org/web/2026/https://www.amadorcounty.gov/departments/planning/gis-and-mapping"
                 },
                 "data_download": [
-                    "https://services9.arcgis.com/Z65sx307Hunxj6eq/ArcGIS/rest/services/ParcelData_Public/FeatureServer/0"
+                    "https://services9.arcgis.com/Z65sx307Hunxj6eq/ArcGIS/rest/services/Parcels_AmadorCo_20210531/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9052,7 +9068,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gisportal.buttecounty.net/portal/home/item.html?id=9144daa8e8744ebe80e587d859c0a0fe"
                 },
                 "data_download": [
-                    "https://gisportal.buttecounty.net/arcgis/rest/services/Base_Layers/FeatureServer/3"
+                    "https://gisportal.buttecounty.net/arcgis/rest/services/Base_Layers_2/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9176,8 +9192,8 @@
                     "archive": "https://web.archive.org/web/2025/https://www.countyofcolusaca.gov/"
                 },
                 "data_location": {
-                    "primary": "http://www.countyofcolusa.org/index.aspx?NID=710",
-                    "archive": "https://web.archive.org/web/2025/http://www.countyofcolusa.org/index.aspx?NID=710"
+                    "primary": "https://www.countyofcolusaca.gov/713/GIS-Download-Library",
+                    "archive": "https://web.archive.org/web/2026/https://www.countyofcolusaca.gov/713/GIS-Download-Library"
                 },
                 "data_download": [
                     "https://services5.arcgis.com/RHVBVx0fVmUtvfJV/ArcGIS/rest/services/Colusa_County_Tax_Parcels/FeatureServer/0"
@@ -9244,7 +9260,7 @@
                     "archive": "https://www.contracosta.ca.gov/1818/GIS"
                 },
                 "data_download": [
-                    "https://gis.cccounty.us/Downloads/General%20County%20Data/CCC_AddressData.zip"
+                    "https://gis.cccounty.us/Downloads/General%20County%20Data/CCC_DOIT_AddressData.zip"
                 ]
             },
             "license": {
@@ -9308,7 +9324,7 @@
                     "archive": "https://web.archive.org/web/2025/http://www.co.del-norte.ca.us/departments/information-technology/geographic-information-services-gis"
                 },
                 "data_download": [
-                    "https://services3.arcgis.com/IkUDY1vRIUWiVvcz/arcgis/rest/services/Parcels/FeatureServer/0"
+                    "https://services3.arcgis.com/IkUDY1vRIUWiVvcz/arcgis/rest/services/Parcels_20240628/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9372,7 +9388,7 @@
                     "archive": "https://web.archive.org/web/2025/http://www.edcgov.us/Government/Surveyor/FAQs/G_I_S__FAQs.aspx"
                 },
                 "data_download": [
-                    "https://see-eldorado.edcgov.us/arcgis/rest/services/uGOTNETandEXTRACTS/address/MapServer/0"
+                    "https://see-eldorado.edcgov.us/arcgis/rest/services/Parcels_Public/MapServer/0"
                 ]
             },
             "license": {
@@ -9436,7 +9452,7 @@
                     "archive": "https://web.archive.org/web/2025/https://countyofglenn.maps.arcgis.com/home/index.html"
                 },
                 "data_download": [
-                    "http://gis.gcppwa.net/arcgis/rest/services/Districts/GCDistricts/MapServer/0"
+                    "https://services3.arcgis.com/GUHJKBhKMcD5JjTe/ArcGIS/rest/services/Zoning_Finder/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9628,7 +9644,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gisdata.inyo.gov/datasets/c9c42ea84e4a4450a6d7c5aac50ff69c_0/explore"
                 },
                 "data_download": [
-                    "https://gis.inyo.gov/server/rest/services/AddressPoints/FeatureServer/0"
+                    "https://services.arcgis.com/0jRlQ17Qmni5zEMr/arcgis/rest/services/Address_Points/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9816,11 +9832,11 @@
                     "archive": "https://web.archive.org/web/2025/https://www.lakecountyca.gov/"
                 },
                 "data_location": {
-                    "primary": "http://gis.co.lake.ca.us/",
-                    "archive": "https://web.archive.org/web/2025/http://gis.co.lake.ca.us/"
+                    "primary": "https://gis.lakecountyca.gov/portal/home/index.html",
+                    "archive": "https://web.archive.org/web/2026/https://gis.lakecountyca.gov/portal/home/index.html"
                 },
                 "data_download": [
-                    "https://gispublic.co.lake.ca.us/server/rest/services/ParcelsFV/Mapserver/0"
+                    "https://services.arcgis.com/W9F9wfM5YRkBzUKB/ArcGIS/rest/services/Parcels/FeatureServer/0"
                 ]
             },
             "license": {
@@ -9876,12 +9892,12 @@
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
-                    "primary": "http://lassencounty.org/",
-                    "archive": "https://web.archive.org/web/2025/http://lassencounty.org/"
+                    "primary": "https://www.lassencounty.gov/",
+                    "archive": "https://web.archive.org/web/2026/https://www.lassencounty.gov/"
                 },
                 "data_location": {
-                    "primary": "http://lassencounty.org/govt/dept/assessor/default.asp",
-                    "archive": "https://web.archive.org/web/2025/http://lassencounty.org/govt/dept/assessor/default.asp"
+                    "primary": "https://www.lassencounty.gov/180/Assessor",
+                    "archive": "https://web.archive.org/web/2026/https://www.lassencounty.gov/180/Assessor"
                 },
                 "data_download": [
                     "https://services.arcgis.com/q3Zg9ERurv23iysr/ArcGIS/rest/services/Lassen_Parcel_Final_Schema1/FeatureServer/0"
@@ -9948,7 +9964,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.maderacounty.com/government/geographic-information-system-gis"
                 },
                 "data_download": [
-                    "https://gis.maderacounty.com/server/rest/services/STANDARD/MasterAddressPointFile/MapServer/0"
+                    "https://gis.maderacounty.com/server/rest/services/Addresses/Address_Lookup/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10136,11 +10152,11 @@
                     "archive": "https://web.archive.org/web/2025/https://www.mendocinocounty.gov/"
                 },
                 "data_location": {
-                    "primary": "https://gis.mendocinocounty.org/",
-                    "archive": "https://web.archive.org/web/2025/https://gis.mendocinocounty.org/"
+                    "primary": "https://gis.mendocinocounty.gov/apps/mendocino-county::mendocino-county-gis-1/",
+                    "archive": "https://web.archive.org/web/2026/https://gis.mendocinocounty.gov/apps/mendocino-county::mendocino-county-gis-1/"
                 },
                 "data_download": [
-                    "https://gis.mendocinocounty.org/server/rest/services/Parcels_sde_pub/MapServer/6"
+                    "https://services5.arcgis.com/8y4r60VTvWj2wnDH/arcgis/rest/services/Parcels_Public_/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10204,7 +10220,7 @@
                     "archive": "https://web.archive.org/web/2025/https://geostack-mercedcounty.opendata.arcgis.com/datasets/MercedCounty::merced-county-site-address-points/about"
                 },
                 "data_download": [
-                    "https://maps.countyofmerced.com/server/rest/services/Merced_County_Site_Address_Points/FeatureServer/1"
+                    "https://gis.countyofmerced.com/server/rest/services/Site_Address_Points/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10268,7 +10284,7 @@
                     "archive": ""
                 },
                 "data_download": [
-                    "https://gis2.cdfa.ca.gov/server/rest/services/Parcel_DM/MapServer/24/"
+                    "https://services6.arcgis.com/MIuDOWgDqUpHjCEg/arcgis/rest/services/REACH_Parcels/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10460,7 +10476,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gisdata.countyofnapa.org/datasets/napacounty::addresses-all/about"
                 },
                 "data_download": [
-                    "https://services1.arcgis.com/Ko5rxt00spOfjMqj/arcgis/rest/services/Addresses_All/FeatureServer/0"
+                    "https://services1.arcgis.com/Ko5rxt00spOfjMqj/arcgis/rest/services/Addresses_Public/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10652,7 +10668,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.placer.ca.gov/2842/GIS-and-Online-Maps"
                 },
                 "data_download": [
-                    "https://services6.arcgis.com/PArfeTGcwA9RGNzN/ArcGIS/rest/services/Address_Points/FeatureServer/0"
+                    "https://services6.arcgis.com/PArfeTGcwA9RGNzN/ArcGIS/rest/services/AddressPoints_LIS/FeatureServer/0"
                 ]
             },
             "license": {
@@ -10716,7 +10732,7 @@
                     "archive": "https://web.archive.org/web/2025/https://plumascounty.us/2199/Interactive-GIS-Data-to-Download-Page"
                 },
                 "data_download": [
-                    "https://github.com/user-attachments/files/17595521/mygeodata.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-01-05-qo8uh/plumas_2025_07.geojson.zip"
                 ]
             },
             "license": {
@@ -10783,7 +10799,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gisopendata-countyofriverside.opendata.arcgis.com/datasets/CountyofRiverside::address-points/about"
                 },
                 "data_download": [
-                    "https://gis.countyofriverside.us/arcgis_public/rest/services/OpenData/ParcelBasic/MapServer/5"
+                    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/General/MapServer/10"
                 ]
             },
             "license": {
@@ -10975,7 +10991,7 @@
                     "archive": "https://web.archive.org/web/2025/https://open.sbcounty.gov/datasets/sbcounty::countywide-parcels/about"
                 },
                 "data_download": [
-                    "https://www.arcgis.com/sharing/rest/content/items/49323ddf29ef475db75e141f675fac47/data"
+                    "https://maps.sbcounty.gov/gis/rest/services/AddressDataManagement/SBC_Site_Addresses/FeatureServer/0"
                 ]
             },
             "license": {
@@ -11039,7 +11055,7 @@
                     "archive": "https://web.archive.org/web/2025/https://geo.sandag.org/portal/home/item.html?id=b1c2fd749f6847ccae6040cf0f803647"
                 },
                 "data_download": [
-                    "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0"
+                    "https://geo.sandag.org/server/rest/directories/downloads/Address_Points_shapefile.zip"
                 ]
             },
             "license": {
@@ -11295,7 +11311,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.countyofsb.org/1858/Mapping-GIS"
                 },
                 "data_download": [
-                    "https://services8.arcgis.com/s7n9cRiugyMCsR0U/ArcGIS/rest/services/Parcel_layers_ArcGISonline_LUZO/FeatureServer/0"
+                    "https://services.arcgis.com/KkJhFbLnXVqahKz2/ArcGIS/rest/services/Address_Points/FeatureServer/0"
                 ]
             },
             "license": {
@@ -11355,11 +11371,11 @@
                     "archive": "https://web.archive.org/web/2025/https://www.santaclaracounty.gov/home"
                 },
                 "data_location": {
-                    "primary": "https://data.sccgov.org/Government/AddressPoint/k4vk-5ggi",
-                    "archive": "https://web.archive.org/web/2025/https://data.sccgov.org/Government/AddressPoint/k4vk-5ggi"
+                    "primary": "https://gis.santaclaracounty.gov/access-county-maps-portal",
+                    "archive": "https://web.archive.org/web/2026/https://gis.santaclaracounty.gov/access-county-maps-portal"
                 },
                 "data_download": [
-                    "https://mapservices.sccgov.org/arcgis/rest/services/opendata/SCCGISHUB/MapServer/8"
+                    "https://maps.santaclaracounty.gov/server/rest/services/opendata/SCCGISHUB/MapServer/8"
                 ]
             },
             "license": {
@@ -11675,8 +11691,8 @@
                     "archive": "https://web.archive.org/web/2025/https://www.stancounty.com/"
                 },
                 "data_location": {
-                    "primary": "https://gis2.stancounty.com/portal/home/item.html?id=2d32837e108940fca1be9c20993e2d75",
-                    "archive": "https://web.archive.org/web/2025/https://gis2.stancounty.com/portal/home/item.html?id=2d32837e108940fca1be9c20993e2d75"
+                    "primary": "https://stancounty-gis.maps.arcgis.com/home/item.html?id=e8554b543e074d2d94b57dd056118119",
+                    "archive": "https://web.archive.org/web/2026/https://stancounty-gis.maps.arcgis.com/home/item.html?id=e8554b543e074d2d94b57dd056118119"
                 },
                 "data_download": [
                     "https://services.arcgis.com/EeYBJFxLdUojipYa/ArcGIS/rest/services/Addresses_AGOL/FeatureServer/0"
@@ -11803,11 +11819,11 @@
                     "archive": "https://web.archive.org/web/2025/https://tehamartpa.org/"
                 },
                 "data_location": {
-                    "primary": "https://tehamartpa.org/gis/",
-                    "archive": "https://web.archive.org/web/2025/https://tehamartpa.org/gis/"
+                    "primary": "https://tehamartpa.org/gis-mapping/gis-data/",
+                    "archive": "https://web.archive.org/web/2026/https://tehamartpa.org/gis-mapping/gis-data/"
                 },
                 "data_download": [
-                    "https://nspdcwebsrv.csuchico.edu/nspdcarcsrv01/rest/services/Tehama_County/Tehama_County_Planning_Public/MapServer/29"
+                    "https://nspdcwebsrv.csuchico.edu/nspdcarcsrv01/rest/services/Tehama_County/Tehama_County_Planning_Public/MapServer/33"
                 ]
             },
             "license": {
@@ -11935,7 +11951,7 @@
                     "archive": "https://web.archive.org/web/2025/https://gis-tularecounty.opendata.arcgis.com/datasets/TulareCounty::site-structure-address-points/about"
                 },
                 "data_download": [
-                    "https://services2.arcgis.com/bYBANhmQGwSSLC0l/ArcGIS/rest/services/Tulare_County_Address_Points/FeatureServer/0"
+                    "https://services2.arcgis.com/bYBANhmQGwSSLC0l/ArcGIS/rest/services/SiteStructureAddressPoints/FeatureServer/0"
                 ]
             },
             "license": {
@@ -11999,7 +12015,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.tuolumnecounty.ca.gov/"
                 },
                 "data_download": [
-                    "https://services3.arcgis.com/afQpMaliVrwHS7Ud/ArcGIS/rest/services/Parcels_WithSiteAddress_View/FeatureServer/0"
+                    "https://services3.arcgis.com/afQpMaliVrwHS7Ud/arcgis/rest/services/Parcels_WithSiteAddress_view/FeatureServer/2"
                 ]
             },
             "license": {
@@ -12119,15 +12135,15 @@
             "inception_date": "2025-03-19",
             "source": {
                 "url": {
-                    "primary": "https://www.yuba.org/",
-                    "archive": "https://web.archive.org/web/2025/https://www.yuba.org/"
+                    "primary": "https://www.yuba.gov/",
+                    "archive": "https://web.archive.org/web/2026/https://www.yuba.gov/"
                 },
                 "data_location": {
-                    "primary": "https://www.yuba.org/departments/information_technology/geographic_information_systems_(gis)/gis_data_catalog.php",
-                    "archive": "https://web.archive.org/web/2025/https://www.yuba.org/departments/information_technology/geographic_information_systems_(gis)/gis_data_catalog.php"
+                    "primary": "https://www.yuba.gov/departments/community_development/gis/index.php",
+                    "archive": "https://web.archive.org/web/2026/https://www.yuba.gov/departments/community_development/gis/index.php"
                 },
                 "data_download": [
-                    "https://services5.arcgis.com/THtdW72WxYCCmIVL/ArcGIS/rest/services/Yuba_County_WFL1/FeatureServer/0"
+                    "https://gis.yuba.org/arcgis/rest/services/Addressing/Addressing_public/FeatureServer/0"
                 ]
             },
             "license": {
@@ -12191,7 +12207,7 @@
                     "archive": "https://web.archive.org/web/2025/https://www.leegov.com/gis/data/gis-data"
                 },
                 "data_download": [
-                    "https://gismapserver.leegov.com/gisserver910/rest/services/Layers/NG911AddressPoints/MapServer/0"
+                    "https://services2.arcgis.com/LvWGAAhHwbCJ2GMP/arcgis/rest/services/NG911_Address_Points/FeatureServer/0"
                 ]
             },
             "license": {
@@ -12454,8 +12470,8 @@
             },
             "license": {
                 "url": {
-                    "primary": "https://kortforsyning.asiaq.gl/Downloads/EN_Terms%20of%20use.pdf",
-                    "archive": "https://web.archive.org/web/2025/https://kortforsyning.asiaq.gl/Downloads/EN_Terms%20of%20use.pdf"
+                    "primary": "https://www.asiaq.gl/wp-content/uploads/2026/04/EN_Terms_of_use_for_Asiaq_geodata.pdf",
+                    "archive": "https://web.archive.org/web/2026/https://www.asiaq.gl/wp-content/uploads/2026/04/EN_Terms_of_use_for_Asiaq_geodata.pdf"
                 },
                 "type": "",
                 "requires_attribution": true,
@@ -12641,7 +12657,7 @@
                     "archive": "https://web.archive.org/web/2025/https://dps.mn.gov/divisions/ecn/contact-ecn/submit-ecn-data-request"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/iandees/2025-04-11-vrni2/Snapshot20250401.gdb.zip"
+                    "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/loc_addresses_open/FeatureServer/0"
                 ]
             },
             "license": {
@@ -12962,7 +12978,7 @@
                     "archive": "https://web.archive.org/web/2025/https://data-carsoncity.opendata.arcgis.com/datasets/CarsonCity::address-points/about"
                 },
                 "data_download": [
-                    "https://portal.carson.org/server/rest/services/CarsonCity/CarsonCityNV_OpenData/MapServer/37"
+                    "https://portal.carsoncity.gov/server/rest/services/CarsonCity/CarsonCityNV_OpenData/MapServer/37"
                 ]
             },
             "license": {
@@ -13283,8 +13299,8 @@
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Alcorn_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Chickasaw_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Choctaw_PointAddresses_2022/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Clay_PointAddresses_2022/MapServer",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Claiborne_PointAddresses_2022/MapServer/0",
+                    "https://services2.arcgis.com/kQPfxbSKhIDcSFXL/ArcGIS/rest/services/ClayCoMS/FeatureServer/5",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Coahoma_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Covington_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Harrrison_PointAddresses_Oct2022/MapServer/0",
@@ -13292,25 +13308,25 @@
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Jefferson_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Jones_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Lafayette_PointAddresses_2022/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Madison_PointAddresses_2023/MapServer",
+                    "https://gis.cmpdd.org/server/rest/services/Hosted/Madison_County_Map/FeatureServer/19",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Noxubee_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Oktibbeha_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/PearlRiver_PointAddresses_2023/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Prentiss_PointAddresses_2022/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Rankin_PointAddresses_2023/MapServer",
-                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Simpson_PointAddresses_2022/MapServer",
+                    "https://gis.cmpdd.org/server/rest/services/Hosted/Rankin_County_Feature_Layer/FeatureServer/3",
+                    "https://gis.cmpdd.org/server/rest/services/Hosted/Simpson_County_Feature_Layer/FeatureServer/2",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Smith_PointAddresses_2022/MapServer/0",
+                    "https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2023/MapServer/1",
+                    "https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2023/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Wayne_PointAddresses_2022/MapServer/0",
                     "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Webster_PointAddresses_2022/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Winston_PointAddresses_2022/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/Cadastral/MS_East_Parcels/MapServer/0",
-                    "https://gis.mississippi.edu/server/rest/services/Cadastral/MS_West_Parcels/MapServer/0"
+                    "https://gis.mississippi.edu/server/rest/services/CountyPointAddresses/Winston_PointAddresses_2022/MapServer/0"
                 ]
             },
             "license": {
                 "url": {
-                    "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf",
-                    "archive": "https://web.archive.org/web/2025/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer.pdf"
+                    "primary": "https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf",
+                    "archive": "https://web.archive.org/web/2026/https://maris.mississippi.edu/HTML/DATA/data_Cadastral/DataDisclaimer_2026.pdf"
                 },
                 "type": "",
                 "requires_attribution": false,
@@ -13645,7 +13661,7 @@
                     "archive": "https://web.archive.org/web/2026/https://laiv.geodaten-mv.de/afgvk/Liegenschaftskataster/Beschreibung?produkt=ALKIS"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-03-05-hsk7h/mv_alkis_addresses.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-08-04-som90/mv_alkis_addresses.csv.zip"
                 ]
             },
             "license": {
@@ -13713,7 +13729,7 @@
                     "archive": "https://web.archive.org/web/2026/https://ni-lgln-opengeodata.hub.arcgis.com/apps/lgln-opengeodata::alkis/about"
                 },
                 "data_download": [
-                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-03-04-tc3md/ni_alkis_addresses.csv.zip"
+                    "https://data.openaddresses.io/cache/uploads/jeffdefacto/2026-08-04-e51tq/ni_alkis_addresses.csv.zip"
                 ]
             },
             "license": {
