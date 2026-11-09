@@ -2074,7 +2074,7 @@
         },
         {
             "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
-            "dataset_name": "OpenAddresses/Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/23/Aichi",
             "inception_date": "2024-10-13",
             "source": {
                 "url": {
@@ -2086,52 +2086,3042 @@
                     "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
                 },
                 "data_download": [
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/23000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/05000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/02000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/12000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/38000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/18000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/40000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/07000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/21000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/10000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/34000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/01000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/28000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/08000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/17000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/03000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/37000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/46000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/14000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/39000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/43000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/26000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/24000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/04000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/45000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/20000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/42000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/29000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/15000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/44000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/33000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/47000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/27000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/41000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/11000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/25000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/32000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/22000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/09000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/36000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/13000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/31000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/16000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/30000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/06000-24.0a.zip",
-                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/35000-24.0a.zip",
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/23000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-23"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    136.671021,
+                    34.578529,
+                    137.83812,
+                    35.424789
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/aichi-addresses-state.geojson"
+                ],
+                "data_layer_name": "23000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/aichi.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/05/Akita",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/05000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-05"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.694153,
+                    38.87302,
+                    140.995438,
+                    40.511124
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/akita-addresses-state.geojson"
+                ],
+                "data_layer_name": "05000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/akita.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/02/Aomori",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/02000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-02"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.860748,
+                    40.217709,
+                    141.684799,
+                    41.555328
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/aomori-addresses-state.geojson"
+                ],
+                "data_layer_name": "02000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/aomori.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/12/Chiba",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/12000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-12"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.752289,
+                    34.899403,
+                    140.881912,
+                    36.104107
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/chiba-addresses-state.geojson"
+                ],
+                "data_layer_name": "12000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/chiba.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/38/Ehime",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/38000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-38"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    132.014084,
+                    32.897736,
+                    133.69281,
+                    34.299812
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/ehime-addresses-state.geojson"
+                ],
+                "data_layer_name": "38000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/ehime.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/18/Fukui",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/18000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-18"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    135.449326,
+                    35.343678,
+                    136.832367,
+                    36.295486
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/fukui-addresses-state.geojson"
+                ],
+                "data_layer_name": "18000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/fukui.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/40/Fukuoka",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/40000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-40"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    130.03302,
+                    33.001438,
+                    131.190628,
+                    34.249584
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/fukuoka-addresses-state.geojson"
+                ],
+                "data_layer_name": "40000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/fukuoka.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/07/Fukushima",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/07000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-07"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.164734,
+                    36.791317,
+                    141.046143,
+                    37.97665
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/fukushima-addresses-state.geojson"
+                ],
+                "data_layer_name": "07000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/fukushima.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/21/Gifu",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/21000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-21"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    136.276215,
+                    35.133728,
+                    137.653061,
+                    36.465069
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/gifu-addresses-state.geojson"
+                ],
+                "data_layer_name": "21000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/gifu.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/10/Gunma",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/10000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-10"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    138.397018,
+                    35.985332,
+                    139.669968,
+                    37.058628
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/gunma-addresses-state.geojson"
+                ],
+                "data_layer_name": "10000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/gunma.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/34/Hiroshima",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/34000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-34"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    132.036438,
+                    34.034294,
+                    133.470184,
+                    35.105694
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/hiroshima-addresses-state.geojson"
+                ],
+                "data_layer_name": "34000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/hiroshima.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/01/Hokkaido",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/01000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-01"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.336975,
+                    41.352116,
+                    145.817459,
+                    45.522949
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/hokkaido-addresses-state.geojson"
+                ],
+                "data_layer_name": "01000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/hokkaido.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/28/Hyogo",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/28000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-28"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    134.252731,
+                    34.157284,
+                    135.468597,
+                    35.674725
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/hyogo-addresses-state.geojson"
+                ],
+                "data_layer_name": "28000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/hyogo.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/08/Ibaraki",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/08000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-08"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.687668,
+                    35.739132,
+                    140.852448,
+                    36.945305
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/ibaraki-addresses-state.geojson"
+                ],
+                "data_layer_name": "08000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/ibaraki.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/17/Ishikawa",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/17000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-17"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    136.243942,
+                    36.067226,
+                    137.360443,
+                    37.855103
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/ishikawa-addresses-state.geojson"
+                ],
+                "data_layer_name": "17000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/ishikawa.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/03/Iwate",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/03000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-03"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    140.653107,
+                    38.74765,
+                    142.072495,
+                    40.450302
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/iwate-addresses-state.geojson"
+                ],
+                "data_layer_name": "03000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/iwate.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/37/Kagawa",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/37000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-37"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    133.452911,
+                    34.012325,
+                    134.440704,
+                    34.564034
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kagawa-addresses-state.geojson"
+                ],
+                "data_layer_name": "37000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kagawa.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/46/Kagoshima",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/46000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-46"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    128.395355,
+                    27.018675,
+                    131.20546,
+                    32.308147
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kagoshima-addresses-state.geojson"
+                ],
+                "data_layer_name": "46000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kagoshima.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/14/Kanagawa",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/14000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-14"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    138.915756,
+                    35.129059,
+                    139.798676,
+                    35.672897
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kanagawa-addresses-state.geojson"
+                ],
+                "data_layer_name": "14000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kanagawa.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/39/Kochi",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/39000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-39"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    132.480087,
+                    32.703369,
+                    134.306854,
+                    33.883366
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kochi-addresses-state.geojson"
+                ],
+                "data_layer_name": "39000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kochi.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/43/Kumamoto",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/43000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-43"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    129.96344,
+                    32.094917,
+                    131.329514,
+                    33.195175
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kumamoto-addresses-state.geojson"
+                ],
+                "data_layer_name": "43000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kumamoto.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/26/Kyoto",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/26000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-26"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    134.853714,
+                    34.705753,
+                    136.055481,
+                    35.779293
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/kyoto-addresses-state.geojson"
+                ],
+                "data_layer_name": "26000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/kyoto.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/24/Mie",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/24000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-24"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    135.85318,
+                    33.722855,
+                    136.987701,
+                    35.257652
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/mie-addresses-state.geojson"
+                ],
+                "data_layer_name": "24000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/mie.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/04/Miyagi",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/04000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-04"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    140.274857,
+                    37.773251,
+                    141.674683,
+                    39.002785
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/miyagi-addresses-state.geojson"
+                ],
+                "data_layer_name": "04000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/miyagi.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/45/Miyazaki",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/45000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-45"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    130.703369,
+                    31.364433,
+                    131.885696,
+                    32.838982
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/miyazaki-addresses-state.geojson"
+                ],
+                "data_layer_name": "45000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/miyazaki.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/20/Nagano",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/20000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-20"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    137.324539,
+                    35.198364,
+                    138.739258,
+                    37.030426
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/nagano-addresses-state.geojson"
+                ],
+                "data_layer_name": "20000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/nagano.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/42/Nagasaki",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/42000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-42"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    128.343887,
+                    31.988537,
+                    130.381943,
+                    34.707848
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/nagasaki-addresses-state.geojson"
+                ],
+                "data_layer_name": "42000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/nagasaki.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/29/Nara",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/29000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-29"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    135.539673,
+                    33.858955,
+                    136.229874,
+                    34.781357
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/nara-addresses-state.geojson"
+                ],
+                "data_layer_name": "29000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/nara.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/15/Niigata",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/15000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-15"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    137.635727,
+                    36.736526,
+                    139.899887,
+                    38.553589
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/niigata-addresses-state.geojson"
+                ],
+                "data_layer_name": "15000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/niigata.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/44/Oita",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/44000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-44"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    130.824738,
+                    32.714439,
+                    132.085342,
+                    33.74028
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/oita-addresses-state.geojson"
+                ],
+                "data_layer_name": "44000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/oita.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/33/Okayama",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/33000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-33"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    133.266785,
+                    34.298405,
+                    134.413162,
+                    35.352901
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/okayama-addresses-state.geojson"
+                ],
+                "data_layer_name": "33000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/okayama.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/47/Okinawa",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/47000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-47"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    122.93364,
+                    24.045612,
+                    131.33197,
+                    27.885046
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/okinawa-addresses-state.geojson"
+                ],
+                "data_layer_name": "47000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/okinawa.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/27/Osaka",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/27000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-27"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    135.091782,
+                    34.27182,
+                    135.746613,
+                    35.051296
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/osaka-addresses-state.geojson"
+                ],
+                "data_layer_name": "27000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/osaka.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/41/Saga",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/41000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-41"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    129.739944,
+                    32.950638,
+                    130.54213,
+                    33.619087
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/saga-addresses-state.geojson"
+                ],
+                "data_layer_name": "41000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/saga.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/11/Saitama",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/11000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-11"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    138.711334,
+                    35.753517,
+                    139.900101,
+                    36.283413
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/saitama-addresses-state.geojson"
+                ],
+                "data_layer_name": "11000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/saitama.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/25/Shiga",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/25000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-25"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    135.763718,
+                    34.790569,
+                    136.455048,
+                    35.703743
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/shiga-addresses-state.geojson"
+                ],
+                "data_layer_name": "25000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/shiga.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/32/Shimane",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/32000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-32"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    131.667908,
+                    34.302433,
+                    133.386002,
+                    36.348862
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/shimane-addresses-state.geojson"
+                ],
+                "data_layer_name": "32000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/shimane.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/22/Shizuoka",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/22000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-22"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    137.474106,
+                    34.594994,
+                    139.176559,
+                    35.645958
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/shizuoka-addresses-state.geojson"
+                ],
+                "data_layer_name": "22000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/shizuoka.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/09/Tochigi",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/09000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-09"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.326553,
+                    36.19968,
+                    140.292252,
+                    37.155064
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/tochigi-addresses-state.geojson"
+                ],
+                "data_layer_name": "09000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/tochigi.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/36/Tokushima",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/36000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-36"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    133.660736,
+                    33.54155,
+                    134.821381,
+                    34.252037
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/tokushima-addresses-state.geojson"
+                ],
+                "data_layer_name": "36000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/tokushima.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/13/Tokyo",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/13000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-13"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    138.942856,
+                    24.224676,
+                    153.986084,
+                    35.898426
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/tokyo-addresses-state.geojson"
+                ],
+                "data_layer_name": "13000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/tokyo.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/31/Tottori",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/31000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-31"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    133.135864,
+                    35.057674,
+                    134.515411,
+                    35.613758
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/tottori-addresses-state.geojson"
+                ],
+                "data_layer_name": "31000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/tottori.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/16/Toyama",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/16000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-16"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    136.768341,
+                    36.274364,
+                    137.763382,
+                    36.978401
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/toyama-addresses-state.geojson"
+                ],
+                "data_layer_name": "16000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/toyama.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/30/Wakayama",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/30000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-30"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    134.999619,
+                    33.433044,
+                    136.013474,
+                    34.384483
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/wakayama-addresses-state.geojson"
+                ],
+                "data_layer_name": "30000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/wakayama.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/06/Yamagata",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/06000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-06"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    139.539001,
+                    37.733826,
+                    140.646469,
+                    39.206573
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/yamagata-addresses-state.geojson"
+                ],
+                "data_layer_name": "06000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/yamagata.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/35/Yamaguchi",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
+                    "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/35000-24.0a.zip"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/ksj/other/agreement.html",
+                    "archive": "https://web.archive.org/web/20250214144421/https://nlftp.mlit.go.jp/ksj/other/agreement.html"
+                },
+                "type": "CC-BY-4.0",
+                "requires_attribution": true,
+                "text": "When using content, please indicate the source. The method of writing sources is as follows: Source: Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site (URL of the page). Source: “National Land Numerical Information (XX Data)” (Ministry of Land, Infrastructure, Transport and Tourism) (URL of the page) (obtained on XX year, XX month, XX date). If you edit or process the content and use it, please state that the editing/processing was done in addition to the above source. Please note that edited and processed information must not be published or used in a manner that makes it appear as if it was created by the government (or ministries, etc.).",
+                "attribution": "Ministry of Land, Infrastructure, Transport and Tourism"
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-35"
+                        ]
+                    }
+                ],
+                "description": "Regional",
+                "bbox": [
+                    130.775467,
+                    33.712975,
+                    132.490738,
+                    34.798668
+                ]
+            },
+            "file_information": {
+                "oa_path": [
+                    "jp/yamaguchi-addresses-state.geojson"
+                ],
+                "data_layer_name": "35000-24.0a.zip",
+                "file_format": "csv",
+                "address_levels": [
+                    "region",
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Annually",
+                "source": "OpenAddresses",
+                "type": "manual",
+                "month": [
+                    7
+                ]
+            },
+            "known_issues": "",
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/yamaguchi.json."
+        },
+        {
+            "source_name": "Japanese Ministry of Land, Infrastructure and Transport",
+            "dataset_name": "OpenAddresses/JP/19/Yamanashi",
+            "inception_date": "2024-10-13",
+            "source": {
+                "url": {
+                    "primary": "https://nlftp.mlit.go.jp/",
+                    "archive": "https://web.archive.org/web/2025/https://nlftp.mlit.go.jp/"
+                },
+                "data_location": {
+                    "primary": "https://nlftp.mlit.go.jp/isj/index.html",
+                    "archive": "https://web.archive.org/web/20250215163028/https://nlftp.mlit.go.jp/isj/index.html"
+                },
+                "data_download": [
                     "https://nlftp.mlit.go.jp/isj/dls/data/24.0a/19000-24.0a.zip"
                 ]
             },
@@ -2148,68 +5138,25 @@
             "coverage": {
                 "areas": [
                     {
-                        "iso_3166_1": "JP"
+                        "iso_3166_1": "JP",
+                        "iso_3166_2": [
+                            "JP-19"
+                        ]
                     }
                 ],
                 "description": "Regional",
                 "bbox": [
-                    124.072706,
-                    24.331068,
-                    145.620128,
-                    45.448731
+                    138.180084,
+                    35.168381,
+                    139.134415,
+                    35.97171
                 ]
             },
             "file_information": {
                 "oa_path": [
-                    "jp/aichi-addresses-state.geojson",
-                    "jp/akita-addresses-state.geojson",
-                    "jp/aomori-addresses-state.geojson",
-                    "jp/chiba-addresses-state.geojson",
-                    "jp/ehime-addresses-state.geojson",
-                    "jp/fukui-addresses-state.geojson",
-                    "jp/fukuoka-addresses-state.geojson",
-                    "jp/fukushima-addresses-state.geojson",
-                    "jp/gifu-addresses-state.geojson",
-                    "jp/gunma-addresses-state.geojson",
-                    "jp/hiroshima-addresses-state.geojson",
-                    "jp/hokkaido-addresses-state.geojson",
-                    "jp/hyogo-addresses-state.geojson",
-                    "jp/ibaraki-addresses-state.geojson",
-                    "jp/ishikawa-addresses-state.geojson",
-                    "jp/iwate-addresses-state.geojson",
-                    "jp/kagawa-addresses-state.geojson",
-                    "jp/kagoshima-addresses-state.geojson",
-                    "jp/kanagawa-addresses-state.geojson",
-                    "jp/kochi-addresses-state.geojson",
-                    "jp/kumamoto-addresses-state.geojson",
-                    "jp/kyoto-addresses-state.geojson",
-                    "jp/mie-addresses-state.geojson",
-                    "jp/miyagi-addresses-state.geojson",
-                    "jp/miyazaki-addresses-state.geojson",
-                    "jp/nagano-addresses-state.geojson",
-                    "jp/nagasaki-addresses-state.geojson",
-                    "jp/nara-addresses-state.geojson",
-                    "jp/niigata-addresses-state.geojson",
-                    "jp/oita-addresses-state.geojson",
-                    "jp/okayama-addresses-state.geojson",
-                    "jp/okinawa-addresses-state.geojson",
-                    "jp/osaka-addresses-state.geojson",
-                    "jp/saga-addresses-state.geojson",
-                    "jp/saitama-addresses-state.geojson",
-                    "jp/shiga-addresses-state.geojson",
-                    "jp/shimane-addresses-state.geojson",
-                    "jp/shizuoka-addresses-state.geojson",
-                    "jp/tochigi-addresses-state.geojson",
-                    "jp/tokushima-addresses-state.geojson",
-                    "jp/tokyo-addresses-state.geojson",
-                    "jp/tottori-addresses-state.geojson",
-                    "jp/toyama-addresses-state.geojson",
-                    "jp/wakayama-addresses-state.geojson",
-                    "jp/yamagata-addresses-state.geojson",
-                    "jp/yamaguchi-addresses-state.geojson",
                     "jp/yamanashi-addresses-state.geojson"
                 ],
-                "data_layer_name": "Multiple",
+                "data_layer_name": "19000-24.0a.zip",
                 "file_format": "csv",
                 "address_levels": [
                     "region",
@@ -2225,7 +5172,7 @@
                 ]
             },
             "known_issues": "",
-            "notes": "Distributed by OpenAddresses."
+            "notes": "Distributed by OpenAddresses. See also: https://github.com/openaddresses/openaddresses/blob/master/sources/jp/yamanashi.json."
         },
         {
             "source_name": "Kartverket",
@@ -3017,8 +5964,8 @@
             "notes": "Distributed by OpenAddresses."
         },
         {
-            "source_name": "Stadfangaskra/Byggðastofnun",
-            "dataset_name": "Stadfangaskra/Byggðastofnun",
+            "source_name": "Húsnæðis-, mannvirkja- og skipulagsstofnun",
+            "dataset_name": "Stadfangaskrá",
             "inception_date": "2024-11-13",
             "source": {
                 "url": {
@@ -3072,7 +6019,65 @@
                 "month": []
             },
             "known_issues": "",
-            "notes": ""
+            "notes": "Postal city names come from Byggðastofnun Postal Cities, joined at ingest time."
+        },
+        {
+            "source_name": "Byggðastofnun",
+            "dataset_name": "Byggðastofnun Postal Cities",
+            "inception_date": "2024-11-13",
+            "source": {
+                "url": {
+                    "primary": "https://www.byggdastofnun.is/",
+                    "archive": "https://web.archive.org/web/2025/https://www.byggdastofnun.is/"
+                },
+                "data_location": {
+                    "primary": "https://gis.lmi.is/geoserver/byggdastofnun/wfs",
+                    "archive": ""
+                },
+                "data_download": [
+                    "https://gis.lmi.is/geoserver/byggdastofnun/wfs?request=GetFeature&service=WFS&version=1.1.0&typeName=byggdastofnun:postnumer&outputFormat=csv"
+                ]
+            },
+            "license": {
+                "url": {
+                    "primary": "",
+                    "archive": ""
+                },
+                "type": "LicenseRef-Proprietary",
+                "requires_attribution": false,
+                "text": "",
+                "attribution": ""
+            },
+            "coverage": {
+                "areas": [
+                    {
+                        "iso_3166_1": "IS"
+                    }
+                ],
+                "description": "National",
+                "bbox": [
+                    -24.53156072,
+                    63.31765626,
+                    -13.51248581,
+                    66.56446177
+                ]
+            },
+            "file_information": {
+                "oa_path": [],
+                "data_layer_name": "byggdastofnun:postnumer",
+                "file_format": "csv",
+                "address_levels": [
+                    "city"
+                ]
+            },
+            "refresh_schedule": {
+                "frequency": "Infrequent",
+                "source": "tf-data-platform",
+                "type": "continuous",
+                "month": []
+            },
+            "known_issues": "",
+            "notes": "Postcode to postal city lookup, combined with Stadfangaskrá at ingest time."
         },
         {
             "source_name": "Valsts zemes dienests",
