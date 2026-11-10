@@ -13,13 +13,13 @@
       "name": "at/countrywide",
       "collection": {
         "data_location": {
-          "primary": "https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512",
-          "archive": "https://web.archive.org/web/20240305115833/https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512"
+          "primary": "https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e",
+          "archive": "https://web.archive.org/web/2026/https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e"
         },
         "license": {
           "url": {
-            "primary": "https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512",
-            "archive": "https://web.archive.org/web/20240305115833/https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/catalog.search#/metadata/bd28c2b0-4ea5-41c2-8847-b7e8711a6512"
+            "primary": "https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e",
+            "archive": "https://web.archive.org/web/2026/https://data.bev.gv.at/geonetwork/srv/eng/catalog.search#/metadata/69980a2b-a223-40cf-897f-b9c24ec4a99e"
           },
           "type": "CC-BY-4.0",
           "requires_attribution": true,
@@ -7601,7 +7601,7 @@
           "type": "DL-DE-BY-2.0",
           "requires_attribution": true,
           "text": "The terms of use of LVermGeo apply to the geodata provided free of charge , according to which these data and services may be used under the open data license \" Data License Germany – Attribution – Version 2.0 \" ",
-          "attribution": "©GeoBasis-DE/LVermGeo SH/DL-DE->BY-2.0"
+          "attribution": "©GeoBasis-DE/LVermGeo ST/DL-DE->BY-2.0"
         },
         "coverage": {
           "areas": [
@@ -9628,8 +9628,8 @@
         },
         "license": {
           "url": {
-            "primary": "https://creativecommons.org/licenses/by/4.0/",
-            "archive": "https://web.archive.org/web/2026/https://creativecommons.org/licenses/by/4.0/"
+            "primary": "https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55",
+            "archive": "https://web.archive.org/web/2026/https://kartkatalog.geonorge.no/metadata/matrikkelen-adresse-leilighetsnivaa/365b0591-b536-42a6-a20d-22e404fbfe55"
           },
           "type": "CC-BY-4.0",
           "requires_attribution": true,
