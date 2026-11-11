@@ -7,6 +7,7 @@
             "archive": "https://web.archive.org/web/2024/https://www.geoboundaries.org/"
         }
     },
+    "themes": ["divisions"],
     "resources": [
         {
             "label": "ago_adm2",

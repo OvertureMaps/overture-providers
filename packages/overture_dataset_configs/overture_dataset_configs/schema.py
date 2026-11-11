@@ -19,11 +19,11 @@ import re
 import sys
 from functools import cache
 from pathlib import Path
-from typing import Annotated, Any, Literal
+from typing import Annotated, Any, Literal, get_args
 
 import botocore
 import botocore.session
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field, model_validator
 
 
 @cache
@@ -48,6 +48,23 @@ ISO_3166_2_PATTERN = r"^[A-Z]{2}-[A-Z0-9]{1,3}$"
 Label = Annotated[str, Field(pattern=LABEL_PATTERN)]
 NonEmptyStr = Annotated[str, Field(min_length=1)]
 Month = Annotated[int, Field(ge=1, le=12)]
+
+Theme = Literal[
+    "addresses", "base", "buildings", "divisions", "places", "transportation"
+]
+THEMES: tuple[str, ...] = get_args(Theme)
+
+
+def _unique_themes(themes: list[str]) -> list[str]:
+    dupes = sorted({t for t in themes if themes.count(t) > 1})
+    if dupes:
+        raise ValueError(f"duplicate themes: {dupes}")
+    return themes
+
+
+# Overture themes a dataset feeds. Set on the file to cover every resource;
+# a resource's own value replaces the file-level one for that resource.
+Themes = Annotated[list[Theme], Field(min_length=1), AfterValidator(_unique_themes)]
 
 
 class _StrictModel(BaseModel):
@@ -168,6 +185,7 @@ class Collection(_StrictModel):
 class Resource(_StrictModel):
     label: Label
     name: NonEmptyStr
+    themes: Themes | None = None
     collection: Collection
     # Free-form pipeline configs; intentionally unvalidated.
     ingestion: dict[str, Any]
@@ -176,6 +194,7 @@ class Resource(_StrictModel):
 
 class DatasetFile(_StrictModel):
     provider: Provider
+    themes: Themes | None = None
     resources: Annotated[list[Resource], Field(min_length=1)]
 
     @model_validator(mode="after")

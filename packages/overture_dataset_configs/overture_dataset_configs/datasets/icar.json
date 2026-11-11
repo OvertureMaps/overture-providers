@@ -7,6 +7,7 @@
             "archive": "https://web.archive.org/web/20240518122651/https://be.brussels/fr"
         }
     },
+    "themes": ["addresses"],
     "resources": [
         {
             "label": "icar",

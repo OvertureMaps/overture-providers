@@ -7,6 +7,7 @@
       "archive": "https://web.archive.org/web/2025/https://www.pdok.nl/"
     }
   },
+  "themes": ["addresses"],
   "resources": [
     {
       "label": "bag_light",

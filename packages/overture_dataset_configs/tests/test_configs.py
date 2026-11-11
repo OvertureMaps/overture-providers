@@ -1,11 +1,19 @@
 from pathlib import Path
 
 import pytest
-from overture_dataset_configs import load_config, provider_names
-from overture_dataset_configs.schema import validate_all, validate_file
+from overture_dataset_configs import (
+    load_config,
+    load_license_policy,
+    provider_names,
+)
+from overture_dataset_configs.dataset import Dataset
+from overture_dataset_configs.schema import THEMES, validate_all, validate_file
 
 DATASETS = Path(__file__).parent.parent / "overture_dataset_configs" / "datasets"
 FILES = sorted(DATASETS.glob("*.json"))
+
+# Resources that intentionally feed no theme.
+UNTAGGED = {"osm_planet_history"}
 
 
 def test_configs_present():
@@ -34,3 +42,27 @@ def test_load_config_by_provider_name():
 def test_load_config_unknown(name):
     with pytest.raises(KeyError):
         load_config(name)
+
+
+def test_themes_match_license_policy():
+    assert set(THEMES) == set(load_license_policy())
+
+
+@pytest.mark.parametrize("path", FILES, ids=lambda p: p.stem)
+def test_theme_values_are_known(path):
+    config = load_config(path.stem)
+    declared = [config.get("themes") or []]
+    declared += [r.get("themes") or [] for r in config["resources"]]
+    for themes in declared:
+        assert set(themes) <= set(THEMES), themes
+        assert len(themes) == len(set(themes)), themes
+
+
+def test_every_resource_resolves_to_a_theme():
+    untagged = {
+        ds.dataset_id
+        for path in FILES
+        for ds in Dataset.all_from_file(path)
+        if not ds.themes
+    }
+    assert untagged == UNTAGGED

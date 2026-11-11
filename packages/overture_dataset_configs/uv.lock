@@ -561,10 +561,11 @@ wheels = [
 
 [[package]]
 name = "overture-core"
-version = "1.5.0"
+version = "1.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "boto3" },
+    { name = "overture-dataset-configs" },
     { name = "overture-serverless" },
     { name = "packaging" },
     { name = "pydantic" },
@@ -574,9 +575,9 @@ dependencies = [
     { name = "rich" },
     { name = "sqlglot" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/28/03/36431ae175f754d7790101d9e27ca8545205024d4629ae75daaecdc3c98c/overture_core-1.5.0.tar.gz", hash = "sha256:5557f54b3a2774c2e813d057c6c71d023e403ea44cc1d759bbe5ce044bc9e3fe", size = 284849, upload-time = "2026-11-04T16:32:23.398Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/3b/a67c1e2811885e4ee47bdf9413c074035ba8b5ad5b6b88c7958025341453/overture_core-1.10.0.tar.gz", hash = "sha256:3fde10f737103ea54baf62b3588ead3dfa3c95062f647c15da88c9dbcda7c7c4", size = 329329, upload-time = "2026-11-05T20:37:14.565Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/42/7166f43e5d6c11b7abd5de5b1a7e1e54cb7eeea980dff50dfbbfb35e5141/overture_core-1.5.0-py3-none-any.whl", hash = "sha256:cb56c6e6dbe8bcda9cc58d9950ca6636ffac9e4b5befa6cac73c9d9e18e838da", size = 85873, upload-time = "2026-11-04T16:32:22.04Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/6e/06159ecb65578e35a7e476cf95f39f024c1625785cf4c5a66611ea6c954b/overture_core-1.10.0-py3-none-any.whl", hash = "sha256:5388c0cb9b08fbcb8f4cb5c2edc016fae1909658ece8ef26843ba807107c3da8", size = 114189, upload-time = "2026-11-05T20:37:12.936Z" },
 ]
 
 [[package]]
@@ -599,7 +600,7 @@ dev = [
 requires-dist = [
     { name = "botocore", specifier = ">=1.31" },
     { name = "license-expression", marker = "extra == 'dev'", specifier = ">=30.0" },
-    { name = "overture-core", marker = "extra == 'dev'", specifier = ">=1.5.0" },
+    { name = "overture-core", marker = "extra == 'dev'", specifier = ">=1.8.1" },
     { name = "pydantic", specifier = ">=2.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.1.1" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },

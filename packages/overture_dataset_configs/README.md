@@ -17,6 +17,8 @@ load_config("linz")  # raw dict from overture_dataset_configs/datasets/linz.json
 
 ds = Dataset.from_name("osm", "planet")  # packaged configs by default
 ds.dataset_id, ds.license_type, ds.download_url
+ds.themes  # ["base", "buildings", "divisions", "transportation"]
+Dataset.for_theme("places")  # every packaged resource that feeds places
 
 load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 ```
@@ -36,13 +38,32 @@ For a command line, overture-core's `overture-datasets` CLI validates and render
 - **Provider**: an organization Overture takes data from, such as Land Information New Zealand.
 - **Dataset** (a `resources` entry): one licensed collection of data from a provider, such as a single layer or file set. A provider can have many datasets, and each has its own license, coverage and refresh cadence.
 - **License policy**: per theme, the license identifiers Overture accepts. Every dataset's license type should appear in it.
+- **Themes**: the Overture themes a dataset feeds: `addresses`, `base`, `buildings`, `divisions`, `places` or `transportation`.
 
 For how themes, attribution, and licensing work across Overture data, see the [Overture documentation](https://docs.overturemaps.org/): the [schema](https://docs.overturemaps.org/schema/) for themes, and the [attribution page](https://docs.overturemaps.org/attribution/) for the terms published with each release.
 
 Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMaps/overture-providers/tree/main/packages/overture_dataset_configs/overture_dataset_configs/datasets) describes one provider and its datasets. Files are named `<provider_label>.json` and looked up by file stem. The field reference is [`schema.py`](https://github.com/OvertureMaps/overture-providers/blob/main/packages/overture_dataset_configs/overture_dataset_configs/schema.py), which also rejects unknown keys.
+
+### Themes
+
+`themes` is an optional list of the themes a dataset feeds. Set it at the top of a file, next to `provider` and `resources`, to cover every resource. A resource can set its own `themes`, which replaces the file-level list for that resource. A list must have at least one theme and no duplicates. Trimmed to the relevant keys:
+
+```json
+{
+  "provider": { "label": "acme" },
+  "themes": ["buildings"],
+  "resources": [
+    { "label": "footprints" },
+    { "label": "roads", "themes": ["transportation"] }
+  ]
+}
+```
+
+Here `footprints` feeds `buildings` and `roads` feeds only `transportation`. `Dataset.themes` returns this resolved list, or `[]` if neither level sets it, and `Dataset.for_theme()` loads every resource that feeds a theme.
 
 ## Contributing
 
 1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
 2. A new field needs a matching change to `schema.py` in the same PR.
 3. Provider and resource labels feed dataset IDs and S3 paths, so don't rename them.
+4. Set `themes` on new datasets. The tests fail for a resource with no themes unless it is listed in `UNTAGGED` in `tests/test_configs.py`.

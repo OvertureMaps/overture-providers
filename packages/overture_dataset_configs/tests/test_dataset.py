@@ -304,3 +304,107 @@ class TestPackagedDatasets:
     def test_path_for_defaults_to_packaged_dir(self):
         assert Dataset.path_for("osm") == DATASETS_DIR / "osm.json"
         assert Dataset.path_for("osm").is_file()
+
+
+# ── themes ───────────────────────────────────────────────────────────────────
+
+
+@pytest.fixture()
+def themed_file(tmp_path):
+    """File-level themes, with one resource overriding and one inheriting."""
+    data = {
+        "provider": {"label": "initech", "name": "Initech", "url": {}},
+        "themes": ["buildings"],
+        "resources": [
+            {"label": "inherits", "name": "Inherits"},
+            {
+                "label": "overrides",
+                "name": "Overrides",
+                "themes": ["base", "divisions"],
+            },
+        ],
+    }
+    p = tmp_path / "initech.json"
+    p.write_text(json.dumps(data), encoding="utf-8")
+    return p
+
+
+class TestThemes:
+    def test_inherits_file_level(self, themed_file):
+        assert Dataset.from_file(themed_file, resource="inherits").themes == [
+            "buildings"
+        ]
+
+    def test_resource_overrides_file_level(self, themed_file):
+        assert Dataset.from_file(themed_file, resource="overrides").themes == [
+            "base",
+            "divisions",
+        ]
+
+    def test_resource_only(self, multi_resource_file):
+        data = json.loads(multi_resource_file.read_text(encoding="utf-8"))
+        data["resources"][1]["themes"] = ["transportation"]
+        multi_resource_file.write_text(json.dumps(data), encoding="utf-8")
+        assert Dataset.from_file(multi_resource_file, "roads").themes == [
+            "transportation"
+        ]
+        assert Dataset.from_file(multi_resource_file, "buildings").themes == []
+
+    def test_defaults_to_empty(self, single_resource_file):
+        assert Dataset.from_file(single_resource_file).themes == []
+
+    def test_all_from_file_resolves_each_resource(self, themed_file):
+        resolved = {
+            ds.resource_label: ds.themes for ds in Dataset.all_from_file(themed_file)
+        }
+        assert resolved == {
+            "inherits": ["buildings"],
+            "overrides": ["base", "divisions"],
+        }
+
+    def test_constructor_dataset_themes(self):
+        ds = Dataset(
+            {"label": "a"}, {"label": "b"}, dataset_id="a_b", dataset_themes=["base"]
+        )
+        assert ds.themes == ["base"]
+
+    def test_themes_returns_a_copy(self, themed_file):
+        ds = Dataset.from_file(themed_file, resource="overrides")
+        ds.themes.append("places")
+        assert ds.themes == ["base", "divisions"]
+
+
+class TestForTheme:
+    def test_filters_by_resolved_themes(self, themed_file, single_resource_file):
+        directory = themed_file.parent
+        assert single_resource_file.parent == directory
+        ids = [ds.dataset_id for ds in Dataset.for_theme("buildings", directory)]
+        assert ids == ["initech_inherits"]
+        ids = [ds.dataset_id for ds in Dataset.for_theme("divisions", directory)]
+        assert ids == ["initech_overrides"]
+        assert Dataset.for_theme("places", directory) == []
+
+    def test_unknown_theme_raises(self, tmp_path):
+        with pytest.raises(ValueError, match="Unknown theme 'roads'"):
+            Dataset.for_theme("roads", tmp_path)
+
+    def test_defaults_to_packaged_dir(self):
+        ids = {ds.dataset_id for ds in Dataset.for_theme("transportation")}
+        assert {"tomtom_orbis", "osm_planet", "us_dot_hpms"} <= ids
+        assert "us_dot_nad" not in ids
+
+    @pytest.mark.parametrize(
+        "provider, resource, themes",
+        [
+            ("osm", "planet", ["base", "buildings", "divisions", "transportation"]),
+            ("osm", "coastlines", ["base"]),
+            ("osm", "planet_history", []),
+            ("microsoft", "ml_buildings", ["buildings"]),
+            ("microsoft", "maps_entity_variant_names", ["divisions"]),
+            ("microsoft", "microsoft", ["places"]),
+            ("us_dot", "nad", ["addresses"]),
+            ("google", "open_buildings", ["buildings"]),
+        ],
+    )
+    def test_packaged_resolution(self, provider, resource, themes):
+        assert Dataset.from_name(provider, resource).themes == themes
