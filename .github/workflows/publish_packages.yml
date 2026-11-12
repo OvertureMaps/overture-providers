@@ -41,8 +41,8 @@ jobs:
     environment:
       name: ${{ github.event_name == 'workflow_dispatch' && format('testpypi-{0}', matrix.package) || format('pypi-{0}', matrix.package) }}
     permissions:
-      contents: write # release tag
-      id-token: write # trusted publishing
+      contents: read # token minted by releaser-token pushes the tag
+      id-token: write # trusted publishing + OIDC for releaser-token
     strategy:
       fail-fast: false
       matrix:
@@ -56,27 +56,14 @@ jobs:
 
       # GITHUB_TOKEN can't push tags over history with workflow changes; use the
       # overture-pull-requester app (contents + workflows write) instead.
-      - name: Configure AWS credentials for pull-requester PEM
-        if: github.event_name == 'push'
-        uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
-        with:
-          role-to-assume: arn:aws:iam::816069134238:role/gha-pull-requester-secrets-reader
-          aws-region: us-west-2
-
-      - name: Fetch pull-requester PEM from Secrets Manager
-        if: github.event_name == 'push'
-        uses: aws-actions/aws-secretsmanager-get-secrets@2297f9a879480a9e3af9b293ed15c70caf8e1c88 # v3.0.2
-        with:
-          secret-ids: |
-            PULL_REQUESTER_APP_PEM, omf-github-terraform/pull-requester/pem
-
       - name: Generate release push token
         if: github.event_name == 'push'
         id: app-token
-        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        uses: OvertureMaps/workflows/.github/actions/releaser-token@9ddbb7ea0b8d5b08d0cee86823605c4b1202864c # v1.0.0
         with:
           client-id: Iv23liiN80WEARreTV7m # overture-pull-requester
-          private-key: ${{ env.PULL_REQUESTER_APP_PEM }} # zizmor: ignore[secrets-outside-env]
+          secret-id: omf-github-terraform/pull-requester/pem
+          role-to-assume: arn:aws:iam::816069134238:role/gha-pull-requester-secrets-reader
           owner: OvertureMaps
           repositories: overture-providers
           permission-contents: write
