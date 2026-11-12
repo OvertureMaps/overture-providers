@@ -43,6 +43,6 @@ Each file in [`overture_dataset_configs/datasets`](https://github.com/OvertureMa
 
 ## Contributing
 
-1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and run the configs through the `overture-datasets` CLI (`validate --policy`, `license`).
+1. Edit or add a file, then run `uv sync --extra dev` and `uv run pytest` from this directory. The tests validate every file against the schema, plus semantic checks (license ids and URLs, attribution, URL pairs), and render the attribution output (Markdown and text).
 2. A new field needs a matching change to `schema.py` in the same PR.
 3. Provider and resource labels feed dataset IDs and S3 paths, so don't rename them.
