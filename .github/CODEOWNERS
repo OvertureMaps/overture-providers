@@ -2,3 +2,4 @@
 
 /packages/overture_sources/ @OvertureMaps/omf-data-ops-reviewers
 /packages/overture_dataset_configs/ @OvertureMaps/omf-data-ops-reviewers
+/.github/ @OvertureMaps/overture-devops-reviewers
