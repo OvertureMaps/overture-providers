@@ -34,3 +34,17 @@ def test_load_config_by_provider_name():
 def test_load_config_unknown(name):
     with pytest.raises(KeyError):
         load_config(name)
+
+
+def test_natural_earth_disputed_areas():
+    from overture_dataset_configs.dataset import Dataset
+    from overture_dataset_configs.license_policy import load_policy
+
+    ds = Dataset.from_name("natural_earth", "admin_0_disputed_areas_10m")
+    assert ds.dataset_id == "natural_earth_admin_0_disputed_areas_10m"
+    assert ds.license_type == "LicenseRef-Public-Domain-Natural-Earth"
+    assert ds.download_url == (
+        "https://naturalearth.s3.amazonaws.com/10m_cultural/"
+        "ne_10m_admin_0_disputed_areas.zip"
+    )
+    assert load_policy().is_allowed("divisions", ds.license_type)

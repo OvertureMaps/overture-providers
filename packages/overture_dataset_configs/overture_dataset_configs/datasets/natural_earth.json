@@ -1,0 +1,53 @@
+{
+  "provider": {
+    "label": "natural_earth",
+    "name": "Natural Earth",
+    "url": {
+      "primary": "https://www.naturalearthdata.com/",
+      "archive": "https://web.archive.org/web/2025/https://www.naturalearthdata.com/"
+    }
+  },
+  "resources": [
+    {
+      "label": "admin_0_disputed_areas_10m",
+      "name": "Natural Earth 1:10m Admin 0 – Breakaway, Disputed Areas",
+      "collection": {
+        "data_location": {
+          "primary": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/",
+          "archive": "https://web.archive.org/web/2025/https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/"
+        },
+        "data_download": {
+          "type": "http",
+          "url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_0_disputed_areas.zip"
+        },
+        "license": {
+          "url": {
+            "primary": "https://www.naturalearthdata.com/about/terms-of-use/",
+            "archive": "https://web.archive.org/web/2025/https://www.naturalearthdata.com/about/terms-of-use/"
+          },
+          "type": "LicenseRef-Public-Domain-Natural-Earth",
+          "requires_attribution": false,
+          "text": "All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. No permission is needed to use Natural Earth. Crediting the authors is unnecessary.",
+          "attribution": "N/A"
+        },
+        "coverage": {
+          "areas": [
+            {
+              "iso_3166_1": "GLOBAL"
+            }
+          ],
+          "description": "Breakaway and disputed areas worldwide, from Kashmir to the Elemi Triangle (99 polygons in version 5.1.1)"
+        },
+        "refresh_schedule": {
+          "frequency": "Infrequent",
+          "source": "tf-data-platform",
+          "type": "manual"
+        },
+        "known_issues": "Shows Natural Earth's de facto boundaries (who controls the territory), not de jure. Some small areas would be better drawn as points. Not a legal or authoritative boundary source.",
+        "notes": "Version 5.1.1. Shapefile (zip) in WGS84 geographic coordinates (EPSG:4326), 99 polygons, 168 attribute columns. Used as a filter-only input: Places whose country is a disputed area are exempt from country-code checks. Not published in any Overture theme."
+      },
+      "ingestion": {},
+      "matching": {}
+    }
+  ]
+}
