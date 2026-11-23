@@ -6,6 +6,8 @@ import datetime
 
 import requests
 
+from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
+
 from overture_dataset_configs.adapters.addresses._versioning import (
     parse_http_last_modified_version,
 )
@@ -13,7 +15,7 @@ from overture_dataset_configs.adapters.addresses._versioning import (
 _CZ_URL_TEMPLATE = "https://vdp.cuzk.gov.cz/vymenny_format/csv/{date}_OB_ADR_csv.zip"
 
 
-class CZResourceConfig:
+class CZResourceConfig(HttpSource):
     name = "cuzk"
     provider = "cuzk"
     country = "CZ"
@@ -53,3 +55,7 @@ class CZResourceConfig:
     def resolve_version(self, _context: dict) -> str:
         _, version = self._resolve()
         return version
+
+    def plan(self, run_date: datetime.date) -> CollectPlan:
+        url, version = self._resolve()
+        return self._download_plan(url, version)

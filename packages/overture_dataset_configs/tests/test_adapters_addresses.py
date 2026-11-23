@@ -13,9 +13,11 @@ from overture_dataset_configs.adapters.addresses.loaders import (
     load_oa_resources,
 )
 from overture_dataset_configs.adapters.addresses import (
+    CollectPlan,
     CZResourceConfig,
     HttpHeadProbeConfig,
     HttpResourceConfig,
+    HttpSource,
     OAResourceConfig,
     SIResourceConfig,
     SocrataResourceConfig,
@@ -796,3 +798,77 @@ def test_parse_http_last_modified_version(header, expected):
     )
 
     assert parse_http_last_modified_version(header) == expected
+
+
+# ── HttpSource.plan ───────────────────────────────────────────────────────────
+
+
+_RUN_DATE = datetime.date(2026, 5, 15)
+_B = "overture_dataset_configs.adapters.addresses"
+
+
+class TestPlan:
+    def test_every_registered_loader_is_a_concrete_http_source(self):
+        import inspect
+
+        from overture_dataset_configs.adapters.addresses import loaders
+
+        registered = {
+            *loaders._HTTP_LOADER_BY_PROVIDER.values(),
+            *loaders._HTTP_LOADER_BY_RESOURCE.values(),
+        }
+        for cls in registered:
+            assert issubclass(cls, HttpSource) and not inspect.isabstract(cls), cls
+
+    def test_static_uses_run_date_and_url_basename(self):
+        r = HttpResourceConfig("x", "https://example.com/a.gpkg", "p", "IS")
+        assert r.plan(_RUN_DATE) == CollectPlan(
+            "http_download",
+            "2026-05-15",
+            "a.gpkg",
+            url="https://example.com/a.gpkg",
+        )
+
+    def test_zip_url_lands_as_source_zip(self):
+        r = HttpResourceConfig("x", "https://example.com/A.ZIP", "p", "IS")
+        assert r.plan(_RUN_DATE).filename == "source.zip"
+
+    def test_head_probe_uses_last_modified(self):
+        r = HttpHeadProbeConfig("bag", "pdok", "NL", "https://example.com/bag.gpkg")
+        resp = _head_response(200, {"Last-Modified": "Mon, 01 Jan 2026 00:00:00 GMT"})
+        with patch(f"{_B}.strategies.requests.head", return_value=resp):
+            plan = r.plan(_RUN_DATE)
+        assert (plan.url, plan.version, plan.filename) == (
+            "https://example.com/bag.gpkg",
+            "20260101",
+            "bag.gpkg",
+        )
+
+    def test_cz_plans_probed_archive(self):
+        resp = _head_response(200, {"Last-Modified": "Fri, 01 May 2026 05:00:00 GMT"})
+        with patch(f"{_B}.cuzk.requests.head", return_value=resp):
+            with patch(f"{_B}.cuzk.datetime", _mock_datetime(_TODAY)):
+                plan = CZResourceConfig().plan(_RUN_DATE)
+        assert plan == CollectPlan(
+            "http_download", "20260501", "source.zip", url=_APRIL_URL
+        )
+
+    def test_socrata_lands_as_source_zip(self):
+        r = SocrataResourceConfig("https://example.com/download/x")
+        resp = _get_response(json_data={"viewLastModified": 1790803162})
+        with patch(f"{_B}.us_dot_nad.requests.get", return_value=resp):
+            plan = r.plan(_RUN_DATE)
+        assert (plan.version, plan.filename) == ("20260930", "source.zip")
+
+    def test_gurs_defers_signed_url_to_collect_job(self):
+        with patch(f"{_B}.gurs.requests.get") as mock_get:
+            plan = SIResourceConfig(api_url="https://example.com/signed").plan(
+                _RUN_DATE
+            )
+        mock_get.assert_not_called()
+        assert plan == CollectPlan(
+            "http_signed_api",
+            "2026-05-15",
+            "source.zip",
+            api_url="https://example.com/signed",
+        )

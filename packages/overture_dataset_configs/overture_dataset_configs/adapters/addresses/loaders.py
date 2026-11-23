@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from overture_dataset_configs.adapters.addresses.base import HttpSource
 from overture_dataset_configs.adapters.addresses.cuzk import CZResourceConfig
 from overture_dataset_configs.adapters.addresses.gurs import SIResourceConfig
 from overture_dataset_configs.adapters.addresses.strategies import (
@@ -10,10 +11,11 @@ from overture_dataset_configs.adapters.addresses.strategies import (
 from overture_dataset_configs.adapters.addresses.us_dot_nad import SocrataResourceConfig
 from overture_dataset_configs.dataset import Dataset
 
-# Provider → loader class. Adding a new addresses provider = one class + one
-# entry here. Config JSON describes what/who/where; this registry owns how.
+# Provider → loader class. A new address provider is one entry here, plus an
+# HttpSource subclass when no shared strategy fits. Config JSON describes
+# what/who/where; this registry owns how.
 _OA_PROVIDER = "open_addresses"
-_HTTP_LOADER_BY_PROVIDER: dict[str, type] = {
+_HTTP_LOADER_BY_PROVIDER: dict[str, type[HttpSource]] = {
     "byggoastofnun": HttpResourceConfig,
     "nyc_dcp": HttpResourceConfig,
     "us_census_bureau": HttpResourceConfig,
@@ -25,12 +27,12 @@ _HTTP_LOADER_BY_PROVIDER: dict[str, type] = {
 
 # (provider, resource) → loader class, checked first. For providers that also
 # publish non-address resources: us_dot's HPMS is not a Socrata download.
-_HTTP_LOADER_BY_RESOURCE: dict[tuple[str, str], type] = {
+_HTTP_LOADER_BY_RESOURCE: dict[tuple[str, str], type[HttpSource]] = {
     ("us_dot", "nad"): SocrataResourceConfig,
 }
 
 
-def _http_loader_for(dataset: Dataset) -> type | None:
+def _http_loader_for(dataset: Dataset) -> type[HttpSource] | None:
     return _HTTP_LOADER_BY_RESOURCE.get(
         (dataset.provider_label, dataset.resource_label)
     ) or _HTTP_LOADER_BY_PROVIDER.get(dataset.provider_label)
@@ -73,13 +75,7 @@ def load_oa_resources(datasets: list[Dataset]) -> list[OAResourceConfig]:
 
 def load_http_resources(
     datasets: list[Dataset],
-) -> list[
-    HttpResourceConfig
-    | HttpHeadProbeConfig
-    | CZResourceConfig
-    | SIResourceConfig
-    | SocrataResourceConfig
-]:
+) -> list[HttpSource]:
     """Build HTTP resource configs from datasets, dispatching by provider and resource label."""
     results = []
     for dataset in datasets:

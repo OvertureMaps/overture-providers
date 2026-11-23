@@ -6,10 +6,12 @@ import datetime
 
 import requests
 
+from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
+
 _NAD_SOCRATA_API = "https://data.transportation.gov/api/views/fc2s-wawr.json"
 
 
-class SocrataResourceConfig:
+class SocrataResourceConfig(HttpSource):
     """Socrata-hosted resource: version from ``viewLastModified`` metadata (no Last-Modified)."""
 
     name = "nad"
@@ -45,3 +47,7 @@ class SocrataResourceConfig:
             updated_at, tz=datetime.timezone.utc
         ).strftime("%Y%m%d")
         return self.download_url, version
+
+    def plan(self, run_date: datetime.date) -> CollectPlan:
+        url, version = self._resolve()
+        return self._download_plan(url, version)

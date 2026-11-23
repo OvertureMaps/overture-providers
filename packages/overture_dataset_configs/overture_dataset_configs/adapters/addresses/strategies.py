@@ -8,6 +8,8 @@ from urllib.parse import urlparse, parse_qs
 
 import requests
 
+from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
+
 from overture_dataset_configs.adapters.addresses._versioning import (
     parse_http_last_modified_version,
 )
@@ -56,7 +58,7 @@ class OAResourceConfig:
         return self._subdivision_code
 
 
-class HttpResourceConfig:
+class HttpResourceConfig(HttpSource):
     def __init__(
         self,
         name: str,
@@ -97,8 +99,11 @@ class HttpResourceConfig:
     def resolve_version(self, context: dict) -> str:
         return context["ds"]
 
+    def plan(self, run_date: datetime.date) -> CollectPlan:
+        return self._download_plan(self.url, run_date.strftime("%Y-%m-%d"))
 
-class HttpHeadProbeConfig:
+
+class HttpHeadProbeConfig(HttpSource):
     """HEAD-probe resource: version from Last-Modified header."""
 
     url = None
@@ -132,3 +137,7 @@ class HttpHeadProbeConfig:
             else datetime.date.today().strftime("%Y%m%d")
         )
         return self.download_url, version
+
+    def plan(self, run_date: datetime.date) -> CollectPlan:
+        url, version = self._resolve()
+        return self._download_plan(url, version)
