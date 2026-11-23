@@ -45,6 +45,13 @@ class CZResourceConfig(HttpSource):
                     else candidate.strftime("%Y%m%d")
                 )
                 return url, version
+            # ČÚZK answers 404 for a month not yet published; anything else is a
+            # failure to retry, not a reason to fall back to an older file.
+            if resp.status_code != 404:
+                resp.raise_for_status()
+                raise RuntimeError(
+                    f"ČÚZK: unexpected HTTP {resp.status_code} for {url}"
+                )
             candidate = candidate.replace(day=1) - datetime.timedelta(days=1)
         raise RuntimeError("ČÚZK: no published file found in the last 3 months")
 

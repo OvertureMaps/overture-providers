@@ -872,3 +872,45 @@ class TestPlan:
             "source.zip",
             api_url="https://example.com/signed",
         )
+
+
+# ── Error and null handling ───────────────────────────────────────────────────
+
+
+def test_fetch_all_oa_jobs_sets_timeout():
+    with patch(f"{_B}.collect.requests.get", return_value=_get_response([])) as get:
+        fetch_all_oa_jobs("https://batch.openaddresses.io/api")
+    assert get.call_args.kwargs["timeout"] == 30
+
+
+@pytest.mark.parametrize("status", [429, 503])
+def test_cz_raises_on_http_error_instead_of_falling_back(status):
+    resp = _head_response(status)
+    resp.raise_for_status.side_effect = HTTPError(f"HTTP {status}")
+    with patch(f"{_B}.cuzk.requests.head", return_value=resp) as head:
+        with patch(f"{_B}.cuzk.datetime", _mock_datetime(_TODAY)):
+            with pytest.raises(HTTPError):
+                CZResourceConfig()._resolve()
+    assert head.call_count == 1
+
+
+def test_cz_raises_on_redirect_instead_of_falling_back():
+    with patch(f"{_B}.cuzk.requests.head", return_value=_head_response(302)):
+        with patch(f"{_B}.cuzk.datetime", _mock_datetime(_TODAY)):
+            with pytest.raises(RuntimeError, match="HTTP 302"):
+                CZResourceConfig()._resolve()
+
+
+def test_oa_null_iso_3166_2_leaves_subdivision_unset(tmp_path):
+    doc = json.loads(_OA_JSON)
+    doc["resources"][0]["collection"]["coverage"]["areas"][0]["iso_3166_2"] = None
+    f = tmp_path / "open_addresses.json"
+    f.write_text(json.dumps(doc))
+    assert load_oa_resources(Dataset.all_from_file(f))[0].subdivision_code is None
+
+
+def test_socrata_null_api_uses_default_endpoint():
+    cfg = SocrataResourceConfig.from_dict(
+        {"data_download": {"type": "http", "url": "https://example.com/x"}, "api": None}
+    )
+    assert cfg.socrata_api == "https://data.transportation.gov/api/views/fc2s-wawr.json"

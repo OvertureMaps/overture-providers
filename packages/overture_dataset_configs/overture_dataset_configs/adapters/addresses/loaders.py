@@ -50,11 +50,11 @@ def load_oa_resources(datasets: list[Dataset]) -> list[OAResourceConfig]:
         if dataset.provider_label != _OA_PROVIDER:
             continue
         collection = dataset.collection
-        extras = collection.get("extras", {})
+        extras = collection.get("extras") or {}
         # US subdivision comes from coverage.areas[0].iso_3166_2 (e.g. "US-NY" → "NY").
         # Non-US resources leave subdivision_code as None — no downstream consumer today.
         areas = collection.get("coverage", {}).get("areas", [])
-        iso_3166_2 = areas[0].get("iso_3166_2", "") if areas else ""
+        iso_3166_2 = (areas[0].get("iso_3166_2") or "") if areas else ""
         subdivision_code = (
             iso_3166_2.split("-", 1)[1] if iso_3166_2.startswith("US-") else None
         )

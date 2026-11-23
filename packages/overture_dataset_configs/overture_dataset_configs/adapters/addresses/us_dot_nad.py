@@ -33,7 +33,7 @@ class SocrataResourceConfig(HttpSource):
         dd = d["data_download"]
         return cls(
             download_url=dd["url"] + dd.get("endpoint", ""),
-            socrata_api=d.get("api", {}).get("url", _NAD_SOCRATA_API),
+            socrata_api=(d.get("api") or {}).get("url", _NAD_SOCRATA_API),
         )
 
     def _resolve(self) -> tuple[str, str]:
