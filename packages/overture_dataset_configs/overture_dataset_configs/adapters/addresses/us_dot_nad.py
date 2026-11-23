@@ -6,6 +6,7 @@ import datetime
 
 import requests
 
+from overture_dataset_configs.adapters.addresses._versioning import date_version
 from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
 
 _NAD_SOCRATA_API = "https://data.transportation.gov/api/views/fc2s-wawr.json"
@@ -43,9 +44,9 @@ class SocrataResourceConfig(HttpSource):
         # NAD is a file ("blobby") asset: rowsUpdatedAt is fixed at creation and
         # never changes when a new file is uploaded, but viewLastModified does.
         updated_at = meta.get("viewLastModified") or meta["rowsUpdatedAt"]
-        version = datetime.datetime.fromtimestamp(
-            updated_at, tz=datetime.timezone.utc
-        ).strftime("%Y%m%d")
+        version = date_version(
+            datetime.datetime.fromtimestamp(updated_at, tz=datetime.timezone.utc)
+        )
         return self.download_url, version
 
     def plan(self, run_date: datetime.date) -> CollectPlan:

@@ -6,6 +6,7 @@ import datetime
 
 import requests
 
+from overture_dataset_configs.adapters.addresses._versioning import date_version
 from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
 
 _SI_API_URL = "https://ipi.eprostor.gov.si/jgp-service-api/display-views/groups/121/composite-products/141/file?filterParam=DRZAVA&filterValue=1"
@@ -33,7 +34,7 @@ class SIResourceConfig(HttpSource):
     def plan(self, run_date: datetime.date) -> CollectPlan:
         return CollectPlan(
             "http_signed_api",
-            run_date.strftime("%Y-%m-%d"),
+            date_version(run_date),
             "source.zip",
             api_url=self.api_url,
         )

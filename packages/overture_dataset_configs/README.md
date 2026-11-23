@@ -55,6 +55,8 @@ for source in load_http_resources(datasets):  # one HttpSource per HTTP resource
 
 Every HTTP adapter subclasses `HttpSource` and implements `plan`, which returns a `CollectPlan`: the strategy, the URL to download (or, for `http_signed_api`, the API that issues a short-lived signed URL at download time), the version and the destination filename.
 
+Versions are `YYYYMMDD`. An adapter takes the version from its source when the source publishes one, and falls back to the run date otherwise. ČÚZK picks the newest monthly file published as of the run date, so a backfill collects the file that was current then.
+
 Loaders choose a class by provider label, or by provider and resource label for providers that also publish non-address resources. `strategies.py` holds the fetch strategies several providers share; a provider whose source needs its own logic gets its own module, as `cuzk.py`, `gurs.py` and `us_dot_nad.py` do. A new address provider needs an entry in `loaders.py`, plus an `HttpSource` subclass in its own module when no shared strategy fits.
 
 ## Concepts
