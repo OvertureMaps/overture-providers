@@ -28,8 +28,30 @@ load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 | `license_policy` | `LicensePolicy`: validating and querying the per-theme license allowlist. |
 | `attribution` | Flattening configs into license entries and rendering them as Markdown or plain text. |
 | `spdx` | Fetching canonical SPDX license texts from a pinned `license-list-data` release. |
+| `adapters.addresses` | Address source adapters: one class per fetch strategy, and loaders that pick one for each address dataset. Needs the `addresses` extra. |
 
 For a command line, overture-core's `overture-datasets` CLI validates and renders these configs.
+
+## Address source adapters
+
+The `addresses` extra adds `requests` and the `adapters.addresses` module. A plain install keeps only the runtime dependencies above. Without the extra, importing the module raises an `ImportError` that names the extra.
+
+```python
+# pip install 'overture-dataset-configs[addresses]'
+from overture_dataset_configs.adapters.addresses import (
+    fetch_all_oa_jobs,
+    load_http_resources,
+    load_oa_resources,
+)
+from overture_dataset_configs.dataset import DATASETS_DIR, Dataset
+
+datasets = [d for p in DATASETS_DIR.glob("*.json") for d in Dataset.all_from_file(p)]
+load_oa_resources(datasets)  # [OAResourceConfig, ...], one per open_addresses resource
+load_http_resources(datasets)  # HTTP, HEAD-probe, ČÚZK, GURS and Socrata configs
+fetch_all_oa_jobs("https://batch.openaddresses.io/api")  # {source: latest job id}
+```
+
+Loaders choose a class by provider label, or by provider and resource label for providers that also publish non-address resources. A new address provider needs an entry in `loaders.py`, plus a class in `resource_configs.py` when no existing fetch strategy fits.
 
 ## Concepts
 

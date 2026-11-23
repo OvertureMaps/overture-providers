@@ -19,7 +19,13 @@ Source = "https://github.com/OvertureMaps/overture-providers/tree/main/packages/
 Issues = "https://github.com/OvertureMaps/overture-providers/issues"
 
 [project.optional-dependencies]
-dev = ["pytest>=9.1.1", "pytest-cov>=7.0.0", "license-expression>=30.0"]
+addresses = ["requests>=2.31"]
+dev = [
+    "overture-dataset-configs[addresses]",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.0.0",
+    "license-expression>=30.0",
+]
 
 [build-system]
 requires = ["setuptools>=77.0.3", "setuptools_scm>=8.0", "wheel"]
