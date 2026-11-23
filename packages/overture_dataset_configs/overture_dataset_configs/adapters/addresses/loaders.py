@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from overture_dataset_configs.adapters.addresses.resource_configs import (
-    CZResourceConfig,
+from overture_dataset_configs.adapters.addresses.cuzk import CZResourceConfig
+from overture_dataset_configs.adapters.addresses.gurs import SIResourceConfig
+from overture_dataset_configs.adapters.addresses.strategies import (
     HttpHeadProbeConfig,
     HttpResourceConfig,
     OAResourceConfig,
-    SIResourceConfig,
-    SocrataResourceConfig,
 )
+from overture_dataset_configs.adapters.addresses.us_dot_nad import SocrataResourceConfig
 from overture_dataset_configs.dataset import Dataset
 
 # Provider → loader class. Adding a new addresses provider = one class + one
@@ -92,9 +92,11 @@ def load_http_resources(
             areas = dataset.coverage.get("areas", [])
             country = areas[0]["iso_3166_1"] if areas else None
             iso_3166_2 = areas[0].get("iso_3166_2") if areas else None
-            subdivision = (
-                iso_3166_2[0] if isinstance(iso_3166_2, list) and iso_3166_2 else None
-            )
+            # The schema types iso_3166_2 as a string; a list from an
+            # unvalidated config yields its first entry.
+            if isinstance(iso_3166_2, list):
+                iso_3166_2 = iso_3166_2[0] if iso_3166_2 else None
+            subdivision = iso_3166_2 or None
             common = {
                 "name": dataset.resource_label,
                 "provider": dataset.provider_label,

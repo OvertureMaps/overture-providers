@@ -12,7 +12,7 @@ from overture_dataset_configs.adapters.addresses.loaders import (
     load_http_resources,
     load_oa_resources,
 )
-from overture_dataset_configs.adapters.addresses.resource_configs import (
+from overture_dataset_configs.adapters.addresses import (
     CZResourceConfig,
     HttpHeadProbeConfig,
     HttpResourceConfig,
@@ -38,7 +38,7 @@ _FEB_URL = "https://vdp.cuzk.gov.cz/vymenny_format/csv/20260228_OB_ADR_csv.zip"
 
 
 def _mock_datetime(fixed_today: datetime.date):
-    """Patch target for `overture_dataset_configs.adapters.addresses.resource_configs.datetime`.
+    """Patch target for a module's `datetime`.
 
     Returns a stand-in that pins date.today() while forwarding date(y, m, d)
     calls and timedelta to the real implementations.
@@ -276,9 +276,7 @@ class TestLoadOaResources:
 
 
 class TestCZResourceConfig:
-    _PATCH = (
-        "overture_dataset_configs.adapters.addresses.resource_configs.requests.head"
-    )
+    _PATCH = "overture_dataset_configs.adapters.addresses.cuzk.requests.head"
 
     def _cz(self) -> CZResourceConfig:
         return CZResourceConfig()
@@ -289,7 +287,7 @@ class TestCZResourceConfig:
         )
         with patch(self._PATCH, return_value=mock_resp):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 url, _ = self._cz()._resolve()
@@ -301,7 +299,7 @@ class TestCZResourceConfig:
         )
         with patch(self._PATCH, return_value=mock_resp):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 version = self._cz().resolve_version({})
@@ -311,7 +309,7 @@ class TestCZResourceConfig:
         mock_resp = _head_response(200, {})
         with patch(self._PATCH, return_value=mock_resp):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 version = self._cz().resolve_version({})
@@ -323,7 +321,7 @@ class TestCZResourceConfig:
         )
         with patch(self._PATCH, return_value=mock_resp):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 assert self._cz().resolve_url() == _APRIL_URL
@@ -335,7 +333,7 @@ class TestCZResourceConfig:
         ]
         with patch(self._PATCH, side_effect=responses):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 url, version = self._cz()._resolve()
@@ -346,7 +344,7 @@ class TestCZResourceConfig:
         responses = [_head_response(404)] * 3
         with patch(self._PATCH, side_effect=responses):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.cuzk.datetime",
                 _mock_datetime(_TODAY),
             ):
                 with pytest.raises(RuntimeError, match="3 months"):
@@ -511,6 +509,12 @@ class TestLoadHttpResources:
         r = load_http_resources(datasets)[0]
         assert r.subdivision == "US-NY"
 
+    def test_packaged_nyc_dcp_subdivision_from_string(self):
+        datasets = Dataset.all_from_file(Dataset.path_for("nyc_dcp", DATASETS_DIR))
+        assert datasets[0].coverage["areas"][0]["iso_3166_2"] == "US-NY"
+        r = load_http_resources(datasets)[0]
+        assert r.subdivision == "US-NY"
+
     def test_http_static_no_subdivision(self, tmp_path):
         datasets = self._datasets(tmp_path, "byggoastofnun", _HTTP_STATIC_JSON)
         r = load_http_resources(datasets)[0]
@@ -581,7 +585,7 @@ class TestLoadHttpResources:
 
 
 class TestSIResourceConfig:
-    _PATCH = "overture_dataset_configs.adapters.addresses.resource_configs.requests.get"
+    _PATCH = "overture_dataset_configs.adapters.addresses.gurs.requests.get"
     _API_URL = "https://example.com/signed-api"
 
     def _si(self) -> SIResourceConfig:
@@ -595,7 +599,7 @@ class TestSIResourceConfig:
 
     def test_from_dict_falls_back_to_default(self):
         r = SIResourceConfig.from_dict({})
-        from overture_dataset_configs.adapters.addresses.resource_configs import (
+        from overture_dataset_configs.adapters.addresses.gurs import (
             _SI_API_URL,
         )
 
@@ -649,9 +653,7 @@ _HTTP_HEAD_PROBE_JSON = json.dumps(
 
 
 class TestHttpHeadProbeConfig:
-    _PATCH = (
-        "overture_dataset_configs.adapters.addresses.resource_configs.requests.head"
-    )
+    _PATCH = "overture_dataset_configs.adapters.addresses.strategies.requests.head"
     _URL = "https://example.com/bag.gpkg"
 
     def _probe(self) -> HttpHeadProbeConfig:
@@ -678,7 +680,7 @@ class TestHttpHeadProbeConfig:
         mock_resp = _head_response(200, {})
         with patch(self._PATCH, return_value=mock_resp):
             with patch(
-                "overture_dataset_configs.adapters.addresses.resource_configs.datetime",
+                "overture_dataset_configs.adapters.addresses.strategies.datetime",
                 _mock_datetime(_TODAY),
             ):
                 _, version = self._probe()._resolve()
@@ -716,7 +718,7 @@ class TestLoadHttpResourcesHeadProbe:
 
 
 class TestSocrataResourceConfig:
-    _PATCH = "overture_dataset_configs.adapters.addresses.resource_configs.requests.get"
+    _PATCH = "overture_dataset_configs.adapters.addresses.us_dot_nad.requests.get"
     _DOWNLOAD_URL = "https://data.transportation.gov/download/fc2s-wawr/application%2Fx-zip-compressed"
     _SOCRATA_API = "https://data.transportation.gov/api/views/fc2s-wawr.json"
 
@@ -789,8 +791,8 @@ class TestSocrataResourceConfig:
     ],
 )
 def test_parse_http_last_modified_version(header, expected):
-    from overture_dataset_configs.adapters.addresses.resource_configs import (
-        _parse_http_last_modified_version,
+    from overture_dataset_configs.adapters.addresses._versioning import (
+        parse_http_last_modified_version,
     )
 
-    assert _parse_http_last_modified_version(header) == expected
+    assert parse_http_last_modified_version(header) == expected
