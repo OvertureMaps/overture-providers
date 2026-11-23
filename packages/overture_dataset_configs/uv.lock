@@ -363,30 +363,26 @@ source = { editable = "." }
 dependencies = [
     { name = "botocore" },
     { name = "pydantic" },
+    { name = "requests" },
 ]
 
 [package.optional-dependencies]
-addresses = [
-    { name = "requests" },
-]
 dev = [
     { name = "license-expression" },
     { name = "pytest" },
     { name = "pytest-cov" },
-    { name = "requests" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "botocore", specifier = ">=1.31" },
     { name = "license-expression", marker = "extra == 'dev'", specifier = ">=30.0" },
-    { name = "overture-dataset-configs", extras = ["addresses"], marker = "extra == 'dev'" },
     { name = "pydantic", specifier = ">=2.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.1.1" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },
-    { name = "requests", marker = "extra == 'addresses'", specifier = ">=2.31" },
+    { name = "requests", specifier = ">=2.31" },
 ]
-provides-extras = ["addresses", "dev"]
+provides-extras = ["dev"]
 
 [[package]]
 name = "packaging"

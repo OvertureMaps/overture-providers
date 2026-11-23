@@ -794,25 +794,3 @@ def test_parse_http_last_modified_version(header, expected):
     )
 
     assert _parse_http_last_modified_version(header) == expected
-
-
-def test_public_names_importable_from_package():
-    import overture_dataset_configs.adapters.addresses as addresses
-
-    for name in addresses.__all__:
-        assert getattr(addresses, name) is not None
-
-
-def test_import_without_extra_names_the_extra(monkeypatch):
-    import importlib
-    import sys
-
-    for mod in [
-        m
-        for m in sys.modules
-        if m.startswith("overture_dataset_configs.adapters.addresses")
-    ]:
-        monkeypatch.delitem(sys.modules, mod)
-    monkeypatch.setitem(sys.modules, "requests", None)
-    with pytest.raises(ImportError, match=r"overture-dataset-configs\[addresses\]"):
-        importlib.import_module("overture_dataset_configs.adapters.addresses")

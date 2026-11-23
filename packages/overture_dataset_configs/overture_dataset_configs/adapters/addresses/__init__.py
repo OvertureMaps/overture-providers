@@ -1,16 +1,6 @@
 """Address source adapters: one class per fetch strategy, and loaders that pick
 one for each address dataset config.
-
-Needs the ``addresses`` extra: ``pip install 'overture-dataset-configs[addresses]'``.
 """
-
-try:
-    import requests  # noqa: F401
-except ImportError as e:
-    raise ImportError(
-        "overture_dataset_configs.adapters.addresses needs the 'addresses' extra: "
-        "pip install 'overture-dataset-configs[addresses]'"
-    ) from e
 
 from overture_dataset_configs.adapters.addresses.collect import fetch_all_oa_jobs
 from overture_dataset_configs.adapters.addresses.loaders import (

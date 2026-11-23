@@ -28,16 +28,13 @@ load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 | `license_policy` | `LicensePolicy`: validating and querying the per-theme license allowlist. |
 | `attribution` | Flattening configs into license entries and rendering them as Markdown or plain text. |
 | `spdx` | Fetching canonical SPDX license texts from a pinned `license-list-data` release. |
-| `adapters.addresses` | Address source adapters: one class per fetch strategy, and loaders that pick one for each address dataset. Needs the `addresses` extra. |
+| `adapters.addresses` | Address source adapters: one class per fetch strategy, and loaders that pick one for each address dataset. |
 
 For a command line, overture-core's `overture-datasets` CLI validates and renders these configs.
 
 ## Address source adapters
 
-The `addresses` extra adds `requests` and the `adapters.addresses` module. A plain install keeps only the runtime dependencies above. Without the extra, importing the module raises an `ImportError` that names the extra.
-
 ```python
-# pip install 'overture-dataset-configs[addresses]'
 from overture_dataset_configs.adapters.addresses import (
     fetch_all_oa_jobs,
     load_http_resources,
