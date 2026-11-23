@@ -48,7 +48,7 @@ load_http_resources(datasets)  # HTTP, HEAD-probe, ČÚZK, GURS and Socrata conf
 fetch_all_oa_jobs("https://batch.openaddresses.io/api")  # {source: latest job id}
 ```
 
-Loaders choose a class by provider label, or by provider and resource label for providers that also publish non-address resources. A new address provider needs an entry in `loaders.py`, plus a class in `resource_configs.py` when no existing fetch strategy fits.
+Loaders choose a class by provider label, or by provider and resource label for providers that also publish non-address resources. `strategies.py` holds the fetch strategies several providers share; a provider whose source needs its own logic gets its own module, as `cuzk.py`, `gurs.py` and `us_dot_nad.py` do. A new address provider needs an entry in `loaders.py`, plus a module when no shared strategy fits.
 
 ## Concepts
 
