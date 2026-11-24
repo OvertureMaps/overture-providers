@@ -27,6 +27,7 @@ ATTRIBUTION_REQUIRED = {
 
 # Attribution text that says nothing; it would be rendered as the source name.
 ATTRIBUTION_PLACEHOLDERS = {"", "n/a", "na", "none", "null", "tbd", "-"}
+MIN_ATTRIBUTION_LENGTH = 3
 
 SPDX = get_spdx_licensing()
 
@@ -106,6 +107,7 @@ def test_required_attribution_has_text(provider, resource):
     if license_ and license_["requires_attribution"]:
         text = (license_["attribution"] or "").strip().lower()
         assert text not in ATTRIBUTION_PLACEHOLDERS, license_["attribution"]
+        assert len(text) >= MIN_ATTRIBUTION_LENGTH, license_["attribution"]
 
 
 @pytest.mark.parametrize(("provider", "resource"), RESOURCES, ids=IDS)
