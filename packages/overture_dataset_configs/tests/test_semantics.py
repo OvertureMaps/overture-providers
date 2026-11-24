@@ -25,6 +25,9 @@ ATTRIBUTION_REQUIRED = {
     "DL-DE-ZERO-2.0": False,
 }
 
+# Attribution text that says nothing; it would be rendered as the source name.
+ATTRIBUTION_PLACEHOLDERS = {"", "n/a", "na", "none", "null", "tbd", "-"}
+
 SPDX = get_spdx_licensing()
 
 
@@ -95,6 +98,14 @@ def test_attribution_matches_license(provider, resource):
     expected = ATTRIBUTION_REQUIRED.get(license_ and license_["type"])
     if expected is not None:
         assert license_["requires_attribution"] is expected
+
+
+@pytest.mark.parametrize(("provider", "resource"), RESOURCES, ids=IDS)
+def test_required_attribution_has_text(provider, resource):
+    license_ = resource["collection"]["license"]
+    if license_ and license_["requires_attribution"]:
+        text = (license_["attribution"] or "").strip().lower()
+        assert text not in ATTRIBUTION_PLACEHOLDERS, license_["attribution"]
 
 
 @pytest.mark.parametrize(("provider", "resource"), RESOURCES, ids=IDS)
