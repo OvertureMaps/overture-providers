@@ -11,6 +11,7 @@ import requests
 from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
 
 from overture_dataset_configs.adapters.addresses._versioning import (
+    date_version,
     parse_http_last_modified_version,
 )
 
@@ -100,7 +101,7 @@ class HttpResourceConfig(HttpSource):
         return context["ds"]
 
     def plan(self, run_date: datetime.date) -> CollectPlan:
-        return self._download_plan(self.url, run_date.strftime("%Y-%m-%d"))
+        return self._download_plan(self.url, date_version(run_date))
 
 
 class HttpHeadProbeConfig(HttpSource):
@@ -127,17 +128,18 @@ class HttpHeadProbeConfig(HttpSource):
         path_name = urlparse(self.download_url).path.split("/")[-1]
         return path_name if path_name else "source"
 
-    def _resolve(self) -> tuple[str, str]:
+    def _resolve(self, run_date: datetime.date | None = None) -> tuple[str, str]:
+        """Return the URL and version; ``run_date`` (default today) is the fallback version."""
         resp = requests.head(self.download_url, timeout=30, allow_redirects=True)
         resp.raise_for_status()
         last_modified = resp.headers.get("Last-Modified", "")
         version = (
             parse_http_last_modified_version(last_modified)
             if last_modified
-            else datetime.date.today().strftime("%Y%m%d")
+            else date_version(run_date or datetime.date.today())
         )
         return self.download_url, version
 
     def plan(self, run_date: datetime.date) -> CollectPlan:
-        url, version = self._resolve()
+        url, version = self._resolve(run_date)
         return self._download_plan(url, version)

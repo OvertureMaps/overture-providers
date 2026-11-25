@@ -1,4 +1,4 @@
-"""ČÚZK (Czechia): monthly files probed backwards from the end of last month."""
+"""ČÚZK (Czechia): monthly files probed backwards from the month before the run date."""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ import requests
 from overture_dataset_configs.adapters.addresses.base import CollectPlan, HttpSource
 
 from overture_dataset_configs.adapters.addresses._versioning import (
+    date_version,
     parse_http_last_modified_version,
 )
 
@@ -32,28 +33,37 @@ class CZResourceConfig(HttpSource):
             or _CZ_URL_TEMPLATE
         )
 
-    def _resolve(self) -> tuple[str, str]:
-        candidate = datetime.date.today().replace(day=1) - datetime.timedelta(days=1)
+    def _resolve(self, run_date: datetime.date | None = None) -> tuple[str, str]:
+        """Return the URL and version of the newest file published by ``run_date``.
+
+        ``run_date`` defaults to today.
+        """
+        as_of = run_date or datetime.date.today()
+        candidate = as_of.replace(day=1) - datetime.timedelta(days=1)
         for _ in range(3):
-            url = self.url_template.format(date=candidate.strftime("%Y%m%d"))
+            url = self.url_template.format(date=date_version(candidate))
             resp = requests.head(url, timeout=10)
             if resp.status_code == 200:
                 last_modified = resp.headers.get("Last-Modified", "")
                 version = (
                     parse_http_last_modified_version(last_modified)
                     if last_modified
-                    else candidate.strftime("%Y%m%d")
+                    else date_version(candidate)
                 )
-                return url, version
+                # A file modified after the run date wasn't published as of then.
+                if version <= date_version(as_of):
+                    return url, version
             # ČÚZK answers 404 for a month not yet published; anything else is a
             # failure to retry, not a reason to fall back to an older file.
-            if resp.status_code != 404:
+            elif resp.status_code != 404:
                 resp.raise_for_status()
                 raise RuntimeError(
                     f"ČÚZK: unexpected HTTP {resp.status_code} for {url}"
                 )
             candidate = candidate.replace(day=1) - datetime.timedelta(days=1)
-        raise RuntimeError("ČÚZK: no published file found in the last 3 months")
+        raise RuntimeError(
+            f"ČÚZK: no file published in the 3 months before {as_of.isoformat()}"
+        )
 
     def resolve_url(self) -> str:
         url, _ = self._resolve()
@@ -64,5 +74,5 @@ class CZResourceConfig(HttpSource):
         return version
 
     def plan(self, run_date: datetime.date) -> CollectPlan:
-        url, version = self._resolve()
+        url, version = self._resolve(run_date)
         return self._download_plan(url, version)

@@ -824,7 +824,7 @@ class TestPlan:
         r = HttpResourceConfig("x", "https://example.com/a.gpkg", "p", "IS")
         assert r.plan(_RUN_DATE) == CollectPlan(
             "http_download",
-            "2026-05-15",
+            "20260515",
             "a.gpkg",
             url="https://example.com/a.gpkg",
         )
@@ -853,6 +853,29 @@ class TestPlan:
             "http_download", "20260501", "source.zip", url=_APRIL_URL
         )
 
+    def test_cz_backfill_probes_month_before_run_date(self):
+        resp = _head_response(200, {"Last-Modified": "Wed, 01 Apr 2026 05:00:00 GMT"})
+        with patch(f"{_B}.cuzk.requests.head", return_value=resp) as head:
+            plan = CZResourceConfig().plan(datetime.date(2026, 4, 10))
+        assert head.call_args.args[0] == _MARCH_URL
+        assert (plan.url, plan.version) == (_MARCH_URL, "20260401")
+
+    def test_cz_skips_file_published_after_run_date(self):
+        responses = [
+            _head_response(200, {"Last-Modified": "Sat, 02 May 2026 05:00:00 GMT"}),
+            _head_response(200, {"Last-Modified": "Wed, 01 Apr 2026 05:00:00 GMT"}),
+        ]
+        with patch(f"{_B}.cuzk.requests.head", side_effect=responses):
+            plan = CZResourceConfig().plan(datetime.date(2026, 5, 1))
+        assert (plan.url, plan.version) == (_MARCH_URL, "20260401")
+
+    def test_head_probe_falls_back_to_run_date(self):
+        r = HttpHeadProbeConfig("bag", "pdok", "NL", "https://example.com/bag.gpkg")
+        with patch(
+            f"{_B}.strategies.requests.head", return_value=_head_response(200, {})
+        ):
+            assert r.plan(datetime.date(2025, 1, 2)).version == "20250102"
+
     def test_socrata_lands_as_source_zip(self):
         r = SocrataResourceConfig("https://example.com/download/x")
         resp = _get_response(json_data={"viewLastModified": 1790803162})
@@ -868,7 +891,7 @@ class TestPlan:
         mock_get.assert_not_called()
         assert plan == CollectPlan(
             "http_signed_api",
-            "2026-05-15",
+            "20260515",
             "source.zip",
             api_url="https://example.com/signed",
         )
