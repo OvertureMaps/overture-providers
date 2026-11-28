@@ -29,8 +29,20 @@ load_policy().allowed("places")  # {"CDLA-Permissive-2.0", ...}
 | `attribution` | Flattening configs into license entries and rendering them as Markdown or plain text. |
 | `spdx` | Fetching canonical SPDX license texts from a pinned `license-list-data` release. |
 | `adapters.addresses` | Address source adapters: one class per fetch strategy, and loaders that pick one for each address dataset. |
+| `cli` | The `overture-datasets` command. |
 
-For a command line, overture-core's `overture-datasets` CLI validates and renders these configs.
+## Command line
+
+Installing the package adds an `overture-datasets` command:
+
+```bash
+overture-datasets validate 'path/to/datasets/*.json' --policy path/to/license_policy.json
+overture-datasets parse -d path/to/datasets acme:planet
+overture-datasets license -d path/to/datasets acme globex -o ATTRIBUTION.md
+overture-datasets policy check --policy path/to/license_policy.json --theme places -d path/to/datasets
+```
+
+Run `overture-datasets --help` for exit codes, and `overture-datasets <command> --help` for each command's flags.
 
 ## Address source adapters
 
